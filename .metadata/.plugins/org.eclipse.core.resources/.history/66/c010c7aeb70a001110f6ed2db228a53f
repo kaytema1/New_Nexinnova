@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		
+		
+		
+	<%= render "shared/stylesheets" %>
+	<%= render "shared/javascript" %>
+	</head>
+	<body>
+		
+		<!-- Site Container -->
+		<div id="Wrapper">
+			<div id="PageWrapper">
+				<div class="pageTop"></div>
+				
+				<!-- Slide show: jQuery Cycle (default) -->
+				
+				
+		
+				
+				<%= render "shared/slideshow"%>
+				
+				
+				<div class="pageMain">
+					<!-- Showcase Content -->
+					<!-- Page Content -->
+					<div class="contentArea">
+						<div class="two-thirds">
+							<%= yield %> <!-- Welcome Message / Page Headline
+							<h1 class="headline">Welcome to <strong>Unite</strong>, merging <strong>crisp</strong> design, <strong>powerful</strong> communication and <strong>ease of use</strong>.</h1>
+							<p class="impact">
+							Unite takes a clean, organized approach to presenting content so it’s easier to find what you want. The theme includes page layouts for: <a href="sample-layout.html#full_page">full page</a>, <a href="sample-layout.html#multi_column_page">multi-column</a>, <a href="sample-blog.html">blog</a>, <a href="sample-portfolio.html">portfolio</a>,
+							<br />
+							<a href="sample-contact.html">contact form</a> and an <a href="sample-login.html" class="login" title="Custom Login Page|This theme includes 2 different login forms. Apply either with your admin portal for a cohesive, stylish website. (click for preveiw)">administrative login</a> (<a href="#ContentPanel" class="topReveal" title="Alternate Admin Login|Preview the alternate login.">alternate</a>).
+							</p>-->
+							<!-- Featured Content -->
+						
+							
+							<div class="ribbon">
+								<div class="wrapAround"></div>
+								<div class="tab">
+									<span class="blogDate">5 Jan.</span>
+									<span class="blogPostInfo">Posted by <a href="#">J. Smith</a> in <a href="#">Advertising</a> | <a href="#">3 comments</a></span>
+								</div>
+							</div>
+							<div class="blogPostSummary">
+								<h1>How to Build a Better Mousetrap</h1>
+								<div class="blogPostImage">
+									<a href="#" class="img"><img src="images/content/demo-only/blog-post-1.jpg" width="566" height="133" alt="blog post image" /></a>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo vitae mi iaculis tincidunt. Sed ipsum diam, semper et adipiscing sit amet, gravida ac ipsum. Phasellus rutrum est non eros ultrices a molestie tellus suscipit. Nunc eleifend, nisl vel cursus hendrerit, arcu risus sagittis lorem, nec gravida massa lacus non nulla. Praesent urna diam, cursus ac eleifend mattis, euismod et nisi. Vestibulum id leo sit amet nisi. Aliquam erat volutpat. Nam egestas mollis ultrices. Praesent nec tellus est, et convallis mauris.
+								</p>
+								<p>
+									<a href="#">Read more...</a>
+								</p>
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+					</div>
+						<%= render "shared/footer" %>
+				</div>
+			
+			</div>
+		</div>
+		<!-- Activate Font Replacement (cufón) -->
+		<script type="text/javascript">
+			Cufon.now();
+
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+_

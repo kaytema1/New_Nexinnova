@@ -1,0 +1,16 @@
+<table>
+	<tr>
+		<td><b>Name</b></td>
+		<td><b> Description </b></td>
+		<td></th>
+	</tr>
+	<% for page in @pages %>
+	<tr>
+		<td><%= page.name %></td>
+		<td><%= page.description %></td>
+		<td><%= link_to "Show", page %></td> 
+		<td><%= link_to "Edit", edit_page_path(page) %></td> 
+		<td><%= link_to "Destroy", page, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+	<% end %>
+</table>

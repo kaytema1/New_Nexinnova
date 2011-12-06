@@ -1,0 +1,29 @@
+<% title "NexInnova Home" %>
+	<div class="cat_title">
+					<h2>Latest Posts</h2>
+					<div class="sort">
+						<a href="#">Popular</a><a href="#" class="active">By Date</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+<table>
+	<% for article in @articles %>
+	<tr>
+		<td><%= article.title %></td>
+		<td><%= article.author %></td>
+		<td><%= article.comments.count %> Comments</td>
+		<td><%= article.content %></td>
+		<td><%= article.tag %></td>
+		<td><%= image_tag article.image.url %></td>
+		<td><%= article.page_id %></td>
+		<td><%= article.source %></td>
+		<td><%= link_to "Show", article %></td>
+		<td><%= link_to "Edit", edit_article_path(article) %></td>
+		<td><%= link_to "Destroy", article, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+	<% end %>
+</table>
+<p>
+	<%= link_to "New Page", new_page_path %>
+</p>

@@ -1,0 +1,48 @@
+<!-- Top reveal (slides open, add class "topReveal" to links for open/close toggle ) -->
+<div id="ContentPanel">
+	<!-- close button -->
+	<a href="#" class="topReveal closeBtn">Close</a>
+	<div class="contentArea">
+		<!-- New member registration -->
+		<div class="right" style="margin:10px 0 0;">
+			<h1> Not a member yet? <span>Register now and get started.</span></h1>
+			<button type="button">
+				Register for an account
+			</button>
+		</div>
+		<!-- Alternate Login -->
+		<div>
+			<form class="loginForm" method="post" action="" style="height:auto;">
+				<div id="loginBg">
+					<%= image_tag "icons/lock-and-key-110.png", :size => "110x110",  :alt => "lock and key" %>
+
+				</div>
+				<h2 style="margin-top: 20px;">Sign in to your account.</h2>
+				<fieldset>
+					<legend>
+						Account Login
+					</legend>
+					<p class="left" style="margin: 0 8px 0 0;">
+						<label for="RevealUsername" class="overlabel"></label>
+						<input id="RevealUsername" name="RevealUsername" type="text" class="loginInput textInput rounded" />
+					</p>
+					
+					<p class="left" style="margin: 0 5px 0 0;">
+						<label for="RevealPassword" class="overlabel"></label>
+						<input id="RevealPassword" name="RevealPassword" type="password" class="loginInput textInput rounded" />
+					</p>
+					<p class="left" style="margin: -7px 0 0;">
+						<button type="submit" class="btn" style="margin:0;">
+							<span>Sign in</span>
+						</button>
+					</p>
+				</fieldset>
+				<p class="left noMargin">
+					<a href="#">Forgot your password?</a>
+				</p>
+			</form>
+		</div>
+		<!-- End of Content -->
+		<div class="clear"></div>
+	</div>
+</div>

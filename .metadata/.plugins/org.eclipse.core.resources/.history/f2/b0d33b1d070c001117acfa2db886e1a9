@@ -1,0 +1,26 @@
+<% title "Articles" %>
+<table>
+	<tr>
+		<th> </th>	
+		<th>Title</th>
+		<th>Author</th>
+		<th>Category</th>
+		<th>Geo Region</th>
+		<th>Content</th>
+		<th>Page</th>
+	</tr>
+	<% for article in @articles %>
+	<tr>
+		<td><%= image_tag article.image.url ,:size => "47x68" %> </td>
+		<td><%= article.title %></td>
+		<td><%= article.author %></td>
+		<td><%= article.category %></td>
+		<td><%= article.geo_region %></td>
+		<td><%= article.content %></td>
+		<td><%= article.page_id %></td>
+		<td><%= link_to "Show", article %></td>
+		<td><%= link_to "Edit", edit_article_path(article) %></td>
+		<td><%= link_to "Destroy", article, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+	<% end %>
+</table>

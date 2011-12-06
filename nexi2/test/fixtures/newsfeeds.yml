@@ -1,0 +1,9 @@
+one:
+  hit: MyString
+  content: MyText
+  source: MyString
+
+two:
+  hit: MyString
+  content: MyText
+  source: MyString

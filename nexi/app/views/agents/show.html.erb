@@ -1,0 +1,16 @@
+<% title "Agent" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @agent.name %>
+</p>
+<p>
+  <strong>Search Query:</strong>
+  <%= @agent.search_query %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_agent_path(@agent) %> |
+  <%= link_to "Destroy", @agent, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", agents_path %>
+</p>

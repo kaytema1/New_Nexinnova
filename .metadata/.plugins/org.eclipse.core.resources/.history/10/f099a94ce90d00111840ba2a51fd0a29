@@ -1,0 +1,3 @@
+<%= javascript_include_tag "jquery-1.4.min.js" %>
+<%= stylesheet_link_tag "css/all" %>
+<%= yield %>

@@ -1,0 +1,49 @@
+<!DOCTYPE html UTF-8>
+<html>
+	<head>
+		<%= render "shared/stylesheets" %>
+	</head>
+	<%= render "shared/headbar" %> <!--/ head menu -->
+	<%= render "shared/header" %> <!--/ header -->
+	<!-- middle -->
+	<div class="middle">
+		<div class="container_24">
+			<!-- featured list -->
+			
+				<% flash.each do |name, msg| %>
+				<%= content_tag :div, msg, :id => "flash_#{name}" %>
+				<% end %>
+
+				<%= yield %> <!--
+				<div class="post-item">
+				<h2><a href="blog-details.html">Top 5 cool Fashion tips for skinny guys</a></h2>
+
+				<div class="post-meta">
+				<span class="icon_cat icon_cat_5"><a href="#">Fashion</a></span>
+				<em>by <span class="author">Patrick LeBeouf</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">43 comments</a></em>
+
+				</div>
+
+				<div class="entry">
+				<p><img src="images/temp/temp_image_4.jpg" alt="" width="235" height="164" class="alignleft" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras adipiscing dignissim tortor, molestie sollicitudin erat ullamcorper eu. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem eu...</p>
+				<div class="clear"></div>
+				</div>
+
+				<a href="blog-details.html" class="link-more">read more</a>
+				</div>
+				-->
+				
+			</div>
+			<!--/content -->
+			<!-- sidebar-->
+		
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!--/ middle -->
+	<!-- bottom content/widgets -->
+	<%= render "shared/bottomcontent" %> <!--/ bottom content/widgets -->
+	<%= render "shared/footer" %>
+	<%= javascript_include_rpx(user_session_url) %>
+	</body>
+</html>

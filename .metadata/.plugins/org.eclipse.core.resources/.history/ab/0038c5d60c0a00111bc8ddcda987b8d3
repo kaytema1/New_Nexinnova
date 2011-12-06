@@ -1,0 +1,52 @@
+<% if @latest_article%>
+<div class="ribbon">
+	<div class="wrapAround"></div>
+	<div class="tab">
+		
+		<span class="blogPostInfo">Posted by <a href="#"><%= @latest_article.author %></a> in <a href="#"><%= @latest_article.category %></a> | <a href="#"><%= @latest_article.comments.count %> comments</a></span>
+	</div>
+</div>
+<div class	="featuredContent">
+	<!-- Featured Item -->
+	<div class="featuredItem">
+		<%= image_tag @latest_article.image.url , :class => "featuredImg img zoom" %>
+		<div class="featuredText">
+			<h1 class="title"> <%= @latest_article.title %> <span><%= @latest_article.content %></span></h1>
+			<br />
+			<%= @latest_article.created_at.strftime("Published on %A , %d %B , %Y | %X %Z"  ) %>
+			<br />
+			<a href="#">More information...</a>
+		</div>
+	</div>
+</div>
+<% end%>
+
+<% if @article %>
+<div class="ribbon">
+	<div class="wrapAround"></div>
+	<div class="tab">
+		<span>Other Stories </span>
+	</div>
+</div>
+<div class	="featuredContent">
+	<!-- Featured Item -->
+	<%for @article in @articles %>
+	<div class="featuredItem">
+		<%= image_tag @article.image.url , :class => "featuredImg img zoom" %>
+		<div class="featuredText">
+			<h1 class="title"> <%= @article.title %> <span><%= @article.content %></span></h1>
+			<br />
+			<%= @article.created_at.strftime("Published on %A , %d %B , %Y | %X %Z"  ) %>
+			<br />
+			<a href="#">More information...</a>
+		</div>
+	</div>
+	<% end %>
+</div>
+
+<% end %>
+<p>
+	<%= link_to "Edit", edit_page_path(@page) %> |
+	<%= link_to "Destroy", @page, :confirm => 'Are you sure?', :method => :delete %> |
+	<%= link_to "View All", pages_path %>
+</p>

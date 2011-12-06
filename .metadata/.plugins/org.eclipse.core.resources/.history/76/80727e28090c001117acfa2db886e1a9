@@ -1,0 +1,10 @@
+<% for advertisement in @advertisements %>
+<p>
+	<%= image_tag advertisement.image.url ,:size => "120x108" %>
+</p>
+<% end %> 
+<% for advertisement in @advertisements %>
+<p>
+	<%= image_tag advertisement.image.url ,:size => "120x108" %>
+</p>
+<% end %> 

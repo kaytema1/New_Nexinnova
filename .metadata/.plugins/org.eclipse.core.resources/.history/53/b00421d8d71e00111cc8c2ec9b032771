@@ -1,0 +1,4 @@
+class Article < ActiveRecord::Base
+  attr_accessible :title, :content, :author, :tag, :featured, :approved, :page_id
+   has_attached_file :image
+end

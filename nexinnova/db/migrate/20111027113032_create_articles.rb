@@ -1,0 +1,19 @@
+class CreateArticles < ActiveRecord::Migration
+  def self.up
+    create_table :articles do |t|
+      t.string :title
+      t.string :author
+      t.string :permalink
+      t.text :content
+      t.integer :page_id
+      t.string :region
+      t.string :category
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :articles
+  end
+end
+  

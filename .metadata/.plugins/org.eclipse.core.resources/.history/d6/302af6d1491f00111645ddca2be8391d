@@ -1,0 +1,9 @@
+class CommentsController < ApplicationController
+  def create  
+    article = Article.find params[:book_id]  
+    comment = article.comments.new params[:comment]  
+    comment.save  
+    flash[:notice] = 'Comment saved'  
+    redirect_to book_path(article)  
+  end  
+end

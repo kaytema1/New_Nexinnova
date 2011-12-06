@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<%= stylesheet_link_tag :all %>
+		<%= javascript_include_tag :all, :recursive => true %>
+		<%= csrf_meta_tag %>
+		<%= yield(:head) %>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.featureList($("#feature_tabs li"), $("#feature_output li"), {
+					start_item : 0,
+					transition_interval : 5000
+				});
+			});
+
+		</script>
+		<!--[if IE 6]>
+		<script type="text/javascript" src="js/jquery.reject.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		$.reject({
+		close: false,
+		imagePath: 'images/'
+		});
+		});
+		</script>
+		<![endif]-->
+	</head>
+	<body>
+		<%= render "shared/headbar" %> <!--/ head menu -->
+		<%= render "shared/header" %> <!--/ header -->
+		<!-- middle -->
+		<div class="middle">
+			<div class="container_24">
+				<!-- featured list -->
+				<%= render "shared/feature" %> <!--/ featured list -->
+				<div class="divider_thin"></div>
+				<!--content -->
+				<div class="grid_15 suffix_1 content">
+					<%= yield %>
+				</div>
+				<!--/content -->
+				<!-- sidebar-->
+				<%= render "shared/sidebar" %> <!--/ sidebar -->
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--/ middle -->
+		<!-- bottom content/widgets -->
+		<div class="bottom_content">
+			<div class="container_24">
+				<div class="inner">
+					<div class="grid_6">
+						<div class="widget">
+							<ul class="menu_type_1">
+								<li>
+									<a href="#">About Us</a>
+								</li>
+								<li>
+									<a href="#">Shortcodes</a>
+								</li>
+								<li>
+									<a href="#">Typography</a>
+								</li>
+								<li>
+									<a href="#">Contact Us</a>
+								</li>
+								<li>
+									<a href="#">Pricing Page</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid_6">
+						<div class="widget">
+							<h3>NETWORK</h3>
+							<ul class="menu_type_2">
+								<li>
+									<a href="#">All Sports Mag</a>
+								</li>
+								<li>
+									<a href="#">Car Tuning Mag</a>
+								</li>
+								<li>
+									<a href="#">For Her Magazine</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid_6">
+						<div class="widget">
+							<h3>BLOG</h3>
+							<ul class="menu_type_2">
+								<li>
+									<a href="#">We've redesigned the blog...</a>
+								</li>
+								<li>
+									<a href="#">Saving everything in your...</a>
+								</li>
+								<li>
+									<a href="#">Make it right, now!</a>
+								</li>
+								<li>
+									<a href="#">Asylum of fools discovered</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid_6">
+						<div class="widget">
+							<h3>MAGAZINE</h3>
+							<ul class="menu_type_2">
+								<li>
+									<a href="#">Our authors</a>
+								</li>
+								<li>
+									<a href="#">Monthly Archive</a>
+								</li>
+								<li>
+									<a href="#">Advertise</a>
+								</li>
+								<li>
+									<a href="#">Jobs &amp; Careers</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<!--/ bottom content/widgets -->
+		<div class="footer">
+			<div class="container_24">
+				<div class="botmenu">
+					<ul>
+						<li class="menu-red">
+							<a href="#">Fashion</a>
+						</li>
+						<li class="menu-orange">
+							<a href="#">Design</a>
+						</li>
+						<li class="menu-yellow">
+							<a href="#">Photography</a>
+						</li>
+						<li class="menu-green">
+							<a href="#">Gadgets</a>
+						</li>
+						<li class="menu-turquoise">
+							<a href="#">Arts</a>
+						</li>
+						<li class="menu-blue">
+							<a href="#">Movies</a>
+						</li>
+						<li class="menu-purple">
+							<a href="#">Music</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="footer_logo">
+					<a href="index.html"><img src="images/logo_footer.png" width="117" height="37" alt="" /></a>
+				</div>
+				<p class="copyright">
+					&copy; 2011 Made by <a href="http://www.themefuse.com/">Themefuse</a>.  All rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+		<%= stylesheet_link_tag :all %>
+		<%= javascript_include_tag :defaults %>
+		<%= csrf_meta_tag %>
+		<%= yield(:head) %>
+	</head>
+	<body>
+		<div id="container">
+			<div id="user_nav">
+				<% if user_signed_in? %>
+				Signed in as <%= current_user.email %>. Not you?
+				<%= link_to "Sign out", destroy_user_session_path %>
+				<% else %>
+				<%= link_to "Sign up", new_user_registration_path %> or
+				<%= link_to "Sign in", new_user_session_path %> or
+				<%= link_to_rpx "Sign in with Facebook or Twitter	", user_session_url %>
+				<% end %>
+			</div>
+			<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			<% end %>
+			<%= content_tag :h1, yield(:title) if show_title? %>
+			<%= yield %>
+		</div>
+		<%= javascript_include_rpx(user_session_url) %>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+
+  def pages
+    @pages = Pages.all
+  end
+  
+  
+
+end

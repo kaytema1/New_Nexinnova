@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>NexInnova Web Application</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- Le styles -->
+		<%= stylesheet_link_tag  "application" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+		<style type="text/css">
+			
+			body {
+				padding-top: 90px;
+			}
+		</style>
+		<script type="text/javascript">
+			<script
+			type = "text/javascript" > $(function() {
+				$('textarea').tinymce({
+					theme : 'advanced'
+				});
+			});
+
+		</script>
+ <!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$(".carousel").dualSlider({
+					auto : true,
+					autoDelay : 6000,
+					easingCarousel : "swing",
+					easingDetails : "easeOutBack",
+					durationCarousel : 1000,
+					durationDetails : 600
+				});
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="fill" style="width: 955px; margin: auto;">
+				<div class="container">
+					<%= image_tag("NexInnova.JPG", :class => "span5") %>
+					<div class="pull-right">
+						<ul class="nav">
+							<% for page in @pages %>
+							<li>
+								<%= link_to page.name,page_path(page) %>
+							</li>
+							<% end %>
+						</ul>
+						<form action="">
+							<input class="span3" type="text" placeholder="Search NexInnova">
+							<button class="btn" type="submit">
+								Search
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<!-- Main hero unit for a primary marketing message or call to action -->
+			<!--- Carousel Starts Here -->
+			<div class="hero-unit" style="padding: 10px;">
+				<!-- /container -->
+				<section class="round">
+					<% flash.each do |key, value| %>
+					<div class="flash <%= key %>">
+						<%= value %>
+					</div>
+					<% end %>
+				</section>
+				<%= yield %>
+
+				<%= debug(params) if Rails.env.development? %>
+	</body>
+	</div>
+	<footer>
+		<p>
+			&copy; Company 2011
+		</p>
+	</footer>
+	</div>
+</html>

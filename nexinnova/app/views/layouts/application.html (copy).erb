@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nexinnova | <%= @title %></title>
+		<%= stylesheet_link_tag    "application" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+			}
+		</style>
+		<script>
+			$(document).ready(function() {
+				$(".tabs").tabs({
+					event : "mouseover"
+				});
+
+			})
+
+			jQuery().ready(function() {
+				jQuery('.accordion-gallery.stage').kwicks({
+					autorotation : true,
+					event : 'mouseover',
+					autorotationSpeed : 5,
+					easing : 'easeInOutCubic',
+					duration : 700,
+					id : 'cwz-accordion'
+				});
+			});
+
+		</script>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="fill">
+				<div class="container">
+					<ul class="nav">
+						<% for page in @pages %>
+						<li>
+							<%= link_to page.name,page_path(page) %>
+						</li>
+						<% end %>
+					</ul>
+					<form action="#" class="pull-right">
+						<input class="input-large" type="text" placeholder="Enter Your Search Term">
+						<button class="btn" type="submit">
+							Search
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<section class="round">
+				<% flash.each do |key, value| %>
+				<div class="flash <%= key %>">
+					<%= value %>
+				</div>
+				<% end %>
+			</section>
+			<%= yield %>
+
+			<%= debug(params) if Rails.env.development? %>
+		</div>
+	</body>
+</html>

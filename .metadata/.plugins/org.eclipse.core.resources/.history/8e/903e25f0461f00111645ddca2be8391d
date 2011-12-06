@@ -1,0 +1,37 @@
+<% title "NexInnova Home" %>
+<%= render "shared/feature"%> <!--/ featured list -->
+<div class="divider_thin"></div>
+<!--content -->
+<div class="grid_15 suffix_1 content">
+	<div class="divider_thin"></div>
+	<div class="cat_title">
+		<h2>Latest Posts</h2>
+		<!-- <div class="sort">
+		<a href="#">Popular</a><a href="#" class="active">By Date</a>
+		</div> -->
+		<div class="clear"></div>
+	</div>
+	<% for article in @display_articles %>
+	<div class="post-item">
+		<h2><%= link_to article.title, article_path(article) %></a></h2>
+		<div class="post-meta">
+			<span class="icon_cat icon_cat_2"><a href="#"><%= article.tag %></a></span>
+			<em>by <span class="author"><%= article.author %></span> &nbsp;|&nbsp; on <%= article.created_at.to_s(:long) %> &nbsp;|&nbsp; <a href="#" class="link-comments"><%= article.comments.count %> comments</a></em>
+		</div>
+		<div class="entry">
+			<p>
+				<%= image_tag article.image.url ,:size => '305x206', :class => 'alignleft' %>
+			</p>
+			<p style="text-align: justify">
+				<%= truncate(article.content, :length => 400 , :ommision => "...") %>
+			</p>
+			<div class="clear"></div>
+		</div>
+		<%= link_to "read more", article, :class => "link-more" %>
+	</div>
+	<% end %>
+	<div class="other_posts">
+		<%= will_paginate @articles, :page_links => false, :next_label => 'Next',  :class => 'prev ' %> <!-- Your page content here, "STATEMENT" -->
+		<%= will_paginate @articles, :page_links => false, :previous_label => 'Previous', :class => 'next' %>
+	</div>
+	

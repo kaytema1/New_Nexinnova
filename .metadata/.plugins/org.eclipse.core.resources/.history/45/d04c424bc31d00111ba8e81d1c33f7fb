@@ -1,0 +1,21 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+
+  before_filter :pages, :ads, :articles ,:latest_articles 
+  def pages
+    @pages ||= Page.all  
+  end
+  
+  def ads
+    @ads ||= Ad.all
+  end
+  
+  def articles
+    @articles ||= Article.all
+  end
+  
+  def latest_articles
+    @latest_articles ||= Article.limit(3)
+  end
+
+end

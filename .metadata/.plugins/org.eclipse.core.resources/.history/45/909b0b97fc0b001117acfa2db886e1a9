@@ -1,0 +1,10 @@
+<%= render "shared/slideshow" %>
+<div class="one-third">
+	
+</div>
+<div class="one-third">
+	Your first content column.
+</div>
+<div class="one-third">
+	Your second content column.
+</div>

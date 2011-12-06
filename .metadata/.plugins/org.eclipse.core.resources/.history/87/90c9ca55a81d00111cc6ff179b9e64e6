@@ -1,0 +1,28 @@
+<% title "NexInnova Home" %>
+<%= render "shared/feature"%>
+<div class="cat_title">
+	<h2>Latest Posts</h2>
+	<!-- <div class="sort">
+	<a href="#">Popular</a><a href="#" class="active">By Date</a>
+	</div> -->
+	<div class="clear"></div>
+</div>
+<% for article in @articles %>
+<div class="post-item">
+	<h2><a href="blog-details.html"><%= article.title %></a></h2>
+	<div class="post-meta">
+		<span class="icon_cat icon_cat_2"><a href="#"><%= article.tag %></a></span>
+		<em>by <span class="author"><%= article.author %></span> &nbsp;|&nbsp; on <%= article.created_at.to_s(:long) %> &nbsp;|&nbsp; <a href="#" class="link-comments"><%= article.comments.count %> comments</a></em>
+	</div>
+	<div class="entry">
+		<p style="text-align: justify">
+			<%= truncate(article.content, :length => 100 , :ommision => "...") %>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras adipiscing dignissim tortor, molestie sollicitudin erat ullamcorper eu. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem eu...
+		</p>
+		<div class="clear"></div>
+	</div>
+	<%= link_to "read more", article, :class => "link-more" %>
+</div>
+
+<% end %>
+

@@ -1,0 +1,38 @@
+<% title "Article" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+<p>
+  <strong>Author:</strong>
+  <%= @article.author %>
+</p>
+<p>
+  <strong>Content:</strong>
+  <%= @article.content %>
+</p>
+<p>
+  <strong>Image:</strong>
+  <%= @article.image %>
+</p>
+<p>
+  <strong>Page:</strong>
+  <%= @article.page_id %>
+</p>
+<p>
+  <strong>Tag:</strong>
+  <%= @article.tag %>
+</p>
+<p>
+  <strong>Source:</strong>
+  <%= @article.source %>
+</p>
+
+
+
+<p>
+  <%= link_to "Edit", edit_article_path(@article) %> |
+  <%= link_to "Destroy", @article, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", articles_path %>
+</p>

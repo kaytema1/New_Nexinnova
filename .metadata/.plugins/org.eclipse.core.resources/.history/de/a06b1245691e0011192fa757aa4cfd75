@@ -1,0 +1,229 @@
+<div class="divider_thin"></div>
+<!--content -->
+<div class="grid_15 suffix_1 content">
+
+ <div class="cat_title back_post">
+        	<a href="blog.html" class="link-back">&lt; back to articles</a>
+            <div class="social_buttons_top"><img src="images/temp/social_buttons.gif" width="217" height="20" alt="" /></div>
+            <div class="clear"></div>
+        </div>
+        
+        
+		
+        <!-- post details -->
+		<div class="post-item post-detail">
+			<h1><%= @article.title %></h1>
+            
+                <div class="post-meta">
+                    <span class="icon_cat icon_cat_blog"><a href="#">Blog</a></span>
+                    <em>by <span class="author"><%= @article.author %> </span> &nbsp;|&nbsp; on <%= @article.created_at.to_s(:long) %> &nbsp;|&nbsp; <a href="#" class="link-comments"><%= @article.comments.count %> comments</a></em>
+                </div>
+            
+                <div class="entry">
+                <p>  <%= image_tag @article.image.url , :size => '590x206' %> 
+</p>
+               	<%= @article.content %>
+                <div class="clear"></div>
+              </div>
+
+		</div>
+        
+        <!--/ post details -->
+        
+        <!-- post comments -->
+                        <div class="comment-list" id="comments">
+                        	
+                            <a href="#addcomments" class="link-addcomment">Add a comment</a>
+                            
+                        	<h2>Comments (<%= @article.comments.count %>)</h2>
+                            
+                            <ol>
+		                    	<% for comment in @article.comments %>
+		                    	 <li class="comment">
+                                    <div class="comment-body">
+                                
+                                    <div class="avatar"><img src="images/avatar_default.gif" width="40" height="40" alt="" /></div>
+                                    <div class="comment-text">
+                                        <div class="comment-author"><a href="#" class="link-author"><%= comment.author %></a> <%= comment.created_at.to_s(:long) <a href="#addcomment" class="link-reply">Reply</a></div>
+                                        <div class="comment-entry"> <%= comment.com %> 
+										</div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    </div>
+                                </li>
+		                    	
+		                    	<% end %>
+                                <li class="comment">
+                                    <div class="comment-body">
+                                
+                                    <div class="avatar"><img src="images/avatar_default.gif" width="40" height="40" alt="" /></div>
+                                    <div class="comment-text">
+                                        <div class="comment-author"><a href="#" class="link-author">Johnny Drama</a> Monday - 24 / 05 / 2010  <a href="#addcomment" class="link-reply">Reply</a></div>
+                                        <div class="comment-entry">For WordPress 3.2, due in the first half of 2011, we will be raising the minimum required PHP version to 5.2. Why 5.2? Because that's what the vast majority of WordPress users are using, and it offers substantial improvements. 
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    </div>
+                                </li>
+                                
+                               
+                                <li class="comment">
+                                
+                                    <div class="comment-body">
+                                    <div class="avatar"><img src="images/avatar_1.jpg" width="40" height="40" alt="" /></div>
+                                    <div class="comment-text">
+                                        <div class="comment-author"><a href="#" class="link-author">Ari Gold</a> Monday - 24 / 05 / 2010 <a href="#addcomment" class="link-reply">Reply</a></div>
+                                        <div class="comment-entry">For WordPress 3.2, due in the first half of 2011, we will be raising the minimum required PHP version to 5.2</div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    </div>
+                                    
+                                    <!-- comment reply -->
+                                    <ul class="children">
+                                        <li class="comment">
+                                            <div class="comment-body">
+                                                <div class="avatar"><img src="images/avatar_tf.jpg" width="48" height="48" alt="" /></div>
+                                                <div class="comment-text">
+                                                    <div class="comment-author"><a href="#" class="link-author">ThemeFuse</a> Monday - 24 / 05 / 2010 <a href="#addcomment" class="link-reply">Reply</a></div>
+                                                    <div class="comment-entry">Thanks mate, we'll consider this in the next update. Cheers!</div>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="comment">
+                                            <div class="comment-body">
+                                                <div class="avatar"><img src="images/avatar_1.jpg" width="40" height="40" alt="" /></div>
+                                                <div class="comment-text">
+                                                    <div class="comment-author"><a href="#" class="link-author">Bogdan</a> Monday - 24 / 05 / 2010 <a href="#addcomment" class="link-reply">Reply</a></div>
+                                                    <div class="comment-entry">
+                                                      <p>Try putting this:</p>
+                                                      <p>script type="text/javascript"&gt;<br />
+                                                        jQuery(document).ready(function(){<br />
+                                                        $('.mainlinks li a').click(function() {<br />
+                                                        $('.mainlinks li a').removeClass('selected');<br />
+                                                        $(this).addClass('selected');<br />
+                                                        });<br />
+                                                        });</p>
+                                                      <p>after the php wp_head();</p>
+                                                      
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!--/ comment reply -->
+                                        
+                                </li>
+                                
+                                <li class="comment">
+                                    <div class="comment-body">
+                                    <div class="avatar"><img src="images/avatar_tf.jpg" width="48" height="48" alt="" /></div>
+                                    <div class="comment-text">
+                                        <div class="comment-author"><a href="#" class="link-author">ThemeFuse</a> 17 Jul 2010 <a href="#addcomment" class="link-reply">Reply</a></div>
+                                        <div class="comment-entry">
+                                        Yes sure, it can be done. 
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    </div>
+                                </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        <!--/ post comments -->
+                        
+                        <!-- add comment -->
+                        <div class="add-comment" id="addcomments">
+                            <h3>Add a comment</h3>
+                            
+                            <div class="comment-form">
+                            <form action="" method="post">
+                                
+                                
+                                <div class="row alignleft">
+                                    <label>Your email (required)</label>
+                                    <input type="text" name="email" value="" class="inputtext input_middle required" />
+                                </div>
+                                
+                                <div class="row alignleft">
+                                    <label>Your name (optional)</label>
+                                    <input type="text" name="name" value="" class="inputtext input_middle required" />
+                                </div>                             
+                                <div class="clear"></div>
+                                
+                                <div class="row">
+                                    <label>Your message</label>
+                                    <textarea cols="30" rows="10" name="message" class="textarea textarea_middle required"></textarea>
+                                </div>
+                                
+                                <div class="row">
+                                    <input type="submit" value="Submit" class="btn-submit" />
+                                </div>
+                                
+                            </form>
+                            </div>
+                        </div>
+                        <!--/add comment -->
+
+
+<% title "Article" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+<p>
+  <strong>Author:</strong>
+  <%= @article.author %>
+</p>
+<p>
+  <strong>Content:</strong>
+  <%= @article.content %>
+</p>
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @article.image.url %>
+</p>
+<p>
+  <strong>Page:</strong>
+  <%= @article.page_id %>
+</p>
+<p>
+  <strong>Tag:</strong>
+  <%= @article.tag %>
+</p>
+<p>
+  <strong>Source:</strong>
+  <%= @article.source %>
+</p>
+
+<% if @comments %>  
+  <h3>Comments</h3>  
+  
+  <% for comment in @comments do %>  
+    <p><strong><%= h(comment.author) %></strong>: <%= h comment.text %>  
+  <% end %>  
+<% end %>
+
+<h3>Post Your Comment</h3>  
+<%= form_for([@article, Comment.new]) do |form| %>  
+  <p><%= form.label :author %></p>  
+  <p><%= form.text_field :author %></p>  
+  
+  <p><%= form.label :text, 'Comment' %></p>  
+  <p><%= form.text_area :text %></p>  
+  
+  <%= form.submit 'Share your view' %>  
+<% end %> 
+
+
+<p>
+  <%= link_to "Edit", edit_article_path(@article) %> |
+  <%= button_to "destroy", @article, :method => :delete %> 
+  |
+  <%= link_to "View All", articles_path %>
+</p>

@@ -1,0 +1,17 @@
+one:
+  title: MyString
+  author: MyString
+  content: MyText
+  image: MyString
+  page_id: 1
+  tag: MyString
+  source: MyString
+
+two:
+  title: MyString
+  author: MyString
+  content: MyText
+  image: MyString
+  page_id: 1
+  tag: MyString
+  source: MyString

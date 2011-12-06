@@ -1,0 +1,19 @@
+<% title "Agents" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Search Query</th>
+  </tr>
+  <% for agent in @agents %>
+    <tr>
+      <td><%= agent.name %></td>
+      <td><%= agent.search_query %></td>
+      <td><%= link_to "Show", agent %></td>
+      <td><%= link_to "Edit", edit_agent_path(agent) %></td>
+      <td><%= link_to "Destroy", agent, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Agent", new_agent_path %></p>

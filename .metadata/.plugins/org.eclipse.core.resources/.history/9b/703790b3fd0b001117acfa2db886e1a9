@@ -1,0 +1,24 @@
+<%= render "shared/slideshow" %>
+<div class="two-thirds">
+	<h1>News</h1>
+	<div class="one-third">
+		<table>
+			<tr>
+				<td>
+					
+					
+					
+				</td>
+			</tr>
+			<tr>
+				<td><h1> The World is Flat </h1></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="one-third">
+	Your first content column.
+</div>
+<div class="one-third">
+	Your second content column.
+</div>

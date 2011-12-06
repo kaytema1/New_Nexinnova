@@ -1,0 +1,14 @@
+class CreateNewsFeeds < ActiveRecord::Migration
+  def change
+    create_table :news_feeds do |t|
+      t.integer :agent_id
+      t.integer :admin_user_id
+      t.string :title
+      t.string :keyword
+      t.string :source
+      t.string :country
+
+      t.timestamps
+    end
+  end
+end

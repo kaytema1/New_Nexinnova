@@ -1,0 +1,9 @@
+<% title "New Ad" %>
+<ul class="breadcrumb">
+  <li><a href="#">Add a Advertisement
+  	</li>
+
+</ul>
+<%= render 'form' %>
+
+<p><%= link_to "Back to List", ads_path %></p>

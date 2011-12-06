@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Parallelus" />
+		<meta name="description" content="A brief description of this website or your business." />
+		<meta name="keywords" content="keywords, or phrases, associated, with each page, are best" />
+		<title><%= content_for?(:title) ? yield(:title) : "NexInnova" %></title>
+		<!-- Favorites icon -->
+		<link rel="shortcut icon" href="http://para.llel.us/favicon.ico" />
+		<!-- Style sheets -->
+		<%= stylesheet_link_tag :all %>
+		<%= stylesheet_link_tag "menu.min" %>
+		<%= stylesheet_link_tag "fancybox" %>
+		<%= stylesheet_link_tag "tooltip.min" %>
+		<%= stylesheet_link_tag "default" %>
+		<%= stylesheet_link_tag "skins/skin-2" %>
+		
+		
+		<%= javascript_include_tag :all %>
+		<%= csrf_meta_tag %> <!-- jQuery framework and utilities -->
+		<!--	<script type="text/javascript" src="javascripts/jquery-1.4.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery-ui-1.7.2.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.easing.1.3.min.js"></script>
+		<script type="text/javascript" src="javascripts/hoverIntent.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.bgiframe.min.js"></script>   -->
+		<!-- Drop down menus -->
+		<!--	<script type="text/javascript" src="javascripts/superfish.min.js"></script>
+		<script type="text/javascript" src="javascripts/supersubs.min.js"></script>
+		<!-- Tooltips -->
+		<!-->	<script type="text/javascript" src="javascripts/jquery.cluetip.min.js"></script>
+		<!-- Input labels -->
+		<!--	<script type="text/javascript" src="javascripts/jquery.overlabel.min.js"></script>
+		<!-- Anchor tag scrolling effects -->
+		<!--	<script type="text/javascript" src="javascripts/jquery.scrollTo-min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.localscroll-min.js"></script>
+		<!-- Inline popups/modal windows -->
+		<!--><script type="text/javascript" src="javascripts/jquery.fancybox-1.2.6.pack.js"></script>
+
+		<!-- Slide shows -->
+		<!-- Cycle 	(default) -->
+		<!--	<script type="text/javascript" src="javascripts/jquery.cycle.all.min.js"></script> -->
+		<script type="text/javascript">
+			// initialize slideshow (Cycle)
+			var firstCycle = true;
+			$(document).ready(function($) {
+				if($('#Slides').length > 0) {
+					$('#Slides').cycle({
+						fx : 'scrollHorz',
+						speed : 750,
+						timeout : 6000,
+						randomizeEffects : false,
+						easing : 'easeOutCubic',
+						next : '.slideNext',
+						prev : '.slidePrev',
+						pager : '#slidePager',
+						cleartypeNoBg : true,
+						after : function(curr, next, opts) {
+							// reset the overlay for the next slide
+							jQuery('#SlideRepeat').css('cursor', 'default').unbind('click');
+							// get the link and apply it to the overlay
+							toGet = (firstCycle) ? $('#Slides').children(':eq(0)') : next;
+							var linkURL = jQuery(toGet).attr('href') || jQuery(toGet).children('a').attr('href') || false;
+							if(linkURL) {
+								jQuery('#SlideRepeat').css('cursor', 'pointer').click(function() {
+									document.location.href = linkURL;
+								});
+							}
+							firstCycle = false;
+						}
+					});
+				}
+			});
+
+		</script>
+		<%= stylesheet_link_tag "ie-only.css" %>
+		<%= stylesheet_link_tag "demo" %> <!-- Font replacement (cufón) -->
+		<!--><script src="javascripts/cufon-yui.js" type="text/javascript"></script>
+		<script src="javascripts/LiberationSans.font.js" type="text/javascript"></script>
+
+		<!-- IE only includes (PNG Fix and other things for sucky browsers -->
+		<!--[if lt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie-only.css">
+		<script type="text/javascript" src="js/pngFix.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		$(document.body).supersleight();
+		});
+		</script>
+		<![endif]-->
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie-only-all-versions.css"><![endif]-->
+		<!-- BEGIN: For Demo Only -->
+		<!--
+		These entries are only needed for demo features, such as the real-time skin changer.
+		They can be deleted for production installs without effecting the theme's design or
+		any of the funcionality.
+		-->
+		<!--	<script type="text/javascript" src="javascripts/demo.js"></script>	  -->
+		<!--	<link rel="stylesheet" type="text/css" href="stylesheets/demo.css" />
+		<!-- END: For Demo Only -->
+		<!-- Functions to initialize after page load -->
+		<!--	<script type="text/javascript" src="javascripts/source/onLoad.js"></script>  -->
+	</head>
+	<body>
+		<!-- Top reveal (slides open, add class "topReveal" to links for open/close toggle ) -->
+		<div id="ContentPanel">
+			<!-- close button -->
+			<a href="#" class="topReveal closeBtn">Close</a>
+			<div class="contentArea">
+				<!-- New member registration -->
+				<div class="right" style="margin:10px 0 0;">
+					<h1> Not a member yet? <span>Register now and get started.</span></h1>
+					<button type="button">
+						Register for an account
+					</button>
+				</div>
+				<!-- Alternate Login -->
+				<div>
+					<form class="loginForm" method="post" action="" style="height:auto;">
+						<div id="loginBg"><img src="images/icons/lock-and-key-110.png" width="110" height="110" alt="lock and key" />
+						</div>
+						<h2 style="margin-top: 20px;">Sign in to your account.</h2>
+						<fieldset>
+							<legend>
+								Account Login
+							</legend>
+							<p class="left" style="margin: 0 8px 0 0;">
+								<label for="RevealUsername" class="overlabel">Username</label>
+								<input id="RevealUsername" name="RevealUsername" type="text" class="loginInput textInput rounded" />
+							</p>
+							<p class="left" style="margin: 0 5px 0 0;">
+								<label for="RevealPassword" class="overlabel">Password</label>
+								<input id="RevealPassword" name="RevealPassword" type="password" class="loginInput textInput rounded" />
+							</p>
+							<p class="left" style="margin: -7px 0 0;">
+								<button type="submit" class="btn" style="margin:0;">
+									<span>Sign in</span>
+								</button>
+							</p>
+						</fieldset>
+						<p class="left noMargin">
+							<a href="#">Forgot your password?</a>
+						</p>
+					</form>
+				</div>
+				<!-- End of Content -->
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- Site Container -->
+		<div id="Wrapper">
+			<div id="PageWrapper">
+				<div class="pageTop"></div>
+				<div id="Header">
+					<!-- Main Menu -->
+					<div id="MenuWrapper">
+						<div id="MainMenu">
+							<div id="MmLeft"></div>
+							<div id="MmBody">
+								<!-- Main Menu Links -->
+								<ul class="sf-menu">
+									<% for page in @pages %>
+									<li>
+										<%= link_to page.name, page_path(page) %>
+									</li>
+									<% end %>
+								</ul>
+								<div class="mmDivider"></div>
+								<!-- Extra Menu Links -->
+								<ul id="MmOtherLinks" class="sf-menu">
+									<li>
+										<a href="#ContentPanel" class="topReveal"><span class="mmLogin">Login</span></a>
+									</li>
+								</ul>
+							</div>
+							<div id="MmRight"></div>
+						</div>
+					</div>
+					<!-- Search -->
+					<div id="Search">
+						<form action="#" id="SearchForm" method="post">
+							<p style="margin:0;">
+								<input type="text" name="SearchInput" id="SearchInput" value="" />
+							</p>
+							<p style="margin:0;">
+								<input type="submit" name="SearchSubmit" id="SearchSubmit" class="noStyle" value="" />
+							</p>
+						</form>
+					</div>
+					<!-- Logo -->
+					<div id="Logo">
+						<a href="index.html"></a>
+					</div>
+					<!-- End of Content -->
+					<div class="clear"></div>
+				</div>
+				<!-- Slide show: jQuery Cycle (default) -->
+				<div id="Slideshow">
+					<div id="SlideTop"></div>
+					<div id="SlideRepeat"></div>
+					<div id="SlideBottom"></div>
+					<div id="Slides">
+						<a href="#"><%= image_tag @advertisements.second.image.url ,:size => "948x341" %>/a>
+						<img src="images/slideshow/slide-2.png" width="948" height="341" alt="Slide 2" />
+						<a href="#"><img src="images/slideshow/slide-3.png" width="948" height="341" alt="Slide 3" /></a>
+						<img src="images/slideshow/slide-4.png" width="948" height="341" alt="Slide 4" />
+						<a href="#"><img src="images/slideshow/slide-5.png" width="948" height="341" alt="Slide 5" /></a>
+						<img src="images/slideshow/slide-6.png" width="948" height="341" alt="Slide 6" />
+					</div>
+					<a href="#" class="slidePrev"></a>
+					<a href="#" class="slideNext"></a>
+					<div id="slidePager"></div>
+				</div>
+				
+		<div id="SlideShow-GalleryView">
+			<ul id="GalleryView">
+				<li>
+					<%= image_tag @advertisements.second.image.url ,:size => "948x341" %>
+					<div class="panel-overlay">
+						<h2>Dream.</h2>
+						<p>The imagination of infinity.</p>
+					</div>
+				</li>
+				<li><%= image_tag @advertisements.second.image.url ,:size => "948x341" %></li>
+				<li><%= image_tag @advertisements.second.image.url ,:size => "948x341" %></li>
+				<li>
+					<img src="images/slideshow/gallery-view/slide-7.jpg" width="938" height="340" alt="Slide 7" />
+					<div class="panel-overlay">
+						<h2>Why shouldn't I trust butterflies?</h2>
+						<p>It's not a secret these days. We'll see where they go now.</p>
+					</div>
+				</li>
+				<li><img src="images/slideshow/gallery-view/slide-8.jpg" width="938" height="340" alt="Slide 8" /></li>
+				<li>
+					<img src="images/slideshow/gallery-view/slide-1.jpg" width="938" height="340" alt="Slide 1" />
+					<div class="panel-overlay">
+						<h2>Dream.</h2>
+						<p>The imagination of infinity.</p>
+					</div>
+				</li>
+				<li><img src="images/slideshow/gallery-view/slide-2.jpg" width="938" height="340" alt="Slide 2" /></li>
+				<li><img src="images/slideshow/gallery-view/slide-3.jpg" width="938" height="340" alt="Slide 3" /></li>
+				<li>
+					<img src="images/slideshow/gallery-view/slide-7.jpg" width="938" height="340" alt="Slide 7" />
+					<div class="panel-overlay">
+						<h2>Why shouldn't I trust butterflies?</h2>
+						<p>It's not a secret these days. We'll see where they go now.</p>
+					</div>
+				</li>
+				<li><img src="images/slideshow/gallery-view/slide-8.jpg" width="938" height="340" alt="Slide 8" /></li>
+			</ul>
+		</div>
+				
+				
+				
+				
+				<div class="pageMain">
+					<!-- Showcase Content -->
+					<!-- Page Content -->
+					<div class="contentArea">
+						<div class="two-thirds">
+							<%= yield %> <!-- Welcome Message / Page Headline
+							<h1 class="headline">Welcome to <strong>Unite</strong>, merging <strong>crisp</strong> design, <strong>powerful</strong> communication and <strong>ease of use</strong>.</h1>
+							<p class="impact">
+							Unite takes a clean, organized approach to presenting content so it’s easier to find what you want. The theme includes page layouts for: <a href="sample-layout.html#full_page">full page</a>, <a href="sample-layout.html#multi_column_page">multi-column</a>, <a href="sample-blog.html">blog</a>, <a href="sample-portfolio.html">portfolio</a>,
+							<br />
+							<a href="sample-contact.html">contact form</a> and an <a href="sample-login.html" class="login" title="Custom Login Page|This theme includes 2 different login forms. Apply either with your admin portal for a cohesive, stylish website. (click for preveiw)">administrative login</a> (<a href="#ContentPanel" class="topReveal" title="Alternate Admin Login|Preview the alternate login.">alternate</a>).
+							</p>-->
+							<!-- Featured Content -->
+						
+						
+							<div class="ribbon">
+								<div class="wrapAround"></div>
+								<div class="tab">
+									<span class="blogDate">5 Jan.</span>
+									<span class="blogPostInfo">Posted by <a href="#">J. Smith</a> in <a href="#">Advertising</a> | <a href="#">3 comments</a></span>
+								</div>
+							</div>
+							<div class="blogPostSummary">
+								<h1>How to Build a Better Mousetrap</h1>
+								<div class="blogPostImage">
+									<a href="#" class="img"><img src="images/content/demo-only/blog-post-1.jpg" width="566" height="133" alt="blog post image" /></a>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo vitae mi iaculis tincidunt. Sed ipsum diam, semper et adipiscing sit amet, gravida ac ipsum. Phasellus rutrum est non eros ultrices a molestie tellus suscipit. Nunc eleifend, nisl vel cursus hendrerit, arcu risus sagittis lorem, nec gravida massa lacus non nulla. Praesent urna diam, cursus ac eleifend mattis, euismod et nisi. Vestibulum id leo sit amet nisi. Aliquam erat volutpat. Nam egestas mollis ultrices. Praesent nec tellus est, et convallis mauris.
+								</p>
+								<p>
+									<a href="#">Read more...</a>
+								</p>
+							</div>
+						</div>
+						<div class="one-third">
+							<!-- Skin Changer -->
+							<% for advertisement in @advertisements %>
+							<p>
+								<%= image_tag advertisement.image.url ,:size => "247x298" %>
+							</p>
+							<% end %> <div class="hr"></div>
+							<!-- Side Navigation Menu -->
+							<h1 class="title" style="margin-bottom:0;"> NexInnova Nav <span>Links to other areas of the site</span></h1>
+							<div class="sideNavWrapper">
+								<div class="sideNavBox-1">
+									<div class="sideNavBox-2">
+										<ul class="sideNav">
+											<% for page in @pages %>
+											<li class="currentPage">
+												<%= link_to page.name, page_path(page) %>
+											</li>
+											<% end %>
+											<li>
+												<a href="#">Sample Navigation Link</a>
+											</li>
+											<li class="currentPage">
+												<a href="#">Current Page Sample</a>
+											</li>
+											<li>
+												<a href="#">Sample Navigation Link</a>
+											</li>
+											<li>
+												<a href="#">Sample Navigation Link</a>
+											</li>
+											<li>
+												<a href="#">Sample Navigation Link</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Testimonial/Quote -->
+							<div class="quote">
+								<div class="quoteBox-1">
+									<div class="quoteBox-2">
+										<p>
+											This is one amazing quote! I mean really, really amazing. Like super incredible and stuff.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="quoteAuthor">
+								<p class="name">
+									Gary Philips
+								</p>
+								<p class="details">
+									President, Quotable Quotes, Inc.
+								</p>
+							</div>
+							<div class="hr"></div>
+							<!-- Newsletter -->
+							<h1 class="title" style="margin-bottom:0;"> Newsletter <span>We’ll keep you informed and updated</span></h1>
+							<form action="#" id="newsletter" method="post">
+								<p style="margin: 1em 0 1px;">
+									<label for="NewsletterEmail" class="overlabel">Email</label>
+									<input type="text" id="NewsletterEmail" class="textInput" style="width: 259px; margin:0;" />
+								</p>
+								<p style="margin:0;">
+									<button type="submit" class="btn">
+										<span>Sign me up!</span>
+									</button>
+								</p>
+							</form>
+						</div>
+						<!-- End of Content -->
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!-- Footer -->
+				<div id="Footer">
+					<div id="FooterTop"></div>
+					<div id="FooterContent">
+						<div class="contentArea">
+							<!-- Column 1 -->
+							<div class="one-third">
+								<h3>Design Details</h3>
+								<p>
+									Ceated by <a href="http://para.llel.us">Parallelus</a> and available for purchase on <a href="http://themeforest.net/user/Parallelus/portfolio">ThemeForest</a>.
+								</p>
+							</div>
+							<!-- Column 2 -->
+							<div class="one-third">
+								<h3>Stay Connected</h3>
+								<ul class="horizList">
+									<li>
+										<a href="#"><img src="images/icons/social/delicious.png" width="40" height="40" alt="Delicious" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/icons/social/flickr.png" width="40" height="40" alt="Flickr" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/icons/social/linkedin.png" width="40" height="40" alt="LinkedIn" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/icons/social/skype.png" width="40" height="40" alt="Skype" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/icons/social/twitter.png" width="40" height="40" alt="Twitter" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/icons/social/yahoo.png" width="40" height="40" alt="Yahoo!" /></a>
+									</li>
+								</ul>
+								<p>
+									Keep track of Unite on all your favorite social networks.
+								</p>
+							</div>
+							<!-- Column 3 -->
+							<div class="one-third last">
+								<h3>Contact Information</h3>
+								<div class="logoMark"></div>
+								<p>
+									(555) 443.3221
+									<br />
+									contact@unite-inc.com
+									<br />
+									<a href="#">www.unite-inc.com</a>
+									<br />
+								</p>
+							</div>
+							<!-- End of Content -->
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div id="FooterBottom"></div>
+				</div>
+				<!-- Copyright/legal text -->
+				<div id="Copyright">
+					<p>
+						Copyright &copy; 2010 - <a href="http://para.llel.us" onclick="window.open(this.href); return false;">Parallelus</a> - All rights reserved.
+						Conforms to W3C Standard <a href="http://validator.w3.org/check?uri=referer" onclick="window.open(this.href); return false;">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" onclick="window.open(this.href); return false;">CSS</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Activate Font Replacement (cufón) -->
+		<script type="text/javascript">
+			Cufon.now();
+
+		</script>
+	</body>
+</html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= yield(:head) %>
+	</head>
+	<body>
+		<!-- Top reveal (slides open, add class "topReveal" to links for open/close toggle ) -->
+		<div id="ContentPanel">
+			<!-- close button -->
+			<a href="#" class="topReveal closeBtn">Close</a>
+			<div class="contentArea">
+				<!-- New member registration -->
+				<div class="right" style="margin:10px 0 0;">
+					<h1> Not a member yet? <span>Register now and get started.</span></h1>
+					<button type="button">
+						Register for an account
+					</button>
+				</div>
+				<!-- Alternate Login -->
+				<div>
+					<form class="loginForm" method="post" action="" style="height:auto;">
+						<div id="loginBg"><img src="images/icons/lock-and-key-110.png" width="110" height="110" alt="lock and key" />
+						</div>
+						<h2 style="margin-top: 20px;">Sign in to your account.</h2>
+						<fieldset>
+							<legend>
+								Account Login
+							</legend>
+							<p class="left" style="margin: 0 8px 0 0;">
+								<label for="RevealUsername" class="overlabel">Username</label>
+								<input id="RevealUsername" name="RevealUsername" type="text" class="loginInput textInput rounded" />
+							</p>
+							<p class="left" style="margin: 0 5px 0 0;">
+								<label for="RevealPassword" class="overlabel">Password</label>
+								<input id="RevealPassword" name="RevealPassword" type="password" class="loginInput textInput rounded" />
+							</p>
+							<p class="left" style="margin: -7px 0 0;">
+								<button type="submit" class="btn" style="margin:0;">
+									<span>Sign in</span>
+								</button>
+							</p>
+						</fieldset>
+						<p class="left noMargin">
+							<a href="#">Forgot your password?</a>
+						</p>
+					</form>
+				</div>
+				<!-- End of Content -->
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="container">
+			<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			<% end %>
+			<%= content_tag :h1, yield(:title) if show_title? %>
+			<%= yield %>
+			<p>
+				<%= link_to "New Advertisement", new_advertisement_path %>
+			</p>
+			<p>
+				<%= link_to "New Article", new_article_path %>
+			</p>
+			<p>
+				<%= link_to "New Page", new_page_path %>
+			</p>
+		</div>
+		<div id="sidebar">
+			<% for advertisement in @advertisements %>
+			<p>
+				<%= image_tag advertisement.image.url %>
+			</p>
+			<%= advertisement.image %>
+			<br />
+			<%= advertisement.permalink %>
+
+			<% end %>
+		</div>
+		<hr />
+		<div class="lowbar">
+			<% for article in @articles %>
+
+			<%= article.category %>
+			<br />
+			<% end %>
+		</div>
+		<hr />
+		<div class="lowbar">
+			<% for page in @pages %>
+
+			<%= page.name %>
+			<br />
+			<% end %>
+		</div>
+		<hr />
+	</body>
+</html>

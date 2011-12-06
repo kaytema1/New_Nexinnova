@@ -1,0 +1,206 @@
+<% @title ="Home" %> 
+
+
+<div class="container">
+	<div class="row" style="padding-left: 50px;">
+				<div class="row" style="margin-bottom: 20px;">
+				<table class="span10"><tr><td> <h2 class="pull-left">Top News Stories</h2> 
+					</td><tr></table>   
+							<table class="span5 pull-left">
+						<tr><td>  <span class="pull-left"> <a href="#"> Company </a> | <a href="#">Professional </a> |<a href="#"> Mobile</a>  
+						<button class="btn small info" type="submit">
+							Sign In
+						</button> </span>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<div class="carousel clearfix">
+					<div class="panel">
+						<div class="details_wrapper">
+							<div class="details">
+								
+								<% for article in @articles %>
+								<div class="detail">	
+									<h2 class="Lexia-Bold"><%= link_to  article.title , article_path(article), :class => "Dolor sit amet" %></h2><br /> <h2 style="font-size: 16px;"> <%= shorten(article.content) %> </h2>
+									<a href="#" title="Read more" class="more">Read more</a>
+								</div><!-- /detail -->
+								<% end %>
+								
+							</div><!-- /details -->
+						</div><!-- /details_wrapper -->
+						<div class="paging">
+							<div id="numbers"></div>
+							<a href="javascript:void(0);" class="previous" title="Previous" >Previous</a>
+							<a href="javascript:void(0);" class="next" title="Next">Next</a>
+						</div><!-- /paging -->
+						<a href="javascript:void(0);" class="play" title="Turn on autoplay">Play</a>
+						<a href="javascript:void(0);" class="pause" title="Turn off autoplay">Pause</a>
+					</div><!-- /panel -->
+					<div class="backgrounds">
+						<% for article in @articles %>
+						<div class="item item_1">
+							<object width="604" height="340">
+								<param name="allowfullscreen" value="false" />
+								<param name="allowscriptaccess" value="never" />
+								<embed class="image_header" src=<%= article.image.url %>></embed>	  
+							</object>
+						</div>
+						<% end %>
+						<!-- /item -->
+					</div><!-- /backgrounds -->
+				</div><!-- /carousel -->
+			</div>
+</div>
+
+
+	
+	<div class="row">
+		<div class="span11">
+					<table>
+						<thead>
+							<tr>
+								<th><h2 style="margin-bottom: 2px;">News</h2></th>
+							</tr>
+						</thead>
+					</table>
+					<div class="row" style="margin-bottom: 23px; padding-left: 19px; " >
+						<% for article in @articles %>
+						
+						<% if article.image.file? %>
+  							<%= image_tag article.image.url, :size => "200x200", :class => "thumbnail pull-left"  %>
+						<% else %>
+ 						 No attachment available!
+						<% end %>
+					
+						
+						<p class=" span6 pull-right" style="height: 200px; padding-top: 20px;">
+							<%= paragraph(article.content)%>
+						</p>
+						
+						<% end %>
+					</div>
+					<div class="row">
+						<table class="zebra-striped span5 pull-left">
+							<thead>
+								<tr>
+									<th><h2 style="margin-bottom: 2px;"> Business </h2></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td> The World is becoming flatter EveryDay please resort to Ghana</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="zebra-striped span5 pull-right">
+							<thead>
+								<tr>
+									<th><h2 style="margin-bottom: 2px;"> Sports</h2></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td> The World is becoming flatter EveryDay please resort to Ghana</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="span4">
+			<table>
+				<tr>
+					<td> <% for advertisement in @advertisements %> <a href="http://<%= advertisement.link %>"> <%= image_tag advertisement.image.url, :height => "245px", :width => "200px" %> </a> <% end %> </td>
+				</tr>
+			</table>
+		</div>
+		<div class="span9">
+			<% for page in @pages %>
+
+			<% if page.articles %>
+
+			<% for article in page.articles %>
+
+			<% if article.category == "headline" %>
+			<table>
+				<tr>
+					<td> <%= image_tag article.image.url, :height => "300px", :width => "495px" %> </td>
+				</tr>
+				<tr>
+					<td><%= link_to(article.title, article_path(article)) %> <%= link_to(page.name,page, :class => "label notice") %></td>
+				</tr>
+			</table>
+			<% end %>
+
+			<% end %>
+			<% end %>
+
+			<% end %>
+		</div>
+		<div class="span3">
+			<table>
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span-one-third">
+			<% for page in @pages %>
+			<% if (((page.id.to_i)%2)==0)  %>
+			<table>
+				<tr>
+					<td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+				</tr>
+				<% if page.articles %>
+
+				<% for article in page.articles %>
+				<tr>
+					<td colspan="4"><%= link_to(article.title, article_path(article)) %> </td>
+				</tr>
+				<% end %>
+				<% end %>
+
+				<% end %>
+			</table>
+			<% end %>
+		</div>
+		<div class="span-one-third">
+			<% for page in @pages %>
+			<% if (((page.id.to_i)%2)!=0)  %>
+			<table>
+				<tr>
+					<td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+				</tr>
+				<% if page.articles %>
+
+				<% for article in page.articles %>
+				<tr>
+					<td colspan="4"><%= link_to(article.title, article_path(article)) %> </td>
+				</tr>
+				<% end %>
+				<% end %>
+
+				<% end %>
+			</table>
+			<% end %>
+		</div>
+		<div class="span-one-third">
+			flndfkmndskfmnk mlkdnslfknfk ldndlksn lfdn slkfn skdnfkn
+		</div>
+	</div>
+	<p>
+		<%= link_to "New Page", new_page_path %>
+	</p>
+

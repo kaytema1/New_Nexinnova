@@ -1,0 +1,14 @@
+require 'rubygems'
+require 'nokogiri'
+require 'open-uri'
+
+url = "http://www.bbc.co.uk/search//?q=Business Model"
+doc = Nokogiri::HTML(open(url))
+puts doc.at_css("title").text
+#doc.css(".item").each do |item|
+  #title = item.at_css(".ListItemLink").text
+  
+  
+  #puts "#{title}"
+ # puts "www.walmart.com"+item.at_css(".linktrack-title")[:href]
+#end

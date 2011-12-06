@@ -1,0 +1,30 @@
+<% title "Articles" %>
+<table id="FeatureMatrix" class="">
+	<tr>
+		<th class="matrixColumn"> Image</th>	
+		<th class="matrixColumn">Title</th>
+		<th class="matrixColumn">Author</th>
+		<th class="matrixColumn">Category</th>
+		<th class="matrixColumn">Geo Region</th>
+		<th class="matrixColumn">Content</th>
+		<th class="matrixColumn">Page</th>e
+				<th class="matrixColumn">Featured</th>
+						<th class="matrixColumn">Headline</th>
+	</tr>
+	<% for article in @articles %>
+	<tr>
+		<td class="matrixItem"><%= image_tag article.image.url ,:size => "47x68" %> </td>
+		<td class="matrixItem"><%= article.title %></td>
+		<td class="matrixItem"><%= article.author %></td>
+		<td class="matrixItem"><%= article.category %></td>
+		<td class="matrixItem"><%= article.geo_region %></td>
+		<td class="matrixItem"><%= article.content %></td>
+		<td class="matrixItem"><%= article.page_id %></td>
+		<td class="matrixItem"><%= article.is_featured %></td>
+				<td class="matrixItem"><%= article.is_headline %></td>		
+		<td class="matrixEven"><%= link_to "Show", article %></td>
+		<td class="matrixOdd	"><%= link_to "Edit", edit_article_path(article) %></td>
+		<td class="matrixEven"><%= link_to "Destroy", article, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+	<% end %>
+</table>

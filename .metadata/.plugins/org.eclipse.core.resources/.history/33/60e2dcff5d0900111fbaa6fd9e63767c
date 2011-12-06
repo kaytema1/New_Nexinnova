@@ -1,0 +1,28 @@
+<%= form_for @article do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </p>
+  <p>
+    <%= f.label :geo_region %><br />
+    <%= f.text_field :geo_region %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.label :page_id %><br />
+    <%= f.number_field :page_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

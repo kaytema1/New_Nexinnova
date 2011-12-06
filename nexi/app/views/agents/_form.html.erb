@@ -1,0 +1,12 @@
+<%= form_for @agent do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :search_query %><br />
+    <%= f.text_field :search_query %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

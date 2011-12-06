@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Parallelus" />
+<meta name="description" content="A brief description of this website or your business." />
+<meta name="keywords" content="keywords, or phrases, associated, with each page, are best" />
+<title><%= content_for?(:title) ? yield(:title) : "NexInnova" %></title>
+<!-- Favorites icon -->
+<link rel="shortcut icon" href="http://para.llel.us/favicon.ico" />
+<!-- Style sheets -->
+<%= stylesheet_link_tag :all %>
+<%= stylesheet_link_tag "menu.min" %>
+<%= stylesheet_link_tag "fancybox" %>
+<%= stylesheet_link_tag "tooltip.min" %>
+
+<%= stylesheet_link_tag "default" %>
+<%= stylesheet_link_tag "source/gallerview" %>
+<%= stylesheet_link_tag "skins/skin-2" %>
+<%= stylesheet_link_tag  "bootstrap" %>
+<%= stylesheet_link_tag  "demo" %> 

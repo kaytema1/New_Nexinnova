@@ -1,0 +1,233 @@
+<% @title ="Home" %> 
+
+
+<div class="container">
+	<div class="row" style="padding-left: 50px;">
+				<div class="row" style="margin-bottom: 20px;">
+				<table class="span10"><tr><td> <h2 class="pull-left"><%= @page.name %></h2> 
+					</td><tr></table>   
+							<table class="span5 pull-left">
+						<tr><td>  <span class="pull-left"> <a href="#"> Company </a> | <a href="#">Professional </a> |<a href="#"> Mobile</a>  
+						<button class="btn small info" type="submit">
+							Sign In
+						</button> </span>
+						</td>
+					</tr>
+				</table>
+				</div>
+				
+</div>
+</div>
+
+
+	
+	<div class="row">
+		<div class="span11" style="text-align: justify ">
+			
+		
+				
+			
+					<% for f_article in @featured_article %>
+					
+					<h2> <%= f_article.title  %> </h2>
+						
+						<hr />
+						
+						
+						<% if f_article.image.file? %>
+  					
+  							<%= image_tag f_article.image.url, :size => "230x250", :class => "thumbnail pull-left"  %>
+  						
+						<% else %>
+ 						 No attachment available!
+						<% end %>
+					<h3> <%= f_article.content  %> </h3>
+											<hr />	
+					
+					<% end %>
+					
+					
+
+					
+					<div class="row" style="margin-bottom: 23px; padding-left: 19px; ">
+						<% for article in @articles %>
+						
+						<% if article.image.file? %>
+  					
+  							<%= image_tag article.image.url, :size => "200x200", :class => "thumbnail pull-left"  %>
+  						
+						<% else %>
+ 						 No attachment available!
+						<% end %>
+					
+						<h3 class="span7 pull-right"> <%= link_to article.title, article_path(article) %> </h3>
+
+						<p class=" span7 pull-right" style="height: 200px; padding-top: 20px; text-align: justify">
+							<%= paragraph(article.content) %>
+						</p>
+						<hr />
+						
+						<% end %>
+					</div>
+					
+				</div>
+				<div class="span4">
+					<table>
+						<tr>
+							<td> <% for advertisement in @advertisements %> <a href="http://<%= advertisement.link %>"> <%= image_tag advertisement.image.url, :height => "245px", :width => "200px" %> </a> <% end %> </td>
+						</tr>
+					</table>
+				</div>
+		
+		<div class="span5">
+			<% for page in @pages %>
+
+			<% if page.articles %>
+
+			<% for article in page.articles %>
+
+			<% if article.category == "headline" %>
+			<table>
+				<tr>
+					<td> <%= image_tag article.image.url, :height => "300px", :width => "495px" %> </td>
+				</tr>
+				<tr>
+					<td><%= link_to(article.title, article_path(article)) %> <%= link_to(page.name,page, :class => "label notice") %></td>
+				</tr>
+			</table>
+			<% end %>
+
+			<% end %>
+			<% end %>
+
+			<% end %>
+		</div>
+	
+	</div>
+	<div class="row">
+		<div class="span5">
+			<% for page in @pages %>
+			<% if (((page.id.to_i)%2)==0)  %>
+			<table>
+				<tr>
+					<td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+				</tr>
+				<% if page.articles %>
+
+				<% for article in page.articles %>
+				<tr>
+					<td colspan="4"><%= link_to(article.title, article_path(article)) %> </td>
+				</tr>
+				<% end %>
+				<% end %>
+
+				<% end %>
+			</table>
+			<% end %>
+		</div>
+		<div class="span5">
+			<% for page in @pages %>
+			<% if (((page.id.to_i)%2)!=0)  %>
+			<table>
+				<tr>
+					<td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+				</tr>
+				<% if page.articles %>
+
+				<% for article in page.articles %>
+				<tr>
+					<td colspan="4"><%= link_to(article.title, article_path(article)) %> </td>
+				</tr>
+				<% end %>
+				<% end %>
+
+				<% end %>
+			</table>
+			<% end %>
+		</div>
+		<div class="span5">
+			<% for page in @pages %>
+			<% if (((page.id.to_i)%2)!=0)  %>
+			<table>
+				<tr>
+					<td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+				</tr>
+				<% if page.articles %>
+
+				<% for article in page.articles %>
+				<tr>
+					<td colspan="4"><%= link_to(article.title, article_path(article)) %> </td>
+				</tr>
+				<% end %>
+				<% end %>
+
+				<% end %>
+			</table>
+			<% end %>
+		</div>
+		
+		
+	</div>
+	<p>
+		<%= link_to "New Page", new_page_path %>
+	</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% @title="Page" %>
+<div class="hero-unit">
+	
+	
+	<p>
+		<strong>Name:</strong>
+		<%= @page.name %>
+	</p>
+	<p>
+		<strong>Description:</strong>
+		<%= @page.description %>
+	</p>
+	<% if @articles %>
+
+	<% for article in @articles %>
+	<tr>
+		<td></td><td colspan="4"><%= article.title %> </td>
+	</tr>
+	<% end %>
+	<% end %>
+	<p>
+		<%= link_to "Edit", edit_page_path(@page) %> |
+		<%= link_to "Destroy", @page, :confirm => 'Are you sure?', :method => :delete %> |
+		<%= link_to "View All", pages_path %> |
+		<%= link_to "Add New Article", new_article_path %>
+	</p>
+</div>

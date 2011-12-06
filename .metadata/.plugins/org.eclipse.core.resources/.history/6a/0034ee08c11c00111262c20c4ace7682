@@ -1,0 +1,38 @@
+
+
+
+<!DOCTYPE html UTF-8>
+<html>
+	<head>
+		<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+		<%= stylesheet_link_tag  %>
+		<%= javascript_include_tag :all, :recursive => true  %>
+		<%= csrf_meta_tag %>
+		<%= yield(:head) %>
+		<%= init_tinymce_hammer_if_required %>
+	</head>
+	<body>
+		<div id="container">
+			<div id="user_nav">
+				<% for page in @pages %>
+
+				<%= link_to page.title, page_path(page) %>
+
+				<% end %>
+				<% if user_signed_in? %>
+				Signed in as <%= current_user.email %>. Not you?
+				<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+				<% else %>
+				<%= link_to_rpx "Sign In Using FB or Twitter", user_session_url %>|
+				<%= link_to "Sign In", user_session_url %>
+				<% end %>
+			</div>
+			<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			<% end %>
+			<%= content_tag :h1, yield(:title) if show_title? %>
+			<%= yield %>
+		</div>
+		<%= javascript_include_rpx(user_session_url) %>
+	</body>
+</html>

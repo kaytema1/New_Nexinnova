@@ -1,0 +1,167 @@
+<% @title ="Home" %> 
+
+
+<div class="container">
+	<div class="row" style="padding-left: 50px;">
+				<div class="row" style="margin-bottom: 20px;">
+				<table class="span10"><tr><td> <h2 class="pull-left">Top News Stories</h2> 
+					</td><tr></table>   
+							<table class="span5 pull-left">
+						<tr><td>  <span class="pull-left"> <a href="#"> Company </a> | <a href="#">Professional </a> |<a href="#"> Mobile</a>  
+						<button class="btn small info" type="submit">
+							Sign In
+						</button> </span>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<div class="carousel clearfix">
+					<div class="panel">
+						<div class="details_wrapper">
+							<div class="details">
+								
+								<% for article in @articles %>
+								
+
+								<div class="detail">
+									<h2 class="Lexia-Bold"><a href="#"><Dolor sit amet><%= article.title %></a></h2><br /> <h2 style="font-size: 10px;"> <%= shorten(article.content) %> </h2>
+									<a href="#" title="Read more" class="more">Read more</a>
+								</div><!-- /detail -->
+								<% end %>
+								
+								<div class="detail">
+									<h2 class="Lexia-Bold"><a href="#">Lorem ipsum dolor</a> sit amet, consectetuer adipiscing elit. </h2>
+									<a href="#" title="Read more" class="more">Read more</a>
+								</div><!-- /detail -->
+								<div class="detail">
+									<h2 class="Lexia-Bold"><a href="#">Aenean massa</a>. Cum sociis natoque penatibus et magnis dis parturient montes</h2>
+									<a href="#" title="Read more" class="more">Read more</a>
+								</div><!-- /detail -->
+							</div><!-- /details -->
+						</div><!-- /details_wrapper -->
+						<div class="paging">
+							<div id="numbers"></div>
+							<a href="javascript:void(0);" class="previous" title="Previous" >Previous</a>
+							<a href="javascript:void(0);" class="next" title="Next">Next</a>
+						</div><!-- /paging -->
+						<a href="javascript:void(0);" class="play" title="Turn on autoplay">Play</a>
+						<a href="javascript:void(0);" class="pause" title="Turn off autoplay">Pause</a>
+					</div><!-- /panel -->
+					<div class="backgrounds">
+						<div class="item item_1">
+							<object width="604" height="340">
+								<param name="allowfullscreen" value="true" />
+								<param name="allowscriptaccess" value="always" />
+								<param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=10930565&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" />
+								<embed src="rc="http://placehold.it/604x340""></embed>	
+					<!--			<embed src="http://vimeo.com/moogaloop.swf?clip_id=10930565&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="604" height="340" wmode="transparent"></embed>
+					--->		</object>
+						</div><!-- /item -->
+						<div class="item item_2">
+							<object width="604" height="340">
+								<param name="allowfullscreen" value="true" />
+								<param name="allowscriptaccess" value="always" />
+								<param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12257932&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" />
+								<embed src="rc="http://placehold.it/604x340""></embed>		
+<!--<embed src="http://vimeo.com/moogaloop.swf?clip_id=12257932&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="604" height="340" wmode="transparent"></embed>
+	--->						</object>
+						</div><!-- /item -->
+						<div class="item item_3"></div><!-- /item -->
+					</div><!-- /backgrounds -->
+				</div><!-- /carousel -->
+			</div>
+	
+	
+	
+</div>
+
+
+<div class="hero-unit">
+	<div class="row">
+		<div class="span4">
+			<table>
+				<tr>
+					<td> <% for advertisement in @advertisements %> <a href="http://<%= advertisement.link %>"> <%= image_tag advertisement.image.url, :height => "245px", :width => "200px" %> </a> <% end %> </td>
+				</tr>
+			</table>
+		</div>
+		<div class="span9">
+			<% for page in @pages %>
+
+			<% if page.articles %>
+
+			<% for article in page.articles %>
+
+			<% if article.category == "headline" %>
+			<table>
+				<tr>
+					<td> <%= image_tag article.image.url, :height => "300px", :width => "495px" %> </td>
+				</tr>
+				<tr>
+					<td><%= link_to(article.title, article_path(article)) %> <%= link_to(page.name,page, :class => "label notice") %></td>
+				</tr>
+			</table>
+			<% end %>
+
+			<% end %>
+			<% end %>
+
+			<% end %>
+		</div>
+		<div class="span3">
+			<table>
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span-one-third">
+			<% for page in @pages %>
+			<% if (((page.id.to_i)%2)==0)  %>
+			<table>
+				<tr>
+					<td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+				</tr>
+				<% if page.articles %>
+
+				<% for article in page.articles %>
+				<tr>
+					<td colspan="4"><%= link_to(article.title, article_path(article)) %> </td>
+				</tr>
+				<% end %>
+				<% end %>
+
+				<% end %>
+			</table>
+			<% end %>
+		</div>
+		<div class="span-one-third">
+			<% for page in @pages %>
+			<% if (((page.id.to_i)%2)!=0)  %>
+			<table>
+				<tr>
+					<td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+				</tr>
+				<% if page.articles %>
+
+				<% for article in page.articles %>
+				<tr>
+					<td colspan="4"><%= link_to(article.title, article_path(article)) %> </td>
+				</tr>
+				<% end %>
+				<% end %>
+
+				<% end %>
+			</table>
+			<% end %>
+		</div>
+		<div class="span-one-third">
+			flndfkmndskfmnk mlkdnslfknfk ldndlksn lfdn slkfn skdnfkn
+		</div>
+	</div>
+	<p>
+		<%= link_to "New Page", new_page_path %>
+	</p>
+</div>

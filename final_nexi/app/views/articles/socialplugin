@@ -1,0 +1,5 @@
+<div class="fb_container">
+		<div class="fb_title"> <%= image_tag("fb_activity_title.gif") %>
+		</div>
+		<iframe class="fbBox" src="http://www.facebook.com/widgets/activity.php?header=false&amp;height=360&amp;width=286&amp;border_color=%23ffffff&amp;site=www.engadget.com" style="border: medium none; overflow: hidden; height: 360px; width: 286px;" frameborder="0" scrolling="no"></iframe>
+	</div>

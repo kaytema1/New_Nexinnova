@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		
+		
+		
+	<%= render "shared/stylesheets" %>
+	<%= render "shared/javascript" %>
+	</head>
+	<body>
+		
+		<!-- Site Container -->
+		<div id="Wrapper">
+			<div id="PageWrapper">
+				<div class="pageTop"></div>
+				
+				<!-- Slide show: jQuery Cycle (default) -->
+				
+				
+		
+				
+				<%= render "shared/slideshow"%>
+				
+				
+				<div class="pageMain">
+					<!-- Showcase Content -->
+					<!-- Page Content -->
+					<div class="contentArea">
+						<div class="two-thirds">
+							<%= yield %> 
+							<!-- Featured Content -->
+						
+							
+							
+						</div>
+						
+						<div class="clear"></div>
+					</div>
+						<%= render "shared/footer" %>
+				</div>
+			
+			</div>
+		</div>
+		<!-- Activate Font Replacement (cufón) -->
+		<script type="text/javascript">
+			Cufon.now();
+
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+_

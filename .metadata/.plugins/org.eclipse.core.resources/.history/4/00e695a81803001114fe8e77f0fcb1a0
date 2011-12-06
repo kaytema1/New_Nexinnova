@@ -1,0 +1,237 @@
+<% @title ="Home" %>
+
+	
+	<div class="container">
+	
+	
+	<div class="row">
+		
+			<div style="padding:20px;" class="block-message span10">
+			<div id="cwz-accordion" class="accordion-gallery-wrap shadow stage">
+                    <ul class="accordion-gallery stage" style="height:350px">	
+				<% for show_article in @articles %>		
+						<li class="">
+                            <div class="title">
+                                <div class="title-content">
+                                    <h5><%=show_article.title %></h5>
+                                </div>
+                            </div>
+                            <div class="shadow">
+                            </div>
+                            <%= image_tag show_article.image.url, :height => "350px", :width => "738px" %>
+                            <div class="excerpt">
+                                <div class="excerpt-content">
+                                    <h2><%=show_article.title %></h2>
+                                    <%=show_article.title %>
+                                </div>
+                            </div>
+                            <!-- /excerpt -->
+                        </li>
+		
+					<% end %>
+		
+					</ul>
+				</div>
+			</div>
+			<div class="block-message span5 pull-right">	
+				
+
+							<div class="demo">
+
+							<div class="tabs">
+								<ul>
+									<li><a href="#tabs-1">Headlines</a></li>
+									<li><a href="#tabs-2">Non-Stop News</a></li>
+								
+								</ul>
+								<div id="tabs-1">
+								
+								<table>
+								
+								<% for show_article in @articles %>
+								<tr> <td><%= show_article.title %>  <span class="label success"><%= show_article.category%>   </span> </td> </td>
+								<% end %>
+								</table>
+								</div>
+								<div id="tabs-2">
+								
+								
+							<div style="border-style: solid;border-width: 0;border-color: #FFFFFF;height: 300px;overflow: auto;"><div id="newsblock850274" style="word-wrap: break-word; padding: 5px; background-color: #FFFFFF;">
+<!-- DO NOT ALTER, REMOVE, OR IN ANY WAY TRY TO HIDE THE FOLLOWING TAG OR ITS CONTENTS OR BLASTCASTA WILL NOT FUNCTION PROPERLY. --><div align="center" style="font-size: 8pt;"><br /><a href="http://www.blastcasta.com/" style="text-decoration: none; color: #52A5FF;" target="_top"><b>News Widgets &amp; Tickers</b><br />Powered by BlastCasta</a></div>
+</div></div>
+
+<script id="scrnewsblock850274" type="text/javascript"></script>
+<script type="text/javascript"> /* <![CDATA[ */ 
+setTimeout('document.getElementById(\'scrnewsblock850274\').src = (document.location.protocol == \'https:\' ? \'https\' : \'http\') + \'://www.poweringnews.com/newsjavascript.aspx?feedurl=http%3A//newsrss.bbc.co.uk/rss/newsonline_world_edition/business/rss.xml&maxitems=5&showfeedtitle=1&showtitle=1&showdate=1&showsummary=0&showauthor=0&showactionsbox=0&showrsslink=0&showcopyright=1&opennewwindow=1&inheritstyles=0&bgcolor=%23FFFFFF&titlefontsize=10&summaryfontsize=10&fontfamily=Arial%2CHelvetica&titlecolor=%2352A5FF&summarycolor=%23000000&sepstyle=solid&sepcolor=%23A0A0A0&objectid=newsblock850274\'', 500);
+ /* ]]> */ </script>
+
+
+
+
+								
+								
+								
+								
+								
+								</div>
+								
+							</div>
+
+							</div>				
+		
+			</div>
+		
+		
+		
+		</div>
+	
+	</div>
+<div class="hero-unit" style="padding:25px; width:960px">
+<div class="row">
+<div class="span4">
+<table>
+<tr>
+<td>
+	<% for advertisement in @advertisements %>
+			<a href="http://<%= advertisement.link %>">
+			<%= image_tag advertisement.image.url, :height => "245px", :width => "200px" %>
+			</a> 
+		<% end %>
+</td>
+</tr>
+</table>
+</div>
+<div class="span9">
+<% for page in @pages %>
+	 
+    <% if page.articles %> 
+		
+    <% for article in page.articles %>
+		
+		<% if article.category == "headline" %>
+			<table>  
+		<tr> <td> <%= image_tag article.image.url, :height => "300px", :width => "495px" %>     </td> </tr> 
+		<tr> <td><%= link_to(article.title, article_path(article)) %> <%= link_to(page.name,page, :class => "label notice") %></td>
+		</tr>
+			</table>
+		 <% end %>
+    
+    <% end %>
+    <% end %>
+    
+      
+      
+  <% end %>
+
+</div>
+<div class="span3">
+<table>
+<tr>
+<td>
+
+
+
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="span-one-third">
+	<% for page in @pages %>
+	<% if (((page.id.to_i)%2)==0)  %>
+		<table>
+		
+    <tr>
+      <td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+ 
+      
+      
+    </tr>
+    
+    <% if page.articles %> 
+    
+    <% for article in page.articles %>
+    
+		<tr> <td colspan="4"><%= link_to(article.title, article_path(article)) %> </td></tr>
+    
+    
+    <% end %>
+    <% end %>
+    
+      <% end %>
+      
+      </table>
+  <% end %>
+  </div>
+  
+  <div class="span-one-third">
+  <% for page in @pages %>
+	<% if (((page.id.to_i)%2)!=0)  %>
+		<table>
+		
+    <tr>
+      <td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+ 
+      
+      
+    </tr>
+    
+    <% if page.articles %> 
+    
+    <% for article in page.articles %>
+    
+		<tr> <td colspan="4"><%= link_to(article.title, article_path(article)) %> </td></tr>
+    
+    
+    <% end %>
+    <% end %>
+    
+      <% end %>
+      
+      </table>
+  <% end %>
+  
+  
+  
+  
+</div>
+	
+	
+	
+	<div class="span-one-third">
+  
+  
+  flndfkmndskfmnk mlkdnslfknfk ldndlksn lfdn slkfn skdnfkn
+  
+</div>
+
+
+</div>
+
+
+	
+
+<p><%= link_to "New Page", new_page_path %></p>
+</div>
+
+
+		
+                      
+		   
+
+	
+
+
+
+
+
+
+
+
+
+

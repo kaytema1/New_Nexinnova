@@ -1,0 +1,40 @@
+<%= form_for @ad , :html => { :enctype => "multipart/form-data" }  do |f| %>
+<table>
+	<tr>
+		<td colspan="2"> <%= f.error_messages %> </td>
+	</tr>
+	<tr>
+		<td><%= f.label :image %></td>
+		<td> 	<%= f.file_field :image %></td>
+	</tr>
+	<tr>
+		<td> <%= f.label :link %></td>
+		<td> <%= f.text_field :link %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td> 	<%= f.submit :class => "btn primary large" %></td>
+	</tr>
+	<br/>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+	<br/>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+
+	
+
+
+
+	
+	
+
+
+
+<% end %> 

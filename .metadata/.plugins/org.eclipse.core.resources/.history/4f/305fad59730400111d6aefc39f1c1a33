@@ -1,0 +1,30 @@
+<% @title="Page" %>
+<div class="hero-unit">
+	
+	<table>
+		
+		
+		</table>
+	<p>
+		<strong>Name:</strong>
+		<%= @page.name %>
+	</p>
+	<p>
+		<strong>Description:</strong>
+		<%= @page.description %>
+	</p>
+	<% if @articles %>
+
+	<% for article in @articles %>
+	<tr>
+		<td></td><td colspan="4"><%= article.title %> </td>
+	</tr>
+	<% end %>
+	<% end %>
+	<p>
+		<%= link_to "Edit", edit_page_path(@page) %> |
+		<%= link_to "Destroy", @page, :confirm => 'Are you sure?', :method => :delete %> |
+		<%= link_to "View All", pages_path %> |
+		<%= link_to "Add New Article", new_article_path %>
+	</p>
+</div>

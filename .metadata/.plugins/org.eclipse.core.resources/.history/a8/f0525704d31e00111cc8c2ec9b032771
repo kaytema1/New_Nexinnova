@@ -1,0 +1,12 @@
+<%= form_for @ad do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :image %><br />
+    <%= f.text_field :image %>
+  </p>
+  <p>
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

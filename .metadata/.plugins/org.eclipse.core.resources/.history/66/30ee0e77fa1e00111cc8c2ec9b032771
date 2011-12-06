@@ -1,0 +1,56 @@
+<%= form_for @article , :html => { :enctype => "multipart/form-data" }  do |f| %>
+<table>
+	<tr>
+		<td colspan="2"> <%= f.error_messages %> </td>
+	</tr>
+	<tr>
+		<td> <%= f.label :title %></td>
+		<td> <%= f.text_field :title %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :content %></td>
+		<td> <%= f.text_area :content %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :author %></td>
+		<td> <%= f.text_field :author %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :tag %> </td>
+		<td> <%= f.text_field :tag %></td>
+	</tr>
+	<tr>
+		<td> <%= f.label :featured %> </td>
+		<td> <%= f.check_box :featured %> </td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+	<p>
+		<%= f.label :approved %>
+		<br />
+		<%= f.check_box :approved %>
+	</p>
+	<p>
+		<%= f.label :page_id %>
+		<br />
+		<%= f.text_field :page_id %>
+	</p>
+	<p>
+		<%= f.label :image, "Image" %>
+		<%= f.file_field :image %>
+	</p>
+	<p>
+		<%= f.submit :class => "btn primary"  %>
+	</p>
+	<% end %>
+</table>

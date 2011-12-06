@@ -1,0 +1,42 @@
+<% title "NexInnova Home" %>
+<%= render "shared/feature"%>
+<div class="cat_title">
+	<h2>Latest Posts</h2>
+	<!-- <div class="sort">
+	<a href="#">Popular</a><a href="#" class="active">By Date</a>
+	</div> -->
+	<div class="clear"></div>
+</div>
+<% for article in @articles %>
+<div class="post-item">
+	<h2><a href="blog-details.html"><%= article.title %></a></h2>
+	<div class="post-meta">
+		<span class="icon_cat icon_cat_2"><a href="#"><%= article.tag %></a></span>
+		<em>by <span class="author"><%= article.author %></span> &nbsp;|&nbsp; on <%= article.created_at %> &nbsp;|&nbsp; <a href="#" class="link-comments"><%= article.comments.count %> comments</a></em>
+	</div>
+	<div class="entry">
+		<p>
+			<%= article.content %>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras adipiscing dignissim tortor, molestie sollicitudin erat ullamcorper eu. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem eu...
+		</p>
+		<div class="clear"></div>
+	</div>
+	<a href="blog-details.html" class="link-more">read more</a>
+</div>
+<tr>
+	<td></td>
+	<td><%= article.author %></td>
+	<td><%= article.comments.count %> Comments</td>
+	<td><%= article.content %></td>
+	<td><%= article.tag %></td>
+	<td><%= image_tag article.image.url %></td>
+	<td><%= article.page_id %></td>
+	<td><%= article.source %></td>
+	<td><%= link_to "Show", article %></td>
+	<td><%= link_to "Edit", edit_article_path(article) %></td>
+	<td><%= link_to "Destroy", article, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
+<% end %>
+<p>
+	<%= link_to "New Page", new_page_path %>
+</p>

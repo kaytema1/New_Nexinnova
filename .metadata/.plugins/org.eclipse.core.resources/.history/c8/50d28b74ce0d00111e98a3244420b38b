@@ -1,0 +1,17 @@
+<h1>Account Login</h1>
+<%= form_for(:session, :url => sessions_path) do |f| %>
+<p class="left" style="margin: 0 8px 0 0;">
+	<label for="RevealUsername" class="overlabel"></label>
+	<%= f.text_field :email , :class => "loginInput textInput rounded" :id => "RevealUsername" %>
+</p>
+<p class="left" style="margin: 0 5px 0 0;">
+	<label for="RevealPassword" class="overlabel"></label>
+	<%= f.password_field :password , :class => "loginInput textInput rounded" %>
+</p>
+
+<p class="left" style="margin: -7px 0 0;">
+	<%= f.submit "Sign in" %>
+</p>
+
+<% end %> 
+

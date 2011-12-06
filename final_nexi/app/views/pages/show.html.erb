@@ -1,0 +1,22 @@
+<% title "NexInnova | "+@page.title %> <div class="divider_thin"></div>
+<!--content -->
+<div class="grid_15 suffix_1 content">
+	<% for article in @page_articles %>
+	<div class="post-item">
+		<h2><a href="blog-details.html"><%= article.title %></a></h2>
+		<div class="post-meta">
+			<span class="icon_cat icon_cat_2"><a href="#"><%= article.tag %></a></span>
+			<em>by <span class="author"><%= article.author %></span> &nbsp;|&nbsp; on <%= article.created_at.to_s(:long) %> &nbsp;|&nbsp; <a href="#" class="link-comments"><%= article.comments.count %> comments</a></em>
+		</div>
+		<div class="entry">
+			<p>
+				<%= image_tag article.image.url ,:size => '305x206', :class => 'alignleft' %>
+			</p>
+			<p style="text-align: justify">
+				<%= truncate(article.content, :length => 400 , :ommision => "...") %>
+			</p>
+			<div class="clear"></div>
+		</div>
+		<%= link_to "read more", article, :class => "link-more" %>
+	</div>
+	<% end %>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>NexInnova Web Application</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- Le styles -->
+		<link href="bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" media="all" href="css/clearfix.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/jquery.dualSlider.0.2.css" />
+		<script src="scripts/jquery-1.3.2.min.js" type="text/javascript"></script>
+		<script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="scripts/jquery.timers-1.2.js" type="text/javascript"></script>
+		<script src="scripts/jquery.dualSlider.0.3.min.js" type="text/javascript"></script>
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+			}
+		</style>
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$(".carousel").dualSlider({
+					auto : true,
+					autoDelay : 6000,
+					easingCarousel : "swing",
+					easingDetails : "easeOutBack",
+					durationCarousel : 1000,
+					durationDetails : 600
+				});
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="fill" style="width: 955px; margin: auto;">
+				<div class="container">
+					<a class="brand" href="#">NexInnova</a>
+					<div class="pull-right">
+						<ul class="nav">
+							<li class="active">
+								<a href="#">News</a>
+							</li>
+							<li>
+								<a href="#about">Sport</a>
+							</li>
+							<li>
+								<a href="#contact">Weather</a>
+							</li>
+							<li>
+								<a href="#">Travel</a>
+							</li>
+							<li>
+								<a href="#about">TV</a>
+							</li>
+							<li>
+								<a href="#contact">Radio</a>
+							</li>
+						</ul>
+						<form action="">
+							<input class="span3" type="text" placeholder="Search NexInnova">
+							>
+							<button class="btn" type="submit">
+								Search
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<!-- Main hero unit for a primary marketing message or call to action -->
+			<!--- Carousel Starts Here -->
+			<div class="row" style="padding-left: 50px;">
+				<h1>Top News Stories</h1>
+				<div class="carousel clearfix">
+					<div class="panel">
+						<div class="details_wrapper">
+							<div class="details">
+								<div class="detail">
+									<h2 class="Lexia-Bold"><a href="#">Dolor sit amet</a> Cum sociis natoque penatibus et magnis dis parturient montes</h2>
+									<a href="#" title="Read more" class="more">Read more</a>
+								</div><!-- /detail -->
+								<div class="detail">
+									<h2 class="Lexia-Bold"><a href="#">Lorem ipsum dolor</a> sit amet, consectetuer adipiscing elit. </h2>
+									<a href="#" title="Read more" class="more">Read more</a>
+								</div><!-- /detail -->
+								<div class="detail">
+									<h2 class="Lexia-Bold"><a href="#">Aenean massa</a>. Cum sociis natoque penatibus et magnis dis parturient montes</h2>
+									<a href="#" title="Read more" class="more">Read more</a>
+								</div><!-- /detail -->
+							</div><!-- /details -->
+						</div><!-- /details_wrapper -->
+						<div class="paging">
+							<div id="numbers"></div>
+							<a href="javascript:void(0);" class="previous" title="Previous" >Previous</a>
+							<a href="javascript:void(0);" class="next" title="Next">Next</a>
+						</div><!-- /paging -->
+						<a href="javascript:void(0);" class="play" title="Turn on autoplay">Play</a>
+						<a href="javascript:void(0);" class="pause" title="Turn off autoplay">Pause</a>
+					</div><!-- /panel -->
+					<div class="backgrounds">
+						<div class="item item_1">
+							<object width="604" height="340">
+								<param name="allowfullscreen" value="true" />
+								<param name="allowscriptaccess" value="always" />
+								<param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=10930565&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" />
+								<embed src="http://vimeo.com/moogaloop.swf?clip_id=10930565&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="604" height="340" wmode="transparent"></embed>
+							</object>
+						</div><!-- /item -->
+						<div class="item item_2">
+							<object width="604" height="340">
+								<param name="allowfullscreen" value="true" />
+								<param name="allowscriptaccess" value="always" />
+								<param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12257932&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" />
+								<embed src="http://vimeo.com/moogaloop.swf?clip_id=12257932&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="604" height="340" wmode="transparent"></embed>
+							</object>
+						</div><!-- /item -->
+						<div class="item item_3"></div><!-- /item -->
+					</div><!-- /backgrounds -->
+				</div><!-- /carousel -->
+			</div>
+			<!-- Example row of columns -->
+			<div class="row">
+				<div class="span-two-thirds">
+					<table>
+						<thead>
+							<tr>
+								<th><h2 style="margin-bottom: 2px;">News</h2></th>
+							</tr>
+						</thead>
+					</table>
+					<div>
+						<img class="thumbnail pull-left" src="http://placehold.it/200x200" alt="">
+						<p class=" span7 pull-right">
+							Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+						</p>
+					</div>
+					
+				</div>
+				<div class="span-one-third">
+					<div class="span5" style="height: 300px;">
+						Advertisement
+						
+						<img class="thumbnail pull-left" src="http://placehold.it/250x250" alt="">
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th><h2 style="margin-bottom: 2px;"> Most Popular in News</h2></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<footer>
+				<p>
+					&copy; Company 2011
+				</p>
+			</footer>
+		</div>
+		<!-- /container -->
+	</body>
+</html>

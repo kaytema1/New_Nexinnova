@@ -1,0 +1,16 @@
+<% title "Ad" %>
+
+<p>
+  <strong>Image:</strong>
+  <%= @ad.image %>
+</p>
+<p>
+  <strong>Link:</strong>
+  <%= @ad.link %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_ad_path(@ad) %> |
+  <%= link_to "Destroy", @ad, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", ads_path %>
+</p>

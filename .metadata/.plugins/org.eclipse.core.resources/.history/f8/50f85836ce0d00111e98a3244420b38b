@@ -1,0 +1,29 @@
+<h1>Account Login</h1>
+<%= form_for(:session, :url => sessions_path) do |f| %>
+<div class="field">
+	<p class="left" style="margin: 0 8px 0 0;">
+		<label for="RevealUsername" class="overlabel"></label>
+		<input id="RevealUsername" name="RevealUsername" type="text" class="loginInput textInput rounded" />
+	</p>
+	<%= f.label :email %>
+	<br />
+	<%= f.text_field :email , :class => "loginInput textInput rounded" :id => "RevealUsername" %>
+</div>
+<div class="field">
+	<%= f.label :password %>
+	<br />
+	<%= f.password_field :password %>
+</div>
+<div class="actions">
+	<%= f.submit "Sign in" %>
+</div>
+<% end %> <legend></legend>
+<p class="left" style="margin: 0 5px 0 0;">
+	<label for="RevealPassword" class="overlabel"></label>
+	<input id="RevealPassword" name="RevealPassword" type="password" class="loginInput textInput rounded" />
+</p>
+<p class="left" style="margin: -7px 0 0;">
+	<button type="submit" class="btn" style="margin:0;">
+		<span>Sign in</span>
+	</button>
+</p>

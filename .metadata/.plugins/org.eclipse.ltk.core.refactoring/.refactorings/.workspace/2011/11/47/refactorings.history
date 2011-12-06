@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;nexi/app/views/shared/_error_messages.erb&apos;" deleteContents="false" description="Delete resource &apos;nexi/app/views/shared/_error_messages.erb&apos;" element1="/nexi/app/views/shared/_error_messages.erb" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1321172933285"/>&#x0A;<refactoring comment="Delete resource &apos;nexi/app/views/users/_new.html.erb&apos;" deleteContents="false" description="Delete resource &apos;nexi/app/views/users/_new.html.erb&apos;" element1="/nexi/app/views/users/_new.html.erb" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1321175906867"/>
+</session>

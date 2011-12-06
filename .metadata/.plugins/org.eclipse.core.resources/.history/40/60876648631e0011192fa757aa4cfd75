@@ -1,0 +1,30 @@
+<% title "NexInnova | "+@page.title %> <div class="divider_thin"></div>
+<!--content -->
+<div class="grid_15 suffix_1 content">
+	<% for article in @page_articles %>
+	<tr>
+		<td><%= article.title %></td>
+		<td><%= article.author %></td>
+		<td><%= article.comments.count %> Comments</td>
+		<td><%= article.content %></td>
+		<td><%= article.tag %></td>
+		<td><%= article.image %></td>
+		<td><%= article.page_id %></td>
+		<td><%= article.source %></td>
+		<td><%= link_to "Show", article %></td>
+		<td><%= link_to "Edit", edit_article_path(article) %></td>
+		<td><%= link_to "Destroy", article, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+	<% end %>
+
+	<% for ad in @page_ads %>
+	<tr>
+		<td><%= image_tag ad.image.url %></td>
+		<td><%= ad.permalink %></td>
+	</tr>
+	<% end %>
+	<p>
+		<%= link_to "Edit", edit_page_path(@page) %> |
+		<%= button_to "destroy", @page, :method => :delete %>|
+		<%= link_to "View All", pages_path %>
+	</p>

@@ -1,0 +1,16 @@
+<% title "Advertisement" %>
+
+<p>
+  <strong>Image:</strong>
+  <%= @advertisement.image %>
+</p>
+<p>
+  <strong>Permalink:</strong>
+  <%= @advertisement.permalink %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_advertisement_path(@advertisement) %> |
+  <%= link_to "Destroy", @advertisement, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", advertisements_path %>
+</p>

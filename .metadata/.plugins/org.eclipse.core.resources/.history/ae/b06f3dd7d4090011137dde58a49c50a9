@@ -1,0 +1,44 @@
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @page.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @page.description %>
+</p>
+
+
+<p>
+<%= @latest_article.author %>
+</p>
+<p>
+<%= image_tag @latest_article.image.url%>
+</p>
+<p>
+<%= @latest_article.created_at.strftime("Published on %A , %d %B , %Y | %X %Z"  ) %>
+</p>
+<p>	
+<%= @latest_article.title %>
+</p>
+
+<p>	
+<%= @latest_article.content %>
+</p>
+
+<%for @article in @articles %>
+
+<%= @article.title  %>
+<p>
+<%= image_tag @article.image.url%>
+
+</p>
+
+<% end %>
+
+<p>
+  <%= link_to "Edit", edit_page_path(@page) %> |
+  <%= link_to "Destroy", @page, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", pages_path %>
+</p>

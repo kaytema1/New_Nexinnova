@@ -1,0 +1,36 @@
+<div class="footer">
+	<div class="container_24">
+		<div class="botmenu">
+			<ul>
+				<li class="menu-red">
+					<a href="#">Fashion</a>
+				</li>
+				<li class="menu-orange">
+					<a href="#">Design</a>
+				</li>
+				<li class="menu-yellow">
+					<a href="#">Photography</a>
+				</li>
+				<li class="menu-green">
+					<a href="#">Gadgets</a>
+				</li>
+				<li class="menu-turquoise">
+					<a href="#">Arts</a>
+				</li>
+				<li class="menu-blue">
+					<a href="#">Movies</a>
+				</li>
+				<li class="menu-purple">
+					<a href="#">Music</a>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="footer_logo">
+			<a href="index.html"><img src="images/logo_footer.png" width="117" height="37" alt="" /></a>
+		</div>
+		<p class="copyright">
+			&copy; 2011 Made by <a href="http://www.themefuse.com/">Themefuse</a>.  All rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a>
+		</p>
+	</div>
+</div>

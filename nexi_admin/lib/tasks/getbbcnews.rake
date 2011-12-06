@@ -1,0 +1,44 @@
+desc "Get BBC News Feed"
+task :getnews => :environment do
+  
+  require 'rubygems'
+  require 'rake'
+  require 'nokogiri'
+  require 'open-uri'
+  
+  
+  @agent = Agent.all
+  @agent.each do |agent|
+    if agent.url.include? "bbc"    
+        url =  "#{agent.url}/search/news/?q=#{agent.search_query}"
+        doc = Nokogiri::HTML(open(url))
+        #puts doc.at_css("title").text
+        doc.css(".linktrack-title").each do |story|
+          title = story.text
+    
+          #puts "#{title}"
+          news = NewsFeed.new(:title => title.to_s , :keyword => agent.search_query , :source => "#{agent.url}/#{agent.search_query}" ,:country => "Ghana" )
+          
+          news.save
+         #puts "www.walmart.com"+item.at_css(".linktrack-title")[:href]
+    end
+    
+    elsif agent.url.include? "cnn"
+        url =  "#{agent.url}/search/?query=#{agent.search_query}"
+        doc = Nokogiri::HTML(open(url))
+        #puts doc.at_css("title").text
+        doc.css("a").each do |story|
+          title = story.text
+    
+          #puts "#{title}"
+          news = NewsFeed.new(:title => title.to_s , :keyword => agent.search_query , :source => "#{agent.url}/#{agent.search_query}" ,:country => "Ghana" )
+          
+          news.save
+         #puts "www.walmart.com"+item.at_css(".linktrack-title")[:href]
+        end
+      
+      
+    end
+
+  end
+end

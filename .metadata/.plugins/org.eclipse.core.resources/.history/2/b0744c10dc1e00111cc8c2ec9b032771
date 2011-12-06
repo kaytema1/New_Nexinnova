@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<%= stylesheet_link_tag :all %>
+		<%= javascript_include_tag :all, :recursive => true %>
+		<%= csrf_meta_tag %>
+		<%= yield(:head) %>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.featureList($("#feature_tabs li"), $("#feature_output li"), {
+					start_item : 0,
+					transition_interval : 5000
+				});
+			});
+
+		</script>
+		<!--[if IE 6]>
+		<script type="text/javascript" src="js/jquery.reject.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		$.reject({
+		close: false,
+		imagePath: 'images/'
+		});
+		});
+		</script>
+		<![endif]-->
+	</head>
+	<body>
+		<%= render "shared/headbar" %>
+		<!--/ head menu -->
+		<%= render "shared/header" %>	
+		<!--/ header -->
+		<!-- middle -->
+		<div class="middle">
+			<div class="container_24">
+				<!-- featured list -->
+				
+				
+				<%= render "shared/feature" >
+				
+				
+				
+				
+				
+				
+				<!--/ featured list -->
+				<div class="divider_thin"></div>
+				<!--content -->
+				<div class="grid_15 suffix_1 content">
+					<div class="cat_title">
+						<h2>Latest Posts</h2>
+						<div class="sort">
+							<a href="#">Popular</a><a href="#" class="active">By Date</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="post-item">
+						<h2><a href="blog-details.html">Beautiful flying people are invading some corn fields in Lacoste land</a></h2>
+						<div class="post-meta">
+							<span class="icon_cat icon_cat_2"><a href="#">Gadgets</a></span>
+							<em>by <span class="author">Serj Bagrin</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">32 comments</a></em>
+						</div>
+						<div class="entry">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras adipiscing dignissim tortor, molestie sollicitudin erat ullamcorper eu. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem eu...
+							</p>
+							<div class="clear"></div>
+						</div>
+						<a href="blog-details.html" class="link-more">read more</a>
+					</div>
+					<div class="post-item">
+						<h2><a href="blog-details.html">Lifestyle mojo: Best music albums of 2010</a></h2>
+						<div class="post-meta">
+							<span class="icon_cat icon_cat_3"><a href="#">Music</a></span>
+							<em>by <span class="author">Jeremy Masley</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">15 comments</a></em>
+						</div>
+						<div class="entry">
+							<p><img src="images/temp/temp_image_1.jpg" alt="" width="305" height="206" class="alignleft" />Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. <a href="#">Suspendisse</a> ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem dolor sit amet eurasio mecitur.
+							</p>
+							<p>
+								Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie
+							</p>
+							<div class="clear"></div>
+						</div>
+						<a href="blog-details.html" class="link-more">read more</a>
+					</div>
+					<div class="post-item">
+						<h2><a href="blog-details.html">Delicious desserts at Bistro Meridien</a></h2>
+						<div class="post-meta">
+							<span class="icon_cat icon_cat_1"><a href="#">Photography</a></span>
+							<em>by <span class="author">Patrick LeBeouf</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">43 comments</a></em>
+						</div>
+						<div class="entry">
+							<p><img src="images/temp/temp_image_2.jpg" width="590" height="193" alt="" />
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras adipiscing dignissim tortor, molestie sollicitudin erat ullamcorper eu. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem eu...
+							</p>
+							<div class="clear"></div>
+						</div>
+						<a href="blog-details.html" class="link-more">read more</a>
+					</div>
+					<div class="post-item">
+						<h2><a href="blog-details.html">Smokin' Aces -  a new brilliancy by Guy Richie</a></h2>
+						<div class="post-meta">
+							<span class="icon_cat icon_cat_4"><a href="#">Movies</a></span>
+							<em>by <span class="author">James May Raybins</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">6 comments</a></em>
+						</div>
+						<div class="entry">
+							<p><img src="images/temp/temp_image_3.jpg" alt="" width="310" height="229" border="0" class="alignright" />Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem dolor sit amet eurasio mecitur. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque.
+							</p>
+							<div class="clear"></div>
+						</div>
+						<a href="blog-details.html" class="link-more">read more</a>
+					</div>
+					<!--
+					<div class="post-item">
+					<h2><a href="blog-details.html">Top 5 cool Fashion tips for skinny guys</a></h2>
+
+					<div class="post-meta">
+					<span class="icon_cat icon_cat_5"><a href="#">Fashion</a></span>
+					<em>by <span class="author">Patrick LeBeouf</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">43 comments</a></em>
+
+					</div>
+
+					<div class="entry">
+					<p><img src="images/temp/temp_image_4.jpg" alt="" width="235" height="164" class="alignleft" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras adipiscing dignissim tortor, molestie sollicitudin erat ullamcorper eu. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem eu...</p>
+					<div class="clear"></div>
+					</div>
+
+					<a href="blog-details.html" class="link-more">read more</a>
+					</div>
+					-->
+					<div class="other_posts">
+						<a href="#" class="prev">Older posts</a>
+						<a href="#" class="next">Newer posts</a>
+					</div>
+				</div>
+				<!--/content -->
+				<!-- sidebar-->
+				<div class="grid_8 sidebar">
+					<div class="newsletterBox">
+						<div class="inner">
+							<h3>Subscribe to Newsletter</h3>
+							<form method="get" id="subscribe" action="">
+								<input type="text" value="ENTER YOUR EMAIL ADDRESS" onfocus="if (this.value == 'ENTER YOUR EMAIL ADDRESS') {this.value = '';}" onblur="if (this.value == '') {this.value = 'ENTER YOUR EMAIL ADDRESS';}" name="email" class="inputField" />
+								<input type="submit" value="Submit" class="btn-arrow" />
+							</form>
+							<div class="newsletter_text">
+								<a href="#" class="link-news-rss">You can also <span>Subscribe to our RSS</span> feed</a>
+							</div>
+						</div>
+					</div>
+					<div class="adv_sidebar_300x250"><img src="images/baner_300x250.jpg" width="300" height="250" alt="" />
+					</div>
+					<!-- tf sidebar tabs -->
+					<div class="tf_sidebar_tabs tabs_framed">
+						<ul class="tabs">
+							<li>
+								<a href="#tf_tabs_1">Recent Posts</a>
+							</li>
+							<li>
+								<a href="#tf_tabs_2">Most Commented</a>
+							</li>
+						</ul>
+						<div id="tf_tabs_1" class="tabcontent">
+							<ul class="recent_posts">
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_1.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Pharetra sem vitae blandit. Alim sed massa vitae risus </a>
+									<div class="date">
+										Feb 17, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_2.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Morbi tincidunt lorem dolor sit amet eurasio mecitur.</a>
+									<div class="date">
+										Feb 16, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_3.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Aliquam sed massa vitae risus sodales molestie vitae </a>
+									<div class="date">
+										Feb 15, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_4.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Tincidunt lorem dolor sit amet </a>
+									<div class="date">
+										Jan 28, 2010
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_5.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Pharetra sem vitae blandit. Alim sed massa vitae risus </a>
+									<div class="date">
+										Jan 10, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_6.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Morbi tincidunt lorem dolor sit amet eurasio mecitur.</a>
+									<div class="date">
+										Jan 8, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_7.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Aliquam sed massa vitae risus sodales molestie vitae </a>
+									<div class="date">
+										Jan 5, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_4.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Tincidunt lorem dolor sit amet </a>
+									<div class="date">
+										Dec 25, 2010
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div id="tf_tabs_2" class="tabcontent">
+							<ul class="recent_posts">
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_4.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Tincidunt lorem dolor sit amet </a>
+									<div class="date">
+										Jan 28, 2010
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_5.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Pharetra sem vitae blandit. Alim sed massa vitae risus </a>
+									<div class="date">
+										Jan 10, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_1.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Pharetra sem vitae blandit. Alim sed massa vitae risus </a>
+									<div class="date">
+										Feb 17, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_2.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Morbi tincidunt lorem dolor sit amet eurasio mecitur.</a>
+									<div class="date">
+										Feb 16, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_3.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Aliquam sed massa vitae risus sodales molestie vitae </a>
+									<div class="date">
+										Feb 15, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_6.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Morbi tincidunt lorem dolor sit amet eurasio mecitur.</a>
+									<div class="date">
+										Jan 8, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_7.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Aliquam sed massa vitae risus sodales molestie vitae </a>
+									<div class="date">
+										Jan 5, 2011
+									</div>
+								</li>
+								<li>
+									<a href="blog-details.html"><img src="images/temp/temp_thumb_4.jpg" alt="" width="54" height="54" border="0" class="thumbnail" /></a><a href="blog-details.html">Tincidunt lorem dolor sit amet </a>
+									<div class="date">
+										Dec 25, 2010
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--/ tf sidebar tabs -->
+					<div class="fb_container">
+						<div class="fb_title"><img src="images/fb_activity_title.gif" alt="Facebook Activity" />
+						</div>
+						<iframe class="fbBox" src="http://www.facebook.com/widgets/activity.php?header=false&amp;height=360&amp;width=286&amp;border_color=%23ffffff&amp;site=www.engadget.com" style="border: medium none; overflow: hidden; height: 360px; width: 286px;" frameborder="0" scrolling="no"></iframe>
+					</div>
+				</div>
+				<!--/ sidebar -->
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--/ middle -->
+		<!-- bottom content/widgets -->
+		<div class="bottom_content">
+			<div class="container_24">
+				<div class="inner">
+					<div class="grid_6">
+						<div class="widget">
+							<ul class="menu_type_1">
+								<li>
+									<a href="#">About Us</a>
+								</li>
+								<li>
+									<a href="#">Shortcodes</a>
+								</li>
+								<li>
+									<a href="#">Typography</a>
+								</li>
+								<li>
+									<a href="#">Contact Us</a>
+								</li>
+								<li>
+									<a href="#">Pricing Page</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid_6">
+						<div class="widget">
+							<h3>NETWORK</h3>
+							<ul class="menu_type_2">
+								<li>
+									<a href="#">All Sports Mag</a>
+								</li>
+								<li>
+									<a href="#">Car Tuning Mag</a>
+								</li>
+								<li>
+									<a href="#">For Her Magazine</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid_6">
+						<div class="widget">
+							<h3>BLOG</h3>
+							<ul class="menu_type_2">
+								<li>
+									<a href="#">We've redesigned the blog...</a>
+								</li>
+								<li>
+									<a href="#">Saving everything in your...</a>
+								</li>
+								<li>
+									<a href="#">Make it right, now!</a>
+								</li>
+								<li>
+									<a href="#">Asylum of fools discovered</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid_6">
+						<div class="widget">
+							<h3>MAGAZINE</h3>
+							<ul class="menu_type_2">
+								<li>
+									<a href="#">Our authors</a>
+								</li>
+								<li>
+									<a href="#">Monthly Archive</a>
+								</li>
+								<li>
+									<a href="#">Advertise</a>
+								</li>
+								<li>
+									<a href="#">Jobs &amp; Careers</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<!--/ bottom content/widgets -->
+		<div class="footer">
+			<div class="container_24">
+				<div class="botmenu">
+					<ul>
+						<li class="menu-red">
+							<a href="#">Fashion</a>
+						</li>
+						<li class="menu-orange">
+							<a href="#">Design</a>
+						</li>
+						<li class="menu-yellow">
+							<a href="#">Photography</a>
+						</li>
+						<li class="menu-green">
+							<a href="#">Gadgets</a>
+						</li>
+						<li class="menu-turquoise">
+							<a href="#">Arts</a>
+						</li>
+						<li class="menu-blue">
+							<a href="#">Movies</a>
+						</li>
+						<li class="menu-purple">
+							<a href="#">Music</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="footer_logo">
+					<a href="index.html"><img src="images/logo_footer.png" width="117" height="37" alt="" /></a>
+				</div>
+				<p class="copyright">
+					&copy; 2011 Made by <a href="http://www.themefuse.com/">Themefuse</a>.  All rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+		<%= stylesheet_link_tag :all %>
+		<%= javascript_include_tag :defaults %>
+		<%= csrf_meta_tag %>
+		<%= yield(:head) %>
+	</head>
+	<body>
+		<div id="container">
+			<div id="user_nav">
+				<% if user_signed_in? %>
+				Signed in as <%= current_user.email %>. Not you?
+				<%= link_to "Sign out", destroy_user_session_path %>
+				<% else %>
+				<%= link_to "Sign up", new_user_registration_path %> or
+				<%= link_to "Sign in", new_user_session_path %> or
+				<%= link_to_rpx "Sign in with Facebook or Twitter	", user_session_url %>
+				<% end %>
+			</div>
+			<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			<% end %>
+			<%= content_tag :h1, yield(:title) if show_title? %>
+			<%= yield %>
+		</div>
+		<%= javascript_include_rpx(user_session_url) %>
+	</body>
+</html>

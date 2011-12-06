@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+
+<title>Page not found  </title>
+
+<link rel="stylesheet" href="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/stylesheets/prettyPhoto.css" type="text/css" media="screen" />
+
+    
+        
+        
+        
+        
+    <link rel="stylesheet" href="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/style.php" type="text/css" media="screen" />
+
+<link rel="pingback" href="http://dynamix.creativeworkz.co.uk/xmlrpc.php" />
+
+<!--[if IE 6]>
+<style type="text/css" media="screen">
+  @import "http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/stylesheets/ie6.css";
+</style>
+<![endif]-->
+
+<!--[if IE 7]>
+<style type="text/css" media="screen">
+  @import "http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/stylesheets/ie7.css";
+</style>
+<![endif]-->
+
+<!--[if IE]> <style> .clearfix {display: inline-block;} /* Hides from IE-mac \*/ * html .clearfix {height: 1%;} .clearfix {display: block;} /* End hide from IE-mac */ </style> <![endif]-->
+
+<link rel='stylesheet' id='buddypress-css'  href='http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/stylesheets/style-buddypress.css?ver=0.1' type='text/css' media='screen' />
+<script type='text/javascript' src='http://dynamix.creativeworkz.co.uk/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js?ver=3.2.1'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js?ver=3.2.1'></script>
+<script type='text/javascript' src='http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/lib/js/dynamix.min.js?ver=3.2.1'></script>
+<script type='text/javascript' src='http://dynamix.creativeworkz.co.uk/wp-content/uploads/2011/03/jwplayer.js?ver=3.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dynamix.creativeworkz.co.uk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dynamix.creativeworkz.co.uk/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='DynamiX' href='http://dynamix.creativeworkz.co.uk/' />
+<meta name="generator" content="WordPress 3.2.1" />
+
+ 
+<script type="text/javascript" src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/lib/js/Lucida_Sans_Unicode_400.font.js" defer></script>
+
+<script type='text/javascript'>
+</script>
+
+<script type="text/javascript">
+
+	
+
+// Header/Toppanel Gradients
+
+Cufon.replace('#header h1, #footer-wrap h1', {
+color: '-linear-gradient(#777,#222,)',textShadow: '0px 1px 5px rgba(0, 0, 0, 0.08)'
+});	
+
+Cufon.replace('#header h2, #footer-wrap h2', {
+color: '-linear-gradient(#999,#333,)',textShadow: '0px 1px 5px rgba(0, 0, 0, 0.08)'
+
+});	
+
+Cufon.replace('#header h3, #header h4, #header h5, #header h6, #footer-wrap h3,#footer-wrap h4,#footer-wrap h5,#footer-wrap h6,.tweets h3', {
+color: '-linear-gradient(#999,#333,;)',textShadow: '0px 1px 5px rgba(0, 0, 0, 0.08)'
+});	
+
+// Content Gradients
+
+Cufon.replace('.inner-page h1,#toppanel h1, .stage-slider h1', {
+color: '-linear-gradient(#7f7f7f,#262323,)',textShadow: '0px 1px 5px rgba(0, 0, 0, 0.08)'
+});	
+
+Cufon.replace('.inner-page h2, .stagetext h2, #toppanel h2, .stage-slider h2', {
+color: '-linear-gradient(#777,#555,)',textShadow: '0px 1px 5px rgba(0, 0, 0, 0.08)'
+});	
+
+Cufon.replace('.inner-page h3,#toppanel h3,.stage-slider h3, .inner-page h4, #toppanel h4,.stage-slider h4, .inner-page h5,#toppanel h5,.stage-slider h5, .inner-page h6,#toppanel h6, .stage-slider h6', {
+color: '-linear-gradient(#777,#555,)',textShadow: '0px 1px 5px rgba(0, 0, 0, 0.08)'
+});	
+
+
+Cufon.replace('.stage-slider .gallerytitle.light h2, .stage-slider .gallerytitle.light h3, #item-header-content h2 span.highlight, .accordion-gallery .excerpt h2, .container .title h2, .accordion-gallery .title h5', {
+	color: '-linear-gradient(#f9f9f9, #fff,)',textShadow: '0px 1px 5px rgba(0, 0, 0, 0.08)'
+});
+
+Cufon.replace('.stage-slider .gallerytitle.dark h2, .stage-slider .gallerytitle.dark h3', {
+	color: '-linear-gradient(#999, #333,)',textShadow: '0px 1px 5px rgba(0, 0, 0, 0.08)'
+});
+
+
+
+
+		
+</script>
+
+<!--[if lte IE 8]>
+<style type="text/css">
+.content-wrapper,.styledbox.general,.styledbox.help,.styledbox.information,.styledbox.warning,.styledbox.download,.columns.border,.gallery-wrap,div#object-nav.item-list-tabs,div#message {
+    behavior: url(http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/lib/js/PIE.htc);
+}
+</style>
+<![endif]-->
+
+
+</head>
+<body class="error404">
+<div><a id="top"></a></div>
+
+<!-- Drop Panel -->
+<div id="toppanel">
+
+
+	<div id="panel" style="">
+		<div class="content clearfix">
+				
+				
+								
+				<div class="panel-wrap panel-columns-4 ">
+					<ul>
+                            <li id="text-5" class="widget widget_text"><h3>Widget Support</h3>			<div class="textwidget"><div class="styledbox information  clearfix" style="width:200px"><div class="boxcontent">The Drop Panel and Footer areas are split into four columns - each column can contain any widget, including your favourite plugin widgets, plus support for shortcodes.</div></div></div>
+		</li>
+					</ul>
+				</div>
+				
+								
+				<div class="panel-wrap panel-columns-4 ">
+					<ul>
+                            <li id="nav_menu-6" class="widget widget_nav_menu"><h3>Layouts</h3><div class="menu-menu-one-container"><ul id="menu-menu-one" class="menu"><li id="menu-item-1928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1928"><a href="http://dynamix.creativeworkz.co.uk/layouts/1x-column-left/">2x Column Left</a></li>
+<li id="menu-item-1929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1929"><a href="http://dynamix.creativeworkz.co.uk/layouts/1x-column-right/">2x Column Right</a></li>
+<li id="menu-item-1930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1930"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-left/">3x Column Left</a></li>
+<li id="menu-item-1931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1931"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-leftright/">3x Column Left,Right</a></li>
+<li id="menu-item-1932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-right/">3x Column Right</a></li>
+<li id="menu-item-1933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1933"><a href="http://dynamix.creativeworkz.co.uk/blog/blog-with-options/">Blog With Options</a></li>
+<li id="menu-item-1935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1935"><a href="http://dynamix.creativeworkz.co.uk/blog/">Blog</a></li>
+<li id="menu-item-1934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934"><a href="http://dynamix.creativeworkz.co.uk/layouts/no-content-border/">No Content Border</a></li>
+</ul></div></li>
+					</ul>
+				</div>
+				
+								
+				<div class="panel-wrap panel-columns-4 ">
+					<ul>
+                            <li id="meta-3" class="widget widget_meta"><h3>Meta</h3>			<ul>
+						<li><a href="http://dynamix.creativeworkz.co.uk/wp-login.php">Log in</a></li>
+			<li><a href="http://dynamix.creativeworkz.co.uk/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://dynamix.creativeworkz.co.uk/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li>
+					</ul>
+				</div>
+				
+								
+				<div class="panel-wrap panel-columns-4 last">
+					<ul>
+                            <li id="text-6" class="widget widget_text"><h3>Contact Form</h3>			<div class="textwidget"><p>Support questions will ONLY be answered via ThemeForest</p>
+
+<script type='text/javascript'>
+(function ($) {
+$(document).ready(function(){
+ $('#footercontactcontactform input').focus(function() {
+	$(this).removeClass('fielderror');
+ });
+ $('#footercontactcontactform textarea').focus(function() {
+	$(this).removeClass('fielderror');
+ });
+	
+ $("#footercontactcontactform #footercontactsubmit").click(function(){
+
+  $("#footercontactcontactform_wrap .error").slideUp();
+  var hasError = false;
+  var email_regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+
+  var emailToVal = $("#footercontactemailTo").val();
+  emailToVal=emailToVal.replace('#','@');
+  if(emailToVal == '') {
+   $("#footercontactemailTo").addClass('fielderror');
+   hasError = true;
+  } else if(!email_regex.test(emailToVal)) {
+   $("#footercontactemailTo").addClass('fielderror');
+   hasError = true;
+  }
+
+  var emailFromVal = $("#footercontactemailFrom").val();
+  
+  if(emailFromVal == '') {
+   $("#footercontactemailFrom").addClass('fielderror');
+   hasError = true;
+  } else if(!email_regex.test(emailFromVal)) {
+   $("#footercontactemailFrom").addClass('fielderror');
+   hasError = true;
+  }
+
+  var subjectVal = $("#footercontactsubject").val();
+
+  var messageVal = $("#footercontactmessage").val();
+
+  if(messageVal == '') {
+   $("#footercontactmessage").addClass('fielderror');
+   hasError = true;
+  }
+
+  var nameVal = $("#footercontactname").val();
+  if(nameVal == '') {
+   $("#footercontactname").addClass('fielderror');
+   hasError = true;
+  }
+  
+
+  if(hasError == false) {
+			
+   $.post('http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/lib/inc/contact-send.php',$("#footercontactcontactform").serialize(),
+
+     function(data){
+		$("#footercontactcontactform_wrap .error").slideUp();		
+		$('#footercontactcontactform .field').val('');
+		$("#footercontactcontactform_wrap .success").slideDown(function() {
+			$(this).delay(5000).slideUp('slow');	
+		});
+    }
+   );
+  } else if(hasError == true) {
+	  $("#footercontactcontactform_wrap .error").slideDown();
+  }
+
+  return false;
+ });
+}); 
+
+})(jQuery);
+</script>
+
+<div id="footercontactcontactform_wrap" class="contactform_wrap">
+	<div class="success">
+    <h3>Thanks!</h3>
+	<p>Thanks, we&#039;ll be in touch
+soon!</p>
+	</div>
+    <div class="error">
+		 <p><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/error.png" alt="error key" /> Required fields not completed correctly.</p>
+	</div>
+    <form action="#" id="footercontactcontactform" class="contactform" method="post">
+        <ol class="forms">	
+            <li><input type="text" name="footercontactname" id="footercontactname" value="" class="field" />
+            <label for="footercontactname"><small>Name <span class="required">*</span></small></label></li>
+            <li><input type="text" name="footercontactemailFrom" id="footercontactemailFrom" value="" class="field" />
+            <label for="footercontactemailFrom"><small>Email <span class="required">*</span></small></label></li>        
+            <li><textarea name="footercontactmessage" id="footercontactmessage" class="field"></textarea></li>
+            <li><input type="text" name="footercontactsiteURL" id="footercontactsiteURL" value="" class="hfield" /></li>
+            <li><button type="submit" id="footercontactsubmit">Submit</button></li>
+            <li><input type="hidden" name="footercontactsubject" id="footercontactsubject" value="Contact Form Submission from " />
+            <input type="hidden" name="footercontactemailTo" id="footercontactemailTo" value="info#creativeworkz.co.uk" />
+            <input type="hidden" name="footercontactfields" id="footercontactfields" value="DynamiX|Name|Email|Comments" />
+            <input type="hidden" name="form_id" value="footercontact" /></li>
+        </ol>
+    </form>
+</div>
+</div>
+		</li>
+					</ul>
+				</div>
+				
+				
+						</div><!-- / content -->
+	</div> <!-- / panel -->
+
+    
+    <div class="tab-wrap">
+	<!-- The tab on top -->
+	<div class="tab">
+		<ul class="panelswitch">
+			<li class="left"> </li>
+			<!-- Login / Register -->
+			<li id="toggle" style="width:227px;">
+				<div class="search-wrap">
+					<form method="get" id="panelsearchform" action="http://dynamix.creativeworkz.co.uk">
+						<fieldset>
+                        <input type="text" value="Search" name="s" id="drops" onFocus="if(this.value == 'Search') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Search';}" />
+						<input type="submit" id="panelsearchsubmit" value="&nbsp;" />
+        				</fieldset>
+                    </form>
+				</div><!-- search-wrap end -->
+                                <div class="trigger">
+					                    <a id="open" class="toggle open" href="#"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" width="15" height="10" alt="open panel" /></a>
+                    <a id="close" style="display: none;" class="toggle close" href="#"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" width="15" height="10" alt="close panel" /></a>
+                                    </div><!-- /trigger -->
+                			</li> <!-- / toggle -->
+			<li class="right"> </li>
+		</ul>
+	</div> <!-- / top -->
+    </div> <!-- / tab-wrap -->
+</div> <!--/toppanel -->
+<div id="wrapper" class="">
+	<div id="page" class="pages ">
+		<div id="header" class="pages ">
+			<div id="header-logo">
+				<div id="logo">
+					<div class="description"><h2>Premium Wordpress Theme</h2></div>
+						<h1><a href="http://dynamix.creativeworkz.co.uk/">DynamiX</a></h1>
+				</div>
+				<div class="clear"></div>
+			</div><!-- /header-logo -->
+              
+			<div id="tabs">
+				<ul id="dyndropmenu" class="menu"><li class="menubreak"></li><li id="menu-item-2089" class="menu-item menu-item-type-post_type menu-item-object-page"><a title="Beginning" href="http://dynamix.creativeworkz.co.uk/">Home</a><span class="menudesc">Beginning</span>
+<ul class="sub-menu">
+	<li id="menu-item-2127" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/home/how-it-was-made/">How it was made</a></li>
+	<li id="menu-item-2128" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/home/custom-skin-creator/">Custom Skin Creator</a></li>
+	<li id="menu-item-2409" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/home/gallery-slide-set-system/">Gallery Slide Set System</a></li>
+</ul>
+</li>
+<li class="menubreak"></li><li id="menu-item-2090" class="menu-item menu-item-type-post_type menu-item-object-page"><a title="Page Styles" href="http://dynamix.creativeworkz.co.uk/layouts/">Layouts</a><span class="menudesc">Page Styles</span>
+<ul class="sub-menu">
+	<li id="menu-item-2111" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/layouts/1x-column-left/">2x Column Left</a></li>
+	<li id="menu-item-2112" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/layouts/1x-column-right/">2x Column Right</a></li>
+	<li id="menu-item-2113" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-left/">3x Column Left</a></li>
+	<li id="menu-item-2114" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-leftright/">3x Column Left,Right</a></li>
+	<li id="menu-item-2115" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-right/">3x Column Right</a></li>
+	<li id="menu-item-2116" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/layouts/full-width/">Full Width</a></li>
+	<li id="menu-item-2129" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/layouts/no-content-border/">No Content Border</a></li>
+</ul>
+</li>
+<li class="menubreak"></li><li id="menu-item-2091" class="menu-item menu-item-type-post_type menu-item-object-page"><a title="View Shortcodes" href="http://dynamix.creativeworkz.co.uk/shortcodes/">Shortcodes</a><span class="menudesc">View Shortcodes</span>
+<ul class="sub-menu">
+	<li id="menu-item-2118" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/button-shortcodes/">Button Shortcodes</a></li>
+	<li id="menu-item-2119" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/columns/">Columns</a></li>
+	<li id="menu-item-2120" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/general-styling/">General Styling</a></li>
+	<li id="menu-item-2121" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/image-effects/">Image Shortcodes</a></li>
+	<li id="menu-item-2624" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/video-shortcodes/">Video Shortcodes</a></li>
+	<li id="menu-item-2122" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/post-galleries/">Image / Video Galleries</a></li>
+	<li id="menu-item-2123" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/styled-boxes/">Styled Boxes</a></li>
+	<li id="menu-item-2226" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/accordion/">Accordion</a></li>
+	<li id="menu-item-2247" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/tabs/">Tabs</a></li>
+	<li id="menu-item-2275" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/lists/">Lists</a></li>
+	<li id="menu-item-2286" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/drop-caps/">Drop Caps</a></li>
+	<li id="menu-item-2374" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/prices-shortcode/">Prices Shortcode</a></li>
+</ul>
+</li>
+<li class="menubreak"></li><li id="menu-item-2092" class="menu-item menu-item-type-post_type menu-item-object-page"><a title="The Skins" href="http://dynamix.creativeworkz.co.uk/styles/">Styles</a><span class="menudesc">The Skins</span>
+<ul class="sub-menu">
+	<li id="menu-item-2097" class="menu-item menu-item-type-custom menu-item-object-custom"><a>Textured</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2098" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/bokeh/">Bokeh</a></li>
+		<li id="menu-item-2099" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/carbon/">Carbon</a></li>
+		<li id="menu-item-2100" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/grunge/">Grunge</a></li>
+		<li id="menu-item-2101" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/urban/">Urban</a></li>
+		<li id="menu-item-2102" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/wood/">Wood</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2103" class="menu-item menu-item-type-custom menu-item-object-custom"><a>Bright Colours</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2104" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/green-skin/">Green Skin</a></li>
+		<li id="menu-item-2105" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/all-light/">Light Grey</a></li>
+		<li id="menu-item-2106" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/mustard-skin/">Mustard Skin</a></li>
+		<li id="menu-item-2596" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/blue-skin-2/">Blue Skin</a></li>
+		<li id="menu-item-2107" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/orange-skin/">Orange Skin</a></li>
+		<li id="menu-item-2108" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/pink-skin/">Pink Skin</a></li>
+		<li id="menu-item-2109" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/red-skin/">Red Skin</a></li>
+		<li id="menu-item-2110" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/styles/blue-skin/">Teal Skin</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2180" class="menu-item menu-item-type-custom menu-item-object-custom"><a>Dark Colours</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2181" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/shortcodes/columns/">Dark Teal Skin</a></li>
+		<li id="menu-item-2185" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/shortcodes/general-styling/">Dark Brown Skin</a></li>
+		<li id="menu-item-2186" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/shortcodes/image-effects/">Dark Red Skin</a></li>
+		<li id="menu-item-2188" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/shortcodes/post-galleries/">Dark Pink Skin</a></li>
+		<li id="menu-item-2189" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/shortcodes/styled-boxes/">Dark Green Skin</a></li>
+		<li id="menu-item-2652" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/4-columns-sortable/">Dark Blue Skin</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menubreak"></li><li id="menu-item-2093" class="menu-item menu-item-type-post_type menu-item-object-page"><a title="Anywhere" href="http://dynamix.creativeworkz.co.uk/blog/">Blog</a><span class="menudesc">Anywhere</span>
+<ul class="sub-menu">
+	<li id="menu-item-2096" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/blog/blog-with-options/">Blog With Options</a></li>
+</ul>
+</li>
+<li class="menubreak"></li><li id="menu-item-2604" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Create Impact" href="http://dynamix.creativeworkz.co.uk/galleries-2/stage/">Galleries</a><span class="menudesc">Create Impact</span>
+<ul class="sub-menu">
+	<li id="menu-item-2205" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/3d-slider/">3d Slider</a></li>
+	<li id="menu-item-2397" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/accordion-gallery/">Accordion Gallery</a></li>
+	<li id="menu-item-2126" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/stage/">Stage Gallery</a></li>
+	<li id="menu-item-2124" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/grid/">Grid Gallery</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2510" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/4-columns-sortable/">4 Columns + Sortable</a></li>
+		<li id="menu-item-2508" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/5-columns-sortable/">5 Columns + Sortable</a></li>
+		<li id="menu-item-2509" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/6-columns-sortable/">6 Columns + Sortable</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2125" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/group-slider/">Group Slider Gallery</a></li>
+</ul>
+</li>
+<li class="menubreak"></li><li id="menu-item-2575" class="menu-item menu-item-type-post_type menu-item-object-page"><a title="In Action" href="http://dynamix.creativeworkz.co.uk/showcase/">Showcase</a><span class="menudesc">In Action</span></li>
+<li class="menubreak"></li><li id="menu-item-2095" class="droppaneltrigger menu-item menu-item-type-custom menu-item-object-custom"><a title="Send an Email">Contact Us</a><span class="menudesc">Send an Email</span></li>
+</ul>                			</div><!-- /tabs -->
+		</div><!-- /header -->
+
+
+<div id="sub-header">
+	<div id="sub-tabs">
+		<ul>
+<li class="home"><a href="http://dynamix.creativeworkz.co.uk">Home</a></li><li class="current_page_item">Error 404</li>		</ul>
+	</div>
+</div> 
+
+
+<div class="clear"></div>
+	<div class="inner-page "><!-- inner page -->
+
+<div class="content-wrapper">
+	<div class="content-wrapper-inner">
+    
+
+    
+        
+        
+        
+        
+    
+	
+
+	
+    
+    <div class="side-wrap  right out-quarter  ">
+    
+        
+      
+
+         
+            <div class="border-wrap  right  in-full border bottom">
+                <div class="border-inner border">
+                    <div class="sidebar-content out-full border top">
+                        <ul>
+                        <li id="calendar-3" class="widget widget_calendar"><h3>&nbsp;</h3><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>September 2011</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://dynamix.creativeworkz.co.uk/2010/12/" title="View posts for December 2010">&laquo; Dec</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="3" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
+	</tr>
+	<tr>
+		<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+	</tr>
+	<tr>
+		<td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+	</tr>
+	<tr>
+		<td id="today">19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+	</tr>
+	<tr>
+		<td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+		<td class="pad" colspan="2">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></li>
+<li id="nav_menu-5" class="widget widget_nav_menu"><h3>WP 3.0 Custom Menu</h3><div class="menu-styles-container"><ul id="menu-styles" class="menu"><li id="menu-item-1037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1037"><a href="http://dynamix.creativeworkz.co.uk/styles/blue-skin-2/">Blue Skin</a></li>
+<li id="menu-item-1038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1038"><a href="http://dynamix.creativeworkz.co.uk/styles/dark-grey/">Dark Grey</a></li>
+<li id="menu-item-1039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1039"><a href="http://dynamix.creativeworkz.co.uk/styles/green-skin/">Green Skin</a></li>
+<li id="menu-item-1040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1040"><a href="http://dynamix.creativeworkz.co.uk/styles/mustard-skin/">Mustard Skin</a></li>
+<li id="menu-item-1041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1041"><a href="http://dynamix.creativeworkz.co.uk/styles/orange-skin/">Orange Skin</a></li>
+<li id="menu-item-1042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1042"><a href="http://dynamix.creativeworkz.co.uk/styles/pink-skin/">Pink Skin</a></li>
+<li id="menu-item-1043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1043"><a href="http://dynamix.creativeworkz.co.uk/styles/red-skin/">Red Skin</a></li>
+<li id="menu-item-1044" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1044"><a href="http://dynamix.creativeworkz.co.uk/styles/blue-skin/">Teal Skin</a></li>
+<li id="menu-item-2069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2069"><a href="http://dynamix.creativeworkz.co.uk/styles/urban/">Urban</a></li>
+<li id="menu-item-2070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2070"><a href="http://dynamix.creativeworkz.co.uk/styles/carbon/">Carbon</a></li>
+<li id="menu-item-2071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2071"><a href="http://dynamix.creativeworkz.co.uk/styles/wood/">Wood</a></li>
+<li id="menu-item-2072" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2072"><a href="http://dynamix.creativeworkz.co.uk/styles/grunge/">Grunge</a></li>
+<li id="menu-item-2073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2073"><a href="http://dynamix.creativeworkz.co.uk/styles/bokeh/">Bokeh</a></li>
+</ul></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         
+             
+		</div><!-- /side-wrap -->
+     
+          
+	   
+
+    <div class="mid-wrap  left out-threequarter  ">
+ 
+		<div id="content">    
+   
+			<h2 class="pagetitle">We're sorry but that page could not be found.</h2>
+                <div class="list arrow white">
+                    <ul>
+                        <li class="page_item page-item-2198"><a href="http://dynamix.creativeworkz.co.uk/3d-slider/" title="3d Slider">3d Slider</a></li>
+<li class="page_item page-item-2447"><a href="http://dynamix.creativeworkz.co.uk/4-columns-sortable/" title="4 Columns + Sortable">4 Columns + Sortable</a></li>
+<li class="page_item page-item-2493"><a href="http://dynamix.creativeworkz.co.uk/5-columns-sortable/" title="5 Columns + Sortable">5 Columns + Sortable</a></li>
+<li class="page_item page-item-2469"><a href="http://dynamix.creativeworkz.co.uk/6-columns-sortable/" title="6 Columns + Sortable">6 Columns + Sortable</a></li>
+<li class="page_item page-item-2212"><a href="http://dynamix.creativeworkz.co.uk/accordion/" title="Accordion">Accordion</a></li>
+<li class="page_item page-item-2378"><a href="http://dynamix.creativeworkz.co.uk/accordion-gallery/" title="Accordion Gallery">Accordion Gallery</a></li>
+<li class="page_item page-item-2430"><a href="http://dynamix.creativeworkz.co.uk/custom-skin-creator/" title="Custom Skin Creator">Custom Skin Creator</a></li>
+<li class="page_item page-item-2276"><a href="http://dynamix.creativeworkz.co.uk/drop-caps/" title="Drop Caps">Drop Caps</a></li>
+<li class="page_item page-item-1428"><a href="http://dynamix.creativeworkz.co.uk/" title="Home">Home</a>
+<ul class='children'>
+	<li class="page_item page-item-2021"><a href="http://dynamix.creativeworkz.co.uk/home/custom-skin-creator/" title="Custom Skin Creator">Custom Skin Creator</a></li>
+	<li class="page_item page-item-2398"><a href="http://dynamix.creativeworkz.co.uk/home/gallery-slide-set-system/" title="Gallery Slide Set System">Gallery Slide Set System</a></li>
+	<li class="page_item page-item-1811"><a href="http://dynamix.creativeworkz.co.uk/home/how-it-was-made/" title="How it was made">How it was made</a></li>
+</ul>
+</li>
+<li class="page_item page-item-947"><a href="http://dynamix.creativeworkz.co.uk/layouts/" title="Layouts">Layouts</a>
+<ul class='children'>
+	<li class="page_item page-item-952"><a href="http://dynamix.creativeworkz.co.uk/layouts/1x-column-left/" title="2x Column Left">2x Column Left</a></li>
+	<li class="page_item page-item-964"><a href="http://dynamix.creativeworkz.co.uk/layouts/1x-column-right/" title="2x Column Right">2x Column Right</a></li>
+	<li class="page_item page-item-970"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-left/" title="3x Column Left">3x Column Left</a></li>
+	<li class="page_item page-item-981"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-leftright/" title="3x Column Left,Right">3x Column Left,Right</a></li>
+	<li class="page_item page-item-975"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-right/" title="3x Column Right">3x Column Right</a></li>
+	<li class="page_item page-item-949"><a href="http://dynamix.creativeworkz.co.uk/layouts/full-width/" title="Full Width">Full Width</a></li>
+	<li class="page_item page-item-992"><a href="http://dynamix.creativeworkz.co.uk/layouts/no-content-border/" title="No Content Border">No Content Border</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2253"><a href="http://dynamix.creativeworkz.co.uk/lists/" title="Lists">Lists</a></li>
+<li class="page_item page-item-2291"><a href="http://dynamix.creativeworkz.co.uk/prices-shortcode/" title="Prices Shortcode">Prices Shortcode</a></li>
+<li class="page_item page-item-647"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/" title="Shortcodes">Shortcodes</a>
+<ul class='children'>
+	<li class="page_item page-item-649"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/button-shortcodes/" title="Button Shortcodes">Button Shortcodes</a></li>
+	<li class="page_item page-item-750"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/columns/" title="Columns">Columns</a></li>
+	<li class="page_item page-item-721"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/general-styling/" title="General Styling">General Styling</a></li>
+	<li class="page_item page-item-781"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/image-effects/" title="Image Shortcodes">Image Shortcodes</a></li>
+	<li class="page_item page-item-803"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/post-galleries/" title="Post Galleries">Post Galleries</a></li>
+	<li class="page_item page-item-707"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/styled-boxes/" title="Styled Boxes">Styled Boxes</a></li>
+	<li class="page_item page-item-2606"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/video-shortcodes/" title="Video Shortcodes">Video Shortcodes</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2567"><a href="http://dynamix.creativeworkz.co.uk/showcase/" title="Showcase">Showcase</a></li>
+<li class="page_item page-item-166"><a href="http://dynamix.creativeworkz.co.uk/styles/" title="Styles">Styles</a>
+<ul class='children'>
+	<li class="page_item page-item-1034"><a href="http://dynamix.creativeworkz.co.uk/styles/blue-skin-2/" title="Blue Skin">Blue Skin</a></li>
+	<li class="page_item page-item-1983"><a href="http://dynamix.creativeworkz.co.uk/styles/bokeh/" title="Bokeh">Bokeh</a></li>
+	<li class="page_item page-item-2017"><a href="http://dynamix.creativeworkz.co.uk/styles/carbon/" title="Carbon">Carbon</a></li>
+	<li class="page_item page-item-942"><a href="http://dynamix.creativeworkz.co.uk/styles/dark-grey/" title="Dark Grey">Dark Grey</a></li>
+	<li class="page_item page-item-1028"><a href="http://dynamix.creativeworkz.co.uk/styles/green-skin/" title="Green Skin">Green Skin</a></li>
+	<li class="page_item page-item-1989"><a href="http://dynamix.creativeworkz.co.uk/styles/grunge/" title="Grunge">Grunge</a></li>
+	<li class="page_item page-item-1392"><a href="http://dynamix.creativeworkz.co.uk/styles/all-light/" title="Light Grey">Light Grey</a></li>
+	<li class="page_item page-item-1030"><a href="http://dynamix.creativeworkz.co.uk/styles/mustard-skin/" title="Mustard Skin">Mustard Skin</a></li>
+	<li class="page_item page-item-1032"><a href="http://dynamix.creativeworkz.co.uk/styles/orange-skin/" title="Orange Skin">Orange Skin</a></li>
+	<li class="page_item page-item-599"><a href="http://dynamix.creativeworkz.co.uk/styles/pink-skin/" title="Pink Skin">Pink Skin</a></li>
+	<li class="page_item page-item-168"><a href="http://dynamix.creativeworkz.co.uk/styles/red-skin/" title="Red Skin">Red Skin</a></li>
+	<li class="page_item page-item-513"><a href="http://dynamix.creativeworkz.co.uk/styles/blue-skin/" title="Teal Skin">Teal Skin</a></li>
+	<li class="page_item page-item-2019"><a href="http://dynamix.creativeworkz.co.uk/styles/urban/" title="Urban">Urban</a></li>
+	<li class="page_item page-item-2015"><a href="http://dynamix.creativeworkz.co.uk/styles/wood/" title="Wood">Wood</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2227"><a href="http://dynamix.creativeworkz.co.uk/tabs/" title="Tabs">Tabs</a></li>
+<li class="page_item page-item-2414"><a href="http://dynamix.creativeworkz.co.uk/test/" title="test">test</a></li>
+<li class="page_item page-item-1729"><a href="http://dynamix.creativeworkz.co.uk/blog/" title="Blog">Blog</a>
+<ul class='children'>
+	<li class="page_item page-item-1752"><a href="http://dynamix.creativeworkz.co.uk/blog/blog-with-options/" title="Blog With Options">Blog With Options</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1714"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/" title="Galleries">Galleries</a>
+<ul class='children'>
+	<li class="page_item page-item-984"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/grid/" title="Grid Gallery">Grid Gallery</a></li>
+	<li class="page_item page-item-1048"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/group-slider/" title="Group Slider Gallery">Group Slider Gallery</a></li>
+	<li class="page_item page-item-879"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/stage/" title="Stage Gallery">Stage Gallery</a></li>
+	<li class="page_item page-item-1685"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/text-only-gallery/" title="Text Only Gallery">Text Only Gallery</a></li>
+</ul>
+</li>
+                    </ul>
+                </div>                         
+		</div><!-- /content -->                    
+		<div class="clear"></div>
+
+	</div><!-- /mid-wrap -->
+
+
+    
+        
+        
+        
+        
+    
+
+<div class="clear"></div>
+</div><!-- /content-wrapper-inner -->
+</div><!-- /content-wrapper -->
+
+
+
+
+
+
+<div class="clear"></div>
+</div><!-- /inner-page -->
+</div><!-- /page -->
+<div class="push"></div>
+</div><!-- /wrapper -->
+<div class="clear"></div>
+<div id="footer-header"></div>
+	<div id="footer-wrap" class="clearfix">
+		<div id="footer-wrap-inner" class="clearfix">
+			<div id="footer" class="clearfix">
+<!-- I would like to give a great thankyou to WordPress for their amazing platform -->
+				
+								
+				<div class="panel-wrap panel-columns-4 ">
+					<ul>
+                            <li id="text-10" class="widget widget_text"><h3>Page Layouts</h3>			<div class="textwidget"><div class="menu-menu-one-container"><ul id="menu-menu-one-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1928"><a href="http://dynamix.creativeworkz.co.uk/layouts/1x-column-left/">2x Column Left</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1929"><a href="http://dynamix.creativeworkz.co.uk/layouts/1x-column-right/">2x Column Right</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1930"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-left/">3x Column Left</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1931"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-leftright/">3x Column Left,Right</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932"><a href="http://dynamix.creativeworkz.co.uk/layouts/2x-column-right/">3x Column Right</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1933"><a href="http://dynamix.creativeworkz.co.uk/blog/blog-with-options/">Blog With Options</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1935"><a href="http://dynamix.creativeworkz.co.uk/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934"><a href="http://dynamix.creativeworkz.co.uk/layouts/no-content-border/">No Content Border</a></li>
+</ul></div></div>
+		</li>
+					</ul>
+				</div>
+				
+								
+				<div class="panel-wrap panel-columns-4 ">
+					<ul>
+                            <li id="text-7" class="widget widget_text"><h3>Galleries</h3>			<div class="textwidget"><div class="menu-galleries-container"><ul id="menu-galleries" class="menu"><li id="menu-item-1026" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1026"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/grid/">Grid Gallery</a></li>
+<li id="menu-item-1027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1027"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/stage/">Stage Gallery</a></li>
+<li id="menu-item-1050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1050"><a href="http://dynamix.creativeworkz.co.uk/galleries-2/group-slider/">Group Slider Gallery</a></li>
+<li id="menu-item-2421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2421"><a href="http://dynamix.creativeworkz.co.uk/accordion-gallery/">Accordion Gallery</a></li>
+<li id="menu-item-2422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2422"><a href="http://dynamix.creativeworkz.co.uk/3d-slider/">3d Slider</a></li>
+</ul></div>
+</div>
+		</li>
+					</ul>
+				</div>
+				
+								
+				<div class="panel-wrap panel-columns-4 ">
+					<ul>
+                            <li id="text-8" class="widget widget_text"><h3>Shortcodes</h3>			<div class="textwidget"><div class="menu-shortcodes-container"><ul id="menu-shortcodes" class="menu"><li id="menu-item-1015" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1015"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/columns/">Columns</a></li>
+<li id="menu-item-1016" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1016"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/general-styling/">General Styling</a></li>
+<li id="menu-item-1017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1017"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/image-effects/">Image Shortcodes</a></li>
+<li id="menu-item-1018" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1018"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/post-galleries/">Post Galleries</a></li>
+<li id="menu-item-1019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1019"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/styled-boxes/">Styled Boxes</a></li>
+<li id="menu-item-1020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1020"><a href="http://dynamix.creativeworkz.co.uk/shortcodes/button-shortcodes/">Button Shortcodes</a></li>
+<li id="menu-item-2423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2423"><a href="http://dynamix.creativeworkz.co.uk/prices-shortcode/">Prices Shortcode</a></li>
+<li id="menu-item-2424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2424"><a href="http://dynamix.creativeworkz.co.uk/drop-caps/">Drop Caps</a></li>
+<li id="menu-item-2425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2425"><a href="http://dynamix.creativeworkz.co.uk/lists/">Lists</a></li>
+<li id="menu-item-2426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2426"><a href="http://dynamix.creativeworkz.co.uk/tabs/">Tabs</a></li>
+<li id="menu-item-2427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2427"><a href="http://dynamix.creativeworkz.co.uk/accordion/">Accordion</a></li>
+</ul></div></div>
+		</li>
+					</ul>
+				</div>
+				
+								
+				<div class="panel-wrap panel-columns-4 last">
+					<ul>
+                            <li class="widget sidebar-slider"><h3>DynamiX Widget Gallery</h3>        
+<div class="mini-slider widget-gallery-widget4id" style="height:140px">
+		
+		
+
+<div class="panel text">
+    
+	<div class="panel-inner">
+        
+		<div class="panelcontent">
+        	
+            
+			<span class="blockquote_quotes center"><span class="quote left"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote open" /></span>I just bought your DynamiX theme and am absolutely astounded - it is exactly what I have <span class="quote right"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote close" /></span>been hunting for.</span>
+			
+
+       		
+		</div><!-- /panelcontent --> 
+          
+    </div><!--  / panel-inner -->
+</div><!--  / panel -->   
+
+        
+
+
+
+<div class="panel text">
+    
+	<div class="panel-inner">
+        
+		<div class="panelcontent">
+        	
+            
+			<span class="blockquote_quotes center"><span class="quote left"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote open" /></span>Hi There - bought the Dynamix theme and am beginning to implement. This is by far the most feature rich theme I've ever use<span class="quote right"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote close" /></span>d - awesome work!</span>			
+
+       		
+		</div><!-- /panelcontent --> 
+          
+    </div><!--  / panel-inner -->
+</div><!--  / panel -->   
+
+        
+
+
+
+<div class="panel text">
+    
+	<div class="panel-inner">
+        
+		<div class="panelcontent">
+        	
+            
+			<span class="blockquote_quotes center"><span class="quote left"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote open" /></span>Your theme is incredible. Best I've seen on ThemeForest<span class="quote right"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote close" /></span>, so powerful!!! </span>			
+
+       		
+		</div><!-- /panelcontent --> 
+          
+    </div><!--  / panel-inner -->
+</div><!--  / panel -->   
+
+        
+
+
+
+<div class="panel text">
+    
+	<div class="panel-inner">
+        
+		<div class="panelcontent">
+        	
+            
+			<span class="blockquote_quotes center"><span class="quote left"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote open" /></span> Well,I bought Your theme and I must say I love it…. everything seem to be detailed out,your quick responses , clear design , flexibility<span class="quote right"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote close" /></span> and codeing…..</span>			
+
+       		
+		</div><!-- /panelcontent --> 
+          
+    </div><!--  / panel-inner -->
+</div><!--  / panel -->   
+
+        
+
+
+
+<div class="panel text">
+    
+	<div class="panel-inner">
+        
+		<div class="panelcontent">
+        	
+            
+			<span class="blockquote_quotes center"><span class="quote left"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote open" /></span> This is far the best work I have seen so far - really rea<span class="quote right"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote close" /></span>lly good work! ;)</span>			
+
+       		
+		</div><!-- /panelcontent --> 
+          
+    </div><!--  / panel-inner -->
+</div><!--  / panel -->   
+
+        
+
+
+
+<div class="panel text">
+    
+	<div class="panel-inner">
+        
+		<div class="panelcontent">
+        	
+            
+			<span class="blockquote_quotes center"><span class="quote left"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote open" /></span> Amazing theme! I was about to get another one, then I saw this one.
+On<span class="quote right"><img src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/images/blank.gif" alt="quote close" /></span>e word: PERFECT! </span>			
+
+       		
+		</div><!-- /panelcontent --> 
+          
+    </div><!--  / panel-inner -->
+</div><!--  / panel -->   
+
+        
+
+</div><!-- / mini-slider -->
+<script type='text/javascript'>
+<!--
+jQuery(window).load(function() {
+
+	jQuery('.mini-slider.widget-gallery-widget4id').cycle({ 
+		fx:     'scrollVert', 
+		timeout: 5000,
+		speed: 750,
+		easing: 'easeInOutBack',		
+		prev: '#leftnav',
+		next: '#rightnav',
+		cleartype:  true,
+    	cleartypeNoBg:  true
+	});
+
+
+
+});
+//-->
+</script>
+
+		</li><li class="widget sidebar-slider"><h3>Tonnes of effects</h3>        
+<div class="mini-slider widget-gallery-widget3id" style="height:175px">
+		
+		
+
+<div class="panel reflectshadow" >
+    
+	<div class="panel-inner">
+        
+	     
+   
+		<div class="container shadowreflection  ">
+			<div class="gridimg-wrap">
+									<a href="http://dynamix.creativeworkz.co.uk/post-gallery-three/">						<img class="reflect " src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/lib/scripts/timthumb.php?h=145&amp;w=220&amp;zc=1&amp;src=http://dynamix.creativeworkz.co.uk/wp-content/uploads/2010/07/card17.jpg" alt="Post Gallery Three" width="220" height="145" />
+									</a>
+				            	
+			</div><!-- / gridimg-wrap -->
+		</div><!-- / container -->				
+				
+	     </div><!--  / panel-inner -->
+</div><!--  / panel -->          
+
+
+<div class="panel reflectshadow" >
+    
+	<div class="panel-inner">
+        
+	     
+   
+		<div class="container shadowreflection  ">
+			<div class="gridimg-wrap">
+									<a href="http://dynamix.creativeworkz.co.uk/post-gallery-six/">						<img class="reflect " src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/lib/scripts/timthumb.php?h=145&amp;w=220&amp;zc=0&amp;src=http://dynamix.creativeworkz.co.uk/wp-content/uploads/2010/07/card10.jpg" alt="Post Gallery Six" width="220" height="145" />
+									</a>
+				            	
+			</div><!-- / gridimg-wrap -->
+		</div><!-- / container -->				
+				
+	     </div><!--  / panel-inner -->
+</div><!--  / panel -->          
+
+
+<div class="panel reflectshadow" >
+    
+	<div class="panel-inner">
+        
+	     
+   
+		<div class="container shadowreflection  ">
+			<div class="gridimg-wrap">
+									<a href="http://dynamix.creativeworkz.co.uk/post-gallery-five/">						<img class="reflect " src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/lib/scripts/timthumb.php?h=145&amp;w=220&amp;zc=0&amp;src=http://dynamix.creativeworkz.co.uk/wp-content/uploads/2010/07/moo02.jpg" alt="Post Gallery Five" width="220" height="145" />
+									</a>
+				            	
+			</div><!-- / gridimg-wrap -->
+		</div><!-- / container -->				
+				
+	     </div><!--  / panel-inner -->
+</div><!--  / panel -->          
+
+
+<div class="panel reflectshadow" >
+    
+	<div class="panel-inner">
+        
+	     
+   
+		<div class="container shadowreflection  ">
+			<div class="gridimg-wrap">
+									<a href="http://dynamix.creativeworkz.co.uk/post-gallery-four/">						<img class="reflect " src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/lib/scripts/timthumb.php?h=145&amp;w=220&amp;zc=0&amp;src=http://dynamix.creativeworkz.co.uk/wp-content/uploads/2010/07/card08.jpg" alt="Post Gallery Four" width="220" height="145" />
+									</a>
+				            	
+			</div><!-- / gridimg-wrap -->
+		</div><!-- / container -->				
+				
+	     </div><!--  / panel-inner -->
+</div><!--  / panel -->          
+
+
+<div class="panel reflectshadow" >
+    
+	<div class="panel-inner">
+        
+	     
+   
+		<div class="container shadowreflection  ">
+			<div class="gridimg-wrap">
+										<img class="reflect " src="http://dynamix.creativeworkz.co.uk/wp-content/themes/DynamiX/lib/scripts/timthumb.php?h=145&amp;w=220&amp;zc=0&amp;src=http://dynamix.creativeworkz.co.uk/wp-content/uploads/2010/07/card18.jpg" alt="Post Gallery Two" width="220" height="145" />
+				            	
+			</div><!-- / gridimg-wrap -->
+		</div><!-- / container -->				
+				
+	     </div><!--  / panel-inner -->
+</div><!--  / panel -->          
+</div><!-- / mini-slider -->
+<script type='text/javascript'>
+<!--
+jQuery(window).load(function() {
+
+	jQuery('.mini-slider.widget-gallery-widget3id').cycle({ 
+		fx:     'shuffle', 
+		timeout: 4000,
+		speed: 750,
+		easing: 'easeInOutQuart',		
+		prev: '#leftnav',
+		next: '#rightnav',
+		cleartype:  true,
+    	cleartypeNoBg:  true
+	});
+
+
+
+});
+//-->
+</script>
+
+		</li>					</ul>
+				</div>
+				
+				
+							</div><!-- / footer -->
+		</div><!-- / footer-wrap-inner -->
+	</div><!-- / footer-wrap -->
+    
+<div class="lowerfooter-wrap clearfix">
+	<div class="lowerfooter">
+		<div class="lowfooterleft">© 2010 DynamiX</div>
+		<div class="lowfooterright">Powered By <a href="http://themeforest.net/item/dynamix-premium-wordpress-theme/113901?ref=cwz000" title="Buy Dynamix Theme" target="_blank">DynamiX</a></div>
+    </div><!-- / lowerfooter -->		
+</div><!-- / lowerfooter-wrap -->
+
+<!-- Another Great Website Design by Creative Workz - http://www.creativeworkz.co.uk -->
+
+
+
+
+<script type="text/javascript"> 
+<!--
+(function ($) {
+$(document).ready(function() {
+Cufon.now();
+
+$('.post-grid.archive .galleryimg,.accordion-gallery .galleryimg').append('<div class="hoverimg" style="height:100%"></div>');	
+$('.post-grid.archive .galleryvid,.accordion-gallery .galleryvid').append('<div class="hovervid" style="height:100%"></div>');	
+$('.archiveimg-wrap .galleryimg').append('<div class="hoverimg" style="height:100%"></div>');	
+$('.archiveimg-wrap .galleryvid').append('<div class="hovervid" style="height:100%"></div>');	
+$('.container .galleryimg').append('<div class="hoverimg" style="height:inherit"></div>');	
+$('.container .galleryvid').append('<div class="hovervid" style="height:inherit"></div>');	
+
+			$("a[rel^='prettyPhoto']").prettyPhoto({
+			keyboard_shortcuts: false,
+			social_tools:false,
+			theme: 'light_rounded'
+			});
+
+$("img.reflect").reflect({height:35,opacity:0.2});
+if(navigator.appName != "Microsoft Internet Explorer") {
+$("#item-body img.avatar, #members-directory-form img.avatar, #item-header-avatar img.avatar, .avatar-block img.avatar").reflect({height:35,opacity:0.2});
+}
+
+$('.target_blank a').each(function() {
+       $(this).click(function(event) {
+           event.preventDefault();
+           event.stopPropagation();
+           window.open(this.href, '_blank');
+       });
+});
+
+});
+})(jQuery);
+//-->
+</script>
+</body>
+</html>

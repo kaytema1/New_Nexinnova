@@ -1,0 +1,37 @@
+<%= form_for @article do |f| :multipart => true %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  
+  <p>
+    <%= f.label :tag %><br />
+    <%= f.text_field :tag %>
+  </p>
+  <p>
+    <%= f.label :featured %><br />
+    <%= f.check_box :featured %>
+  </p>
+  <p>
+    <%= f.label :approved %><br />
+    <%= f.check_box :approved %>
+  </p>
+  <p>
+    <%= f.label :page_id %><br />
+    <%= f.text_field :page_id %>
+  </p>
+  <p>
+      <%= f.label :image, "Image" %>
+      <%= f.file_field :image %>
+    </p>
+  <p><%= f.submit :class => "btn primary"  %></p>
+<% end %>

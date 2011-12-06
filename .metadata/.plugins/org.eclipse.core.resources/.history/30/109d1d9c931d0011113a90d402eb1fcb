@@ -1,0 +1,7 @@
+<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+<%= stylesheet_link_tag :all, :cache => true, :recursive => true %>
+<%= javascript_include_tag :all, :cache => true, :recursive => true %>
+
+<%= csrf_meta_tag %>
+<%= yield(:head) %>
+<%= init_tinymce_hammer_if_required %>

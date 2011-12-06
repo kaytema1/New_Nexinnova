@@ -1,0 +1,3 @@
+module ApplicationHelper
+    @pages = Page.all
+end

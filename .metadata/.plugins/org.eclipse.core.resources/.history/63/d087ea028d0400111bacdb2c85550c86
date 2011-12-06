@@ -1,0 +1,52 @@
+<% @title = "Article" %>
+
+	<div class="row" style="margin-bottom: 20px;">
+				<table class="span10"><tr><td> <h2 class="pull-left"> <%= @article.title %></h2> 
+					</td><tr></table>   
+							<table class="span5 pull-left">
+						<tr><td>  <span class="pull-left"> <a href="#"> Company </a> | <a href="#">Professional </a> |<a href="#"> Mobile</a>  
+						<button class="btn small info" type="submit">
+							Sign In
+						</button> </span>
+						</td>
+					</tr>
+				</table>
+				</div>
+
+<% if @article.image.file? %>
+<%= image_tag @article.image.url  %>
+<% else %>
+No attachment available!
+<% end %>
+<p>
+	<strong>Title:</strong>
+</p>
+<p>
+	<strong>Author:</strong>
+	<%= @article.author %>
+</p>
+<p>
+	<strong>Permalink:</strong>
+	<%= @article.permalink %>
+</p>
+<p>
+	<strong>Content:</strong>
+	<%= @article.content %>
+</p>
+<p>
+	<strong>Page:</strong>
+	<%= @article.page_id %>
+</p>
+<p>
+	<strong>Region:</strong>
+	<%= @article.region %>
+</p>
+<p>
+	<strong>Category:</strong>
+	<%= @article.category %>
+</p>
+<p>
+	<%= link_to "Edit", edit_article_path(@article) %> |
+	<%= link_to "Destroy", @article, :confirm => 'Are you sure?', :method => :delete %> |
+	<%= link_to "View All", articles_path %>
+</p>

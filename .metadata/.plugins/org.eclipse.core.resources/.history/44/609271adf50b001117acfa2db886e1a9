@@ -1,0 +1,17 @@
+<%= form_for @advertisement do |f| %>
+<%= f.error_messages %>
+<table>
+	<tr>
+		<td>Image</td>
+		<td><%= f.file_field :image %></td>
+	</tr>
+	<tr>
+		<td>Permalink</td>
+		<td> <%= f.text_field :permalink %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td> <%= f.submit %></td>
+	</tr>
+</table>
+<% end %> 

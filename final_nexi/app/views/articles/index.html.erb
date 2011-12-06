@@ -1,0 +1,27 @@
+<% title " All NexInnova Articles" %> <div class="divider_thin"></div>
+<!--content -->
+<div class="grid_24" style="font-size: 15px; ">
+	<table >
+		<tr>
+			<th>Title</th>
+			<th>Author</th>
+			<th>Page</th>
+			<th>Tag</th>
+			<th>Source</th>
+		</tr>
+		<% for article in @articles %>
+		<tr>
+			<td><%= article.title %></td>
+			<td><%= article.author %></td>
+			<td><%= article.page_id %></td>
+			<td><%= article.tag %></td>
+			<td><%= article.source %></td>
+			<td><%= link_to "Show", article %></td>
+			<td><%= link_to "Edit", edit_article_path(article) %></td>
+			<td> <%= button_to "destroy", article, :method => :delete %> </td>
+		</tr>
+		<% end %>
+	</table>
+	<p>
+		<%= link_to "New Article", new_article_path %>
+	</p>

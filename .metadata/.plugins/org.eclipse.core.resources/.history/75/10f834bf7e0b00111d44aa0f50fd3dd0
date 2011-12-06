@@ -1,0 +1,38 @@
+<div id="SlideShow-GalleryView">
+			<ul id="GalleryView">
+				<li>
+					<img src="images/slideshow/gallery-view/slide-1.jpg" width="938" height="340" alt="Slide 1" />
+					<div class="panel-overlay">
+						<h2>Dream.</h2>
+						<p>The imagination of infinity.</p>
+					</div>
+				</li>
+				<li><img src="images/slideshow/gallery-view/slide-2.jpg" width="938" height="340" alt="Slide 2" /></li>
+				<li><img src="images/slideshow/gallery-view/slide-3.jpg" width="938" height="340" alt="Slide 3" /></li>
+				<li>
+					<img src="images/slideshow/gallery-view/slide-7.jpg" width="938" height="340" alt="Slide 7" />
+					<div class="panel-overlay">
+						<h2>Why shouldn't I trust butterflies?</h2>
+						<p>It's not a secret these days. We'll see where they go now.</p>
+					</div>
+				</li>
+				<li><img src="images/slideshow/gallery-view/slide-8.jpg" width="938" height="340" alt="Slide 8" /></li>
+				<li>
+					<img src="images/slideshow/gallery-view/slide-1.jpg" width="938" height="340" alt="Slide 1" />
+					<div class="panel-overlay">
+						<h2>Dream.</h2>
+						<p>The imagination of infinity.</p>
+					</div>
+				</li>
+				<li><img src="images/slideshow/gallery-view/slide-2.jpg" width="938" height="340" alt="Slide 2" /></li>
+				<li><img src="images/slideshow/gallery-view/slide-3.jpg" width="938" height="340" alt="Slide 3" /></li>
+				<li>
+					<img src="images/slideshow/gallery-view/slide-7.jpg" width="938" height="340" alt="Slide 7" />
+					<div class="panel-overlay">
+						<h2>Why shouldn't I trust butterflies?</h2>
+						<p>It's not a secret these days. We'll see where they go now.</p>
+					</div>
+				</li>
+				<li><img src="images/slideshow/gallery-view/slide-8.jpg" width="938" height="340" alt="Slide 8" /></li>
+			</ul>
+		</div>

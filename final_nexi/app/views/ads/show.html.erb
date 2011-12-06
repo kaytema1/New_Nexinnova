@@ -1,0 +1,21 @@
+<% title "Ad" %>
+<div class="divider_thin"></div>
+<!--content -->
+<div class="grid_15 suffix_1 content">
+<p>
+	<strong>Image:</strong>
+	<%= image_tag @ad.image.url %>
+</p>
+<p>
+	<strong>Permalink:</strong>
+	<%= @ad.permalink %>
+</p>
+<p>
+	<strong>Page:</strong>
+	<%= @ad.page_id %>
+</p>
+<p>
+	<%= link_to "Edit", edit_ad_path(@ad) %> |
+	<%= button_to "destroy", @ad, :method => :delete %>|
+	<%= link_to "View All", ads_path %>
+</p>

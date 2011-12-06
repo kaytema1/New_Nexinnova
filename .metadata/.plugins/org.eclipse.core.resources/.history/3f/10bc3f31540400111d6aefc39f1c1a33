@@ -1,0 +1,100 @@
+<% @title ="Home" %> 
+
+
+<div class="container">
+	
+	
+	
+	
+</div>
+
+
+<div class="hero-unit" style="padding:25px; width:960px">
+	<div class="row">
+		<div class="span4">
+			<table>
+				<tr>
+					<td> <% for advertisement in @advertisements %> <a href="http://<%= advertisement.link %>"> <%= image_tag advertisement.image.url, :height => "245px", :width => "200px" %> </a> <% end %> </td>
+				</tr>
+			</table>
+		</div>
+		<div class="span9">
+			<% for page in @pages %>
+
+			<% if page.articles %>
+
+			<% for article in page.articles %>
+
+			<% if article.category == "headline" %>
+			<table>
+				<tr>
+					<td> <%= image_tag article.image.url, :height => "300px", :width => "495px" %> </td>
+				</tr>
+				<tr>
+					<td><%= link_to(article.title, article_path(article)) %> <%= link_to(page.name,page, :class => "label notice") %></td>
+				</tr>
+			</table>
+			<% end %>
+
+			<% end %>
+			<% end %>
+
+			<% end %>
+		</div>
+		<div class="span3">
+			<table>
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span-one-third">
+			<% for page in @pages %>
+			<% if (((page.id.to_i)%2)==0)  %>
+			<table>
+				<tr>
+					<td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+				</tr>
+				<% if page.articles %>
+
+				<% for article in page.articles %>
+				<tr>
+					<td colspan="4"><%= link_to(article.title, article_path(article)) %> </td>
+				</tr>
+				<% end %>
+				<% end %>
+
+				<% end %>
+			</table>
+			<% end %>
+		</div>
+		<div class="span-one-third">
+			<% for page in @pages %>
+			<% if (((page.id.to_i)%2)!=0)  %>
+			<table>
+				<tr>
+					<td><%= page.name %><%= link_to("View",page, :class => "label notice") %></td>
+				</tr>
+				<% if page.articles %>
+
+				<% for article in page.articles %>
+				<tr>
+					<td colspan="4"><%= link_to(article.title, article_path(article)) %> </td>
+				</tr>
+				<% end %>
+				<% end %>
+
+				<% end %>
+			</table>
+			<% end %>
+		</div>
+		<div class="span-one-third">
+			flndfkmndskfmnk mlkdnslfknfk ldndlksn lfdn slkfn skdnfkn
+		</div>
+	</div>
+	<p>
+		<%= link_to "New Page", new_page_path %>
+	</p>
+</div>

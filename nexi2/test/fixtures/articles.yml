@@ -1,0 +1,15 @@
+one:
+  title: MyString
+  author: MyString
+  category: MyString
+  geo_region: MyString
+  content: MyText
+  page_id: 1
+
+two:
+  title: MyString
+  author: MyString
+  category: MyString
+  geo_region: MyString
+  content: MyText
+  page_id: 1

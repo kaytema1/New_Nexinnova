@@ -1,0 +1,7 @@
+class UserController < ApplicationController
+  attr_accessible :name, :email, :company
+
+  def new
+  end
+
+end

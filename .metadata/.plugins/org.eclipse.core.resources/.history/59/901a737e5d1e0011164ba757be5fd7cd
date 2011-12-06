@@ -1,0 +1,22 @@
+<div class="footer">
+	<div class="container_24">
+		<div class="botmenu">
+			<ul>
+				<% for page in @pages%>
+				
+				<li class="menu-red">
+								<%= link_to page.title, page_path(page) %>
+				</li>
+				<% end %>
+				
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="footer_logo">
+			<a href="index.html"><img src="images/logo_footer.png" width="117" height="37" alt="" /></a>
+		</div>
+		<p class="copyright">
+			&copy; 2011 Made by <a href="http://www.themefuse.com/">Themefuse</a>.  All rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a>
+		</p>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+<% title "Newsfeeds" %>
+
+<table>
+  <tr>
+    <th>Hit</th>
+    <th>Content</th>
+    <th>Source</th>
+  </tr>
+  <% for newsfeed in @newsfeeds %>
+    <tr>
+      <td><%= newsfeed.hit %></td>
+      <td><%= newsfeed.content %></td>
+      <td><%= newsfeed.source %></td>
+      <td><%= link_to "Show", newsfeed %></td>
+      <td><%= link_to "Edit", edit_newsfeed_path(newsfeed) %></td>
+      <td><%= link_to "Destroy", newsfeed, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Newsfeed", new_newsfeed_path %></p>

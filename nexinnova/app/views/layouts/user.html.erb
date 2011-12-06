@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nexinnova | <%= @title %></title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
+    <script>
+	$(document).ready(function(){
+	$( ".tabs" ).tabs({
+			event: "mouseover"
+		});
+		
+	})
+		
+		 jQuery().ready(function(){
+                jQuery('.accordion-gallery.stage').kwicks({
+                    autorotation: true,
+                    event: 'mouseover',
+                    autorotationSpeed: 5,
+                    easing: 'easeInOutCubic',
+                    duration: 700,
+                    id: 'cwz-accordion'
+                });
+            });
+
+	</script>
+
+</head>
+<body>
+<header>
+
+<nav class="round">
+<ul>
+<li><%= link_to "Home", root_path %></li>
+<% if signed_in? %>
+<li><%= link_to "Profile", current_user %></li>
+<li><%= link_to "Settings", edit_user_path(current_user) %></li>
+<li><%= link_to "Users", users_path %></li>
+<% end %>
+
+<% if signed_in? %>
+<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+<% else %>
+<li><%= link_to "Sign in", signin_path %></li>
+<% end %>
+</ul>
+
+</nav>
+</header>
+	 
+<div class="container">
+<section class="round">
+<% flash.each do |key, value| %>
+<div class="flash <%= key %>"><%= value %></div>
+<% end %>
+</section>
+
+<%= yield %>
+
+
+<%= debug(params) if Rails.env.development? %>
+</div>
+
+</body>
+</html>

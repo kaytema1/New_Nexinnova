@@ -1,0 +1,12 @@
+<% title "Edit Article" %>
+<ul class="breadcrumb">
+  <li><a href="#">Edit Article
+  	</li>
+
+</ul>
+<%= render 'form' %>
+
+<p>
+  <%= link_to "Show", @article %> |
+  <%= link_to "View All", articles_path %>
+</p>

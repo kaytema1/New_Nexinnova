@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>NexInnova | Dashboard </title>
+		<%= javascript_include_tag "jquery-1.4.min.js" %>
+		<%= stylesheet_link_tag "css/all" %> <!--	<%= stylesheet_link_tag "themes/blackout/blackout" %>
+		<%= stylesheet_link_tag "themes/oceanbreeze/oceanbreeze" %>
+		<%= stylesheet_link_tag "themes/orangebeam/orangebeam" %>
+		<%= stylesheet_link_tag "themes/rebelred/rebelred" %>
+		<%= stylesheet_link_tag "themes/plumcrazy/plumcrazy" %>  -->
+		<%= stylesheet_link_tag "themes/islandescape/islandescape" %> <!--	<%= stylesheet_link_tag "themes/newgrass/newgrass" %>
+		<%= stylesheet_link_tag "themes/autumnleaves/autumnleaves" %>   -->
+	</head>
+	<body>
+		<div id="wrapper" class="">
+			<div id="header">
+				<div class="container">
+					<div class="grid grid_24">
+						<ul>
+							<li class="nav">
+								
+								<%= link_to 'Home', user_path(current_user), :class=>"item icon"%>
+					
+							</li>
+							<li class="bar"></li>
+							<li class="nav dropdown">
+								<a href="javascript:;" class="item">Pages</a>
+								<div class="menu">
+									<h3>Custom Pages</h3>
+									<ul>
+										<li>
+											<a href="./pages/blank.html">Blank Slate</a>
+										</li>
+										<li>
+											<a href="./pages/gallery.html">Image Gallery</a>
+										</li>
+										<li>
+											<a href="./pages/reports.html">Reports</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav dropdown">
+								<a href="javascript:;" class="item">Elements</a>
+								<div class="menu">
+									<h3>Custom Elements</h3>
+									<ul>
+										<li>
+											<a href="./pages/themes.html">Theme Gallery</a>
+										</li>
+										<li>
+											<a href="./pages/grid.html">Grid Layout</a>
+										</li>
+										<li>
+											<a href="./pages/forms.html">Forms</a>
+										</li>
+										<li>
+											<a href="./pages/text.html">Buttons & Text</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav dropdown">
+								<a href="javascript:;" class="item">Widgets</a>
+								<div class="menu">
+									<h3>Custom Widgets</h3>
+									<ul>
+										<li>
+											<a href="./pages/modal.html">Modal</a>
+										</li>
+										<li>
+											<a href="./pages/msgui.html">MsgUI</a>
+										</li>
+										<li>
+											<a href="./pages/guidely.html">Guidely</a>
+										</li>
+									</ul>
+									<h3>Third Party Widgets</h3>
+									<ul>
+										<li>
+											<a href="./pages/calendar.html">Calendar</a>
+										</li>
+										<li>
+											<a href="./pages/wizard.html">Wizard</a>
+										</li>
+										<li>
+											<a href="./pages/charts.html">Charts</a>
+										</li>
+										<li>
+											<a href="./pages/tables.html">Tables</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav profile dropdown right">
+								<a href="javascript:;" class="item"> <%= image_tag "images/layout/nav_profile_image.png "%> </a>
+								<div class="menu">
+									<h3>Preferences</h3>
+									<ul>
+										<li>
+											<a href="./pages/settings.html">General Settings</a>
+										</li>
+										<li>
+											<a href="./pages/upgrade.html">Account Upgrade</a>
+										</li>
+									</ul>
+									<hr />
+									<ul>
+										<li>
+											<a href="./login.html">Logout</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav dropdown right">
+								<a href="javascript:;" class="item icon cog"><span>Config</span></a>
+								<div class="menu">
+									<h3>Support</h3>
+									<ul>
+										<li>
+											<a href="./pages/support.html">Support Center</a>
+										</li>
+										<li>
+											<a href="./pages/support-answer.html">Support Answer</a>
+										</li>
+									</ul>
+									<hr />
+									<ul>
+										<li>
+											<a href="./pages/ticket-submit.html">Submit Ticket</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav dropdown right">
+								<a href="javascript:;" class="item icon email"><span>Email</span></a>
+								<div class="notify">
+									3
+								</div>
+								<div class="menu">
+									<h3>Inbox</h3>
+									<ul>
+										<li>
+											<a href="./pages/inbox.html">Messages</a>
+										</li>
+										<li>
+											<a href="./pages/contacts.html">Contacts</a>
+										</li>
+									</ul>
+									<hr />
+									<ul>
+										<li>
+											<a href="./pages/contact_profile.html">Contact Profile</a>
+										</li>
+										<li>
+											<a href="./pages/message.html">Message</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="bar right"></li>
+						</ul>
+					</div>
+					<!-- .grid -->
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- #header -->
+			<div id="sub-header" class="">
+				<div class="container">
+					<div class="grid grid_24">
+						<h2>NexInnova Pro!  
+						<span style="float: right"><% if signed_in? %> <%=  current_user.name%>   <% end %> </h2> </span> 
+							
+					</div>
+				
+					
+					<!-- .grid -->
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- #sub-header -->
+			<div id="content" class="">
+				<div class="container">
+					<div class="grid grid_17">
+						<%= yield %>
+					</div>
+					<!-- .grid -->
+					<div class="grid grid_7">
+						<div class="box">
+							<h3>Recent Activity</h3>
+							<ul>
+								<li>
+									Lorem ipsum dolor sit amet
+								</li>
+								<li>
+									Quisque ornare ultricies lectus, quis aliquet lorem malesuada ac.
+								</li>
+								<li>
+									Vivamus hendrerit malesuada elit
+								</li>
+								<li>
+									Maecenas venenatis ante ut mi
+								</li>
+								<li>
+									Praesent ac elit neque, sed faucibus eros.
+								</li>
+							</ul>
+						</div>
+						<!-- .box -->
+					</div>
+					<!-- .grid -->
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- #content -->
+			<div id="footer" class="cf">
+				<div class="container">
+					<div id="copyright" class="grid grid_24">
+						<div class="grid grid_12 left">
+							Copyright &copy; 2011 NexInnova, all rights reserved.
+						</div>
+						<!-- .grid -->
+						<div class="grid grid_12 right">
+							<a href="./dashboard.html">Dashboard</a>
+							&nbsp;&nbsp; <a href="javascript:;">Terms of Use</a>
+							&nbsp;&nbsp; <a href="javascript:;">Privary Policy</a>
+						</div>
+						<!-- .grid -->
+					</div>
+					<!-- .grid -->
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- #footer -->
+		</div>
+		<!-- #wrapper -->
+		<%= javascript_include_tag "all" %>
+		<script type="text/javascript">
+			$(function() {
+
+				ReadyMade.init();
+
+			});
+
+		</script>
+	</body>
+</html>

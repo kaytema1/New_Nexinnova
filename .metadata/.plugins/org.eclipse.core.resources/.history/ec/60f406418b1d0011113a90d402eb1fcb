@@ -1,0 +1,261 @@
+<!DOCTYPE html UTF-8>
+<html>
+	<head>
+	<%= render "shared/stylesheets" %>
+	</head>
+	<%= render "shared/headbar" %>
+	<!--/ head menu -->
+		<%= render "shared/header" %>
+	<!--/ header -->
+	<!-- middle -->
+	<div class="middle">
+		<div class="container_24">
+			<!-- featured list -->
+	
+	
+	
+			<!--/ featured list -->
+			<div class="divider_thin"></div>
+			<!--content -->
+			<div class="grid_15 suffix_1 content">
+				<div class="cat_title">
+					<h2>Latest Posts</h2>
+					<div class="sort">
+						<a href="#">Popular</a><a href="#" class="active">By Date</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="post-item">
+					<h2><a href="blog-details.html">Beautiful flying people are invading some corn fields in Lacoste land</a></h2>
+					<div class="post-meta">
+						<span class="icon_cat icon_cat_2"><a href="#">Gadgets</a></span>
+						<em>by <span class="author">Serj Bagrin</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">32 comments</a></em>
+					</div>
+					<div class="entry">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras adipiscing dignissim tortor, molestie sollicitudin erat ullamcorper eu. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem eu...
+						</p>
+						<div class="clear"></div>
+					</div>
+					<a href="blog-details.html" class="link-more">read more</a>
+				</div>
+				<div class="post-item">
+					<h2><a href="blog-details.html">Lifestyle mojo: Best music albums of 2010</a></h2>
+					<div class="post-meta">
+						<span class="icon_cat icon_cat_3"><a href="#">Music</a></span>
+						<em>by <span class="author">Jeremy Masley</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">15 comments</a></em>
+					</div>
+					<div class="entry">
+						<p><img src="images/temp/temp_image_1.jpg" alt="" width="305" height="206" class="alignleft" />Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. <a href="#">Suspendisse</a> ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem dolor sit amet eurasio mecitur.
+						</p>
+						<p>
+							Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie
+						</p>
+						<div class="clear"></div>
+					</div>
+					<a href="blog-details.html" class="link-more">read more</a>
+				</div>
+				<div class="post-item">
+					<h2><a href="blog-details.html">Delicious desserts at Bistro Meridien</a></h2>
+					<div class="post-meta">
+						<span class="icon_cat icon_cat_1"><a href="#">Photography</a></span>
+						<em>by <span class="author">Patrick LeBeouf</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">43 comments</a></em>
+					</div>
+					<div class="entry">
+						<p><img src="images/temp/temp_image_2.jpg" width="590" height="193" alt="" />
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras adipiscing dignissim tortor, molestie sollicitudin erat ullamcorper eu. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem eu...
+						</p>
+						<div class="clear"></div>
+					</div>
+					<a href="blog-details.html" class="link-more">read more</a>
+				</div>
+				<div class="post-item">
+					<h2><a href="blog-details.html">Smokin' Aces -  a new brilliancy by Guy Richie</a></h2>
+					<div class="post-meta">
+						<span class="icon_cat icon_cat_4"><a href="#">Movies</a></span>
+						<em>by <span class="author">James May Raybins</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">6 comments</a></em>
+					</div>
+					<div class="entry">
+						<p><img src="images/temp/temp_image_3.jpg" alt="" width="310" height="229" border="0" class="alignright" />Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem dolor sit amet eurasio mecitur. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque.
+						</p>
+						<div class="clear"></div>
+					</div>
+					<a href="blog-details.html" class="link-more">read more</a>
+				</div>
+				<!--
+				<div class="post-item">
+				<h2><a href="blog-details.html">Top 5 cool Fashion tips for skinny guys</a></h2>
+
+				<div class="post-meta">
+				<span class="icon_cat icon_cat_5"><a href="#">Fashion</a></span>
+				<em>by <span class="author">Patrick LeBeouf</span> &nbsp;|&nbsp; on Feb 17th 2011 &nbsp;|&nbsp; <a href="#" class="link-comments">43 comments</a></em>
+
+				</div>
+
+				<div class="entry">
+				<p><img src="images/temp/temp_image_4.jpg" alt="" width="235" height="164" class="alignleft" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras adipiscing dignissim tortor, molestie sollicitudin erat ullamcorper eu. Nam ornare pharetra sem vitae blandit. Aliquam sed massa vitae risus sodales molestie vitae sit amet arcu. Nunc egestas leo nec est dapibus a pellentesque erat pellentesque. Suspendisse ornare nulla vitae quam vehicula consectetur. Morbi tincidunt lorem eu...</p>
+				<div class="clear"></div>
+				</div>
+
+				<a href="blog-details.html" class="link-more">read more</a>
+				</div>
+				-->
+				<div class="other_posts">
+					<a href="#" class="prev">Older posts</a>
+					<a href="#" class="next">Newer posts</a>
+				</div>
+			</div>
+			<!--/content -->
+			<!-- sidebar-->
+			
+			<!--/ sidebar -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!--/ middle -->
+	<!-- bottom content/widgets -->
+	<div class="bottom_content">
+		<div class="container_24">
+			<div class="inner">
+				<div class="grid_6">
+					<div class="widget">
+						<ul class="menu_type_1">
+							<li>
+								<a href="#">About Us</a>
+							</li>
+							<li>
+								<a href="#">Shortcodes</a>
+							</li>
+							<li>
+								<a href="#">Typography</a>
+							</li>
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+							<li>
+								<a href="#">Pricing Page</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="grid_6">
+					<div class="widget">
+						<h3>NETWORK</h3>
+						<ul class="menu_type_2">
+							<li>
+								<a href="#">All Sports Mag</a>
+							</li>
+							<li>
+								<a href="#">Car Tuning Mag</a>
+							</li>
+							<li>
+								<a href="#">For Her Magazine</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="grid_6">
+					<div class="widget">
+						<h3>BLOG</h3>
+						<ul class="menu_type_2">
+							<li>
+								<a href="#">We've redesigned the blog...</a>
+							</li>
+							<li>
+								<a href="#">Saving everything in your...</a>
+							</li>
+							<li>
+								<a href="#">Make it right, now!</a>
+							</li>
+							<li>
+								<a href="#">Asylum of fools discovered</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="grid_6">
+					<div class="widget">
+						<h3>MAGAZINE</h3>
+						<ul class="menu_type_2">
+							<li>
+								<a href="#">Our authors</a>
+							</li>
+							<li>
+								<a href="#">Monthly Archive</a>
+							</li>
+							<li>
+								<a href="#">Advertise</a>
+							</li>
+							<li>
+								<a href="#">Jobs &amp; Careers</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<!--/ bottom content/widgets -->
+	<div class="footer">
+		<div class="container_24">
+			<div class="botmenu">
+				<ul>
+					<li class="menu-red">
+						<a href="#">Fashion</a>
+					</li>
+					<li class="menu-orange">
+						<a href="#">Design</a>
+					</li>
+					<li class="menu-yellow">
+						<a href="#">Photography</a>
+					</li>
+					<li class="menu-green">
+						<a href="#">Gadgets</a>
+					</li>
+					<li class="menu-turquoise">
+						<a href="#">Arts</a>
+					</li>
+					<li class="menu-blue">
+						<a href="#">Movies</a>
+					</li>
+					<li class="menu-purple">
+						<a href="#">Music</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="footer_logo">
+				<a href="index.html"><img src="images/logo_footer.png" width="117" height="37" alt="" /></a>
+			</div>
+			<p class="copyright">
+				&copy; 2011 Made by <a href="http://www.themefuse.com/">Themefuse</a>.  All rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a>
+			</p>
+		</div>
+	</div>
+	<div id="container">
+		<div id="user_nav">
+			<% for page in @pages %>
+
+			<%= link_to page.title, page_path(page) %>
+
+			<% end %>
+			<% if user_signed_in? %>
+			Signed in as <%= current_user.email %>. Not you?
+			<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+			<% else %>
+			<%= link_to_rpx "Sign In Using FB or Twitter", user_session_url %>|
+			<%= link_to "Sign In", user_session_url %>
+			<% end %>
+		</div>
+		<% flash.each do |name, msg| %>
+		<%= content_tag :div, msg, :id => "flash_#{name}" %>
+		<% end %>
+		<%= content_tag :h1, yield(:title) if show_title? %>
+		<%= yield %>
+	</div>
+	<%= javascript_include_rpx(user_session_url) %>
+	</body>
+</html>

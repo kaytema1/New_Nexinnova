@@ -1,0 +1,16 @@
+<%= form_for @advertisement do |f| %>
+  
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </p>
+   <p>
+   <%= f.label :image, "Photo" %>
+      <%= f.file_field :image %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

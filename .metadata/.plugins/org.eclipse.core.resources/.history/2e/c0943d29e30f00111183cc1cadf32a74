@@ -1,0 +1,7 @@
+require 'rubygems'
+require 'nokogiri'
+require 'open-uri'
+
+url = "http://railscasts.com/episodes/190-screen-scraping-with-nokogiri?autoplay=true"
+doc = Nokogiri::HTML(open(url))
+puts doc.at_css("title").text

@@ -1,0 +1,24 @@
+<% title "Ads" %>
+<div class="divider_thin"></div>
+<!--content -->
+<div class="grid_15 suffix_1 content">
+<table>
+  <tr>
+    <th>Image</th>
+    <th>Permalink</th>
+    <th>Page</th>
+  </tr>
+  <% for ad in @ads %>
+    <tr>
+      <td><%= image_tag ad.image.url %></td>
+      <td><%= ad.permalink %></td>
+      <td><%= ad.page_id %></td>
+      <td><%= link_to "Show", ad %></td>
+      <td><%= link_to "Edit", edit_ad_path(ad) %></td>
+            <td> <%= button_to "destroy", ad, :method => :delete %> </td>
+      
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Ad", new_ad_path %></p>

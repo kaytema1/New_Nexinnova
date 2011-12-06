@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {background:#1b1b1b;color:#ccc;}
+
+/** Drop Panel *********************************/ 
+#panel {background: #222;}
+#panel .widgetlinks, #panel .menu  {	background:url(images/break-a-dark.png) bottom left repeat-x;}
+#panel .widgetlinks li, #panel .menu li {background:url(images/break-a-dark.png) top left repeat-x;}
+.tab-wrap {background: url(images/panel-tab-a-grey.png) repeat-x 0 0;}
+.tab ul.panelswitch li.left {background: url(images/panel-tab-l-grey.png) no-repeat left 0;}
+.tab ul.panelswitch li.right {background: url(images/panel-tab-r-grey.png) no-repeat left 0;}
+.tab ul.panelswitch li {background: url(images/panel-tab-m-grey.png) repeat-x 0 0;}
+.tab #toggle .trigger {	background:url(images/break-c-grey.png) repeat-y left;}
+.tab a.open {background-image:url(images/button-a-grey.png);}
+.tab a.close {background-image:url(images/button-a-grey.png);}
+/** / Drop Panel *********************************/ 
+
+
+
+/** Page Structure *********************************/ 
+#wrapper, #wrapper.gallery {background-color:#1b1b1b;}
+.lowerfooter-wrap {background:url(images/break-a-dark.png) top left repeat-x;}
+/** Page Structure *********************************/ 
+
+
+
+
+
+
+/** Breadcrumbs *********************************/ 
+#sub-tabs ul li {background:url(images/break-b-dark.png) left center no-repeat;}
+/** / Breadcrumbs *********************************/ 
+
+
+/** Grid Filtering *******************************/
+.splitter ul, .splitter li {
+	text-shadow: 0 1px 0px #000;
+	color:#ccc;
+}
+
+
+.splitter ul li a  {
+	color:#000;
+	text-shadow: 0 1px 0px #656565;
+}
+
+
+.splitter ul li  {
+	border:1px solid #222;
+	background-color:#626262;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #333, #626262);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#626262), to(#333));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#626262', endColorstr='#333'); /* for IE */
+}
+
+.splitter ul li.active {
+	border:1px solid #111;
+	-moz-box-shadow: 0px 1px 4px #111 inset;
+	-webkit-box-shadow: 0px 1px 4px #111 inset;
+	box-shadow: 0px 1px 4px #111 inset;
+	background-color:#656565;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #222, #656565);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#656565), to(#222));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#222'); /* for IE */
+
+}
+
+.splitter ul li.active a {
+	text-shadow: 0 1px 0px #000;
+	color:#eee;
+}
+/** / Grid Filtering *******************************/
+
+
+/** Page Content *********************************/ 
+#content .post-titles h1 {color:#ccc;}
+.content-wrapper,.styledbox.general, .columns.border  {
+	background:#1b1b1b;
+	border:1px solid #0f0f0f;
+	-moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 2px 2px 2px #151515;
+}
+#content .postmetadata {background:url(images/break-a-dark.png) bottom repeat-x;}
+#content .postmetadata p {background:url(images/break-a-dark.png) bottom repeat-x;}
+#content .postmetadata .break, .post-date .break {background:url(images/break-c-dark.png) left repeat-y;}
+code {background: #222 url(images/code-a-dark.png) top left;border:1px solid #111;border-bottom:none;color:#ccc;}
+/** / Page Content *********************************/ 
+
+
+
+
+/** Social Icons *********************************/ 
+#content .socialinit,#content .socialhide {background-image:url(images/socialinit-dark.png);}
+#content .socialicons ul li.social-delicious {background-image:url(images/Deli-dark.png);}
+#content .socialicons ul li.social-facebook {background-image:url(images/Facebook-dark.png);}
+#content .socialicons ul li.social-digg {background-image:url(images/Digg-dark.png);}
+#content .socialicons ul li.social-rss {background-image:url(images/RSS-dark.png);}
+#content .socialicons ul li.social-twitter {background-image:url(images/Twitter-dark.png);}
+/** / Social Icons *********************************/ 
+
+
+
+/** Text Resizer *********************************/ 
+#content .textresize .resize-sml {background-image:url(images/resize-sml-dark.png);}
+#content .textresize .resize-lrg {background-image:url(images/resize-lrg-dark.png);}
+/** / Text Resizer *********************************/ 
+
+
+
+/** Table *********************************/ 
+.content-wrapper-inner table {border:1px solid #151515;	border-top:none;}
+.content-wrapper-inner th,td {background:url(images/break-a-dark.png) repeat-x top;}
+.content-wrapper-inner th,tr:hover {background-color:#333;}
+#content th,td {background:url(images/break-a-dark.png) repeat-x top;}
+/** / Table *********************************/ 
+
+
+
+/** Forms *********************************/ 
+#toppanel pre, #content pre, #toppanel input[type=text], select, #content input[type=text],#toppanel input[type=password], #content input[type=password],#toppanel input[type=file], #content input[type=file], #toppanel textarea, #content textarea,#content input, .side-wrap input {
+	background:#2b2b2b url(images/shadow-h.png) top repeat-x;
+	border: 1px solid;
+	color:#ccc;
+	border-color:#1c1c1c #3b3b3b #3b3b3b #1c1c1c;
+}
+
+select,option,option[selected] {
+	background:#2b2b2b;
+	border:none;
+	
+}
+/** / Forms *********************************/ 
+
+
+
+
+/** Search *********************************/ 
+#panelsearchform #drops {color:#888;}
+#panelsearchsubmit, #searchsubmit {background:url(images/search-grey.png) top center no-repeat;}
+#panelsearchsubmit:hover, #searchsubmit:hover {	background:url(images/search-grey.png) center -29px no-repeat;}
+/** / Search *********************************/ 
+
+
+
+
+/** Comments *********************************/ 
+#respond {background:url(images/break-a-dark.png) top repeat-x;}
+#content .comments-wrap {background:url(images/break-a-dark.png) top repeat-x;}
+#content .postmetadata .comments {background-image:url(images/comment-dark.png);}
+#content .postmetadata .comments.no {background-color:#333;}
+ol.commentlist li.parent { background:url(images/break-c-dark.png) left repeat-y; } 
+ol.commentlist li.comment  .commentbreak { background:url(images/comment-a-dark.png) 20px no-repeat;} 
+ol.commentlist li.comment  .authorwrap ul li { background:url(images/break-c-dark.png) right repeat-y; }
+ol.commentlist li.comment  .commenttext { 
+	border-top:1px solid #111;
+	background:#191919 url(images/break-a-dark.png) bottom repeat-x; 
+}
+ol.commentlist li li.vcard img.avatar { border:1px solid #111; } 
+/** / Comments *********************************/ 
+
+
+
+/** Sidebar *********************************/ 
+.side-wrap.left.border.bottom {	background:url(images/content-border-d-dark.png) right bottom no-repeat;}
+.border-wrap.left .border-inner.border {background:url(images/content-border-b-dark.png) right 30px repeat-y;}
+.border-wrap.right .border-inner.border {background:url(images/content-border-e-dark.png) left repeat-y;}
+.border-wrap.left.border.bottom{background:url(images/content-border-d-dark.png) right bottom no-repeat;}
+.border-wrap.right.border.bottom{background:url(images/content-border-g-dark.png) left bottom no-repeat;}
+.border-wrap.left .sidebar-content.border.top {	background:url(images/content-border-c-dark.png) right top no-repeat;}
+.border-wrap.right .sidebar-content.border.top {background:url(images/content-border-f-dark.png) left top no-repeat;}
+/** / Sidebar *********************************/ 
+
+
+
+/** Post Galleries *********************************/ 
+.gallery-wrap {
+	border:1px solid #0f0f0f;
+	-moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 2px 2px 2px #151515;
+	background:#1b1b1b url(images/gradient-b-dark.png) bottom repeat-x;
+}
+.post-control-panel ul {background:none !important;}
+.control-panel ul li, .post-control-panel ul li {background:url(images/gallery-navigation-dark.png) right top no-repeat;}
+.control-panel ul li.activeSlide, .post-control-panel ul li.activeSlide, .control-panel ul li:hover, .post-control-panel ul li:hover {
+	background:url(images/gallery-navigation-dark.png) left top no-repeat;	
+}
+.stage-slider .panel.shadow, .accordion-gallery-wrap.shadow, .accordion-gallery-wrap.shadowreflection {background:url(images/shadow-a-dark.png) no-repeat center 100%;}
+.stage-slider .panel.reflectshadow {background:url(images/shadow-a-dark.png) no-repeat center 95%;}
+.post-gallery .panel.shadow-large, .post-gallery .panel.shadow-medium, .post-gallery .panel.shadow-small  {	*background-color:#1b1b1b !important;}
+.stage-slider .stagetextwrap {	background: #1b1b1b url(images/stagetext-a-dark.png) left repeat-y;}
+.stage-slider .stagetextinner {	background:url(images/break-a-dark.png) left top repeat-x;}
+.stage-slider .stagetextbottom {background:url(images/break-e-dark.png) left bottom repeat-x;}
+.gallery-slider .panel.border-left, .post-slider .panel.border-left  {	background:url(images/border-shadow-a-dark.png) left repeat-y;}
+.gallery-slider .panel.border-first, .post-slider .panel.border-first {	background:url(images/border-shadow-b-dark.png) left repeat-y;}
+.slidernav-left {background:url(images/break-d-dark.png) right repeat-y;}
+.slidernav-right {background:url(images/break-d-dark.png) left repeat-y;}
+.hoverimg {	background: #1b1b1b url(images/image-hover-dark.png) center center no-repeat;}
+.hovervid {	background: #1b1b1b url(images/video-hover-dark.png) center center no-repeat;}
+
+
+.stage-control #stage-prev, .stage-control .poststage-prev {background-image:url(images/galleryslidenav-a-dark.png);}
+.stage-control #stage-next, .stage-control .poststage-next {background-image:url(images/galleryslidenav-b-dark.png);}
+.stage-control #stage-pause, .stage-control .poststage-pause {background-image:url(images/galleryslidenav-c-dark.png);}
+.stage-control #stage-resume, .stage-control .poststage-resume {background-image:url(images/galleryslidenav-c-dark.png);background-position:center -60px;}
+/** / Post Galleries *********************************/ 
+
+
+
+
+/** Twitter *********************************/ 
+.tweets .tweettitle {background:url(images/break-c-dark.png) right center repeat-y;}
+.tweets {background:url(images/break-a-dark.png) repeat-x bottom;}
+.tweets .twitterfollow a {	background-image:url(images/Twitter-dark.png);}
+/** / Twitter *********************************/ 
+
+
+
+
+
+/** Widgets *********************************/ 
+.sidebar-content .widget_recent_entries li, .sidebar-content .widget_archive li, .sidebar-content .widget_links li, .sidebar-content .widget_meta li, .sidebar-content .widget_categories li, .sidebar-content .widget_pages li, .sidebar-content .widget_nav_menu li, .sidebar-content .widget_recent_comments li, #toppanel .widget_recent_entries li, #toppanel .widget_archive li, #toppanel .widget_links li, #toppanel .widget_meta li, #toppanel .widget_categories li, #toppanel .widget_pages li, #toppanel .widget_nav_menu li, #toppanel .widget_recent_comments li {background:url(images/break-a-dark.png) top left repeat-x;}
+#toppanel .widget ul, .sidebar-content .widget ul {background:url(images/break-a-dark.png) bottom left repeat-x;}
+#wp-calendar {
+	border-bottom: 1px solid #151515;
+	border-right: 1px solid #151515;	
+	border-top: 1px solid #151515;	
+}
+#wp-calendar td {background:#222 url(images/cells-dark.png) 0 0 no-repeat;}
+#wp-calendar td a {	background-image:url(images/cells-dark.png);}
+#wp-calendar td.pad {
+	background:#161616 url(images/button-overlay-dark.png) top repeat-x;
+	border-top: 1px solid #151515;
+	border-left: 1px solid #151515;
+}
+#wp-calendar  th {
+	border-left: 1px solid #151515;
+	background:#161616 url(images/button-overlay-dark.png) top repeat-x;		
+}
+#wp-calendar td#today {	
+	background:#777 url(images/cells-dark.png) right top no-repeat;
+	border-left: 1px solid #151515;
+}
+#wp-calendar tfoot td {
+	border-top:1px solid #151515;
+	background:#161616 url(images/button-overlay-dark.png) top repeat-x !important;		
+}
+#wp-calendar tfoot td {	border-left:1px solid #151515;}
+/** Widgets *********************************/
+
+
+
+/** Shortcodes *********************************/
+.button a, .button a:visited, button, #content input[type="submit"] {background: #222 url(images/button-overlay-dark.png) top repeat-x; }
+.button a:hover, button:hover{ background-position: bottom; color: #fff; }
+.hozbreak {	background:url(images/break-a-dark.png) center repeat-x;}
+.blockquote_line, .blockquote_quotes, blockquote, #panel .blockquote_line, #panel .blockquote_quotes, #panel blockquote {color:#ccc;}
+.blockquote_quotes .quote.left, #panel .blockquote_quotes .quote.left {background:url(images/quote-open-dark.png) no-repeat top left;}
+.blockquote_quotes .quote.right, #panel .blockquote_quotes .quote.right {background:url(images/quote-close-dark.png) no-repeat bottom right;}
+
+.hozbreak-top {background:url(images/break-a-top-dark.png) center right no-repeat;}
+.hozbreak-top a  {color:#393939;}
+.imagewrap.frame {
+	background:#202020 url(images/gradient-g-dark.png) repeat-x top !important;
+	border:1px solid #111;
+	-moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.accordion .section, .ui-tabs-panel, .ui-tabs .ui-tabs-nav li  {
+	border:1px solid #0f0f0f;
+	background-color:#111;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f1f1f', endColorstr='#111111'); /* for IE */	
+	background:-moz-linear-gradient(bottom, #111 0px, #1f1f1f 100%);
+	background:-webkit-gradient(linear,left bottom,left top, color-stop(0, #111),color-stop(1, #1f1f1f));
+}
+
+.accordion .section, .ui-tabs-panel {
+	-moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.ui-tabs .ui-tabs-nav li {border:1px solid #0f0f0f;}
+
+.accordion .ui-icon { width: 8px; height: 14px; background-image: url(images/button-b-dark.png); }
+.accordion .ui-state-active .ui-icon { width: 14px; height: 8px; background-image: url(images/button-c-dark.png); }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { background:#1f1f1f;}
+
+.revealbox .ui-icon { width: 15px; height: 15px; background-image: url(images/button-d-dark.png); }
+
+.styledbox.help,.styledbox.information,.styledbox.warning,.styledbox.download {
+	-moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	box-shadow:  0px 2px 4px rgba(0,0,0,0.1);	
+}
+
+.mid-wrap.out-full .styledbox.shadow.top						{background:url(images/stylebox-a-dark.png) center top no-repeat;}
+.content-wrapper .mid-wrap.out-full .styledbox.shadow.top		{background:url(images/stylebox-a-1-dark.png) center top no-repeat;}
+.mid-wrap.out-threequarter .styledbox.shadow.top				{background:url(images/stylebox-a-3-dark.png) center top no-repeat;}
+.mid-wrap.out-half .styledbox.shadow.top						{background:url(images/stylebox-a-2-dark.png) center top no-repeat;}
+
+
+.mid-wrap.out-full .styledbox.shadow.bottom						{background:url(images/stylebox-b-dark.png) center bottom no-repeat;}
+.content-wrapper .mid-wrap.out-full .styledbox.shadow.bottom	{background:url(images/stylebox-b-1-dark.png) center bottom no-repeat;}
+.mid-wrap.out-threequarter .styledbox.shadow.bottom				{background:url(images/stylebox-b-3-dark.png) center bottom no-repeat;}
+.mid-wrap.out-half .styledbox.shadow.bottom						{background:url(images/stylebox-b-2-dark.png) center bottom no-repeat;}
+
+span.dropcap.two {background:url(../images/dropcap-a.png) no-repeat center bottom;text-shadow: 0 1px 1px #555;}
+
+/** / Shortcodes *********************************/

@@ -1,0 +1,32 @@
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @page.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @page.description %>
+</p>
+
+<p>
+<%= @latest_article.author %>
+</p>
+<p>
+<%= humanize(@latest_article.created_at) %>
+</p>
+<p>	
+<%= @latest_article.title %>
+</p>
+
+<%for @article in @articles %>
+
+<%= @article.title  %>
+
+<% end %>
+
+<p>
+  <%= link_to "Edit", edit_page_path(@page) %> |
+  <%= link_to "Destroy", @page, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", pages_path %>
+</p>

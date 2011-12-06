@@ -1,0 +1,17 @@
+<%= form_for @page do |f| %>
+<%= f.error_messages %>
+<table>
+	<tr>
+		<td>Name</td>
+		<td><%= f.text_field :name, :class =>"span5" %></td>
+	</tr>
+	<tr>
+		<td>Page Description</td>
+		<td><%= f.text_area :description, :class =>"span7" %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><%= f.submit %></td>
+	</tr>
+</table>
+<% end %> 

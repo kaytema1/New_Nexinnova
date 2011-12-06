@@ -1,0 +1,11 @@
+<% title "NexInnova Home" %>
+<%= render "shared/feature"%> <!--/ featured list -->
+<div class="divider_thin"></div>
+<!--content -->
+<div class="grid_15 suffix_1 content">
+	<div class="divider_thin"></div>
+		<div class="other_posts">
+		<%= will_paginate @articles, :page_links => false, :next_label => 'Next',  :class => 'prev ' %> <!-- Your page content here, "STATEMENT" -->
+		<%= will_paginate @articles, :page_links => false, :previous_label => 'Previous', :class => 'next' %>
+	</div>
+	

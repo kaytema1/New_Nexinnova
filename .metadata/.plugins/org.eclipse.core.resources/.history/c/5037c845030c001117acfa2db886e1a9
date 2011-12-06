@@ -1,0 +1,62 @@
+<%= render "shared/slideshow" %>
+<div class="one-third">
+	<h1>News</h1>
+	<table>
+		<tr style="height: 180px;">
+			<td> fdjsbsjdsjsndjsndjsndsjndkjsndkn </td>
+		</tr>
+		<tr>
+			<td><h2> The World is Flat </h2></td>
+		</tr>
+	</table>
+</div>
+<div class="one-third">
+	<table>
+		<tr>
+			<td><h2>The World is Flat The World is Flat The World is Flat </h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat The World is Flat The World is Flat</h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat  The World is Flat</h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat </h2></td>
+		</tr>
+	</table>
+</div>
+<div class="one-third">
+	TABS  COMING SOON
+</div>
+<hr class="clear">
+<div class="one-third">
+	<h1>BUSINESS </h1>
+	<table>
+		<tr>
+			<td><h3>The World is Flat The World is Flat The World is Flat</h3></td>
+		</tr>
+		<tr>
+			<td><h3>The World is Flat  The World is Flat</h3></td>
+		</tr>
+		<tr>
+			<td><h3>The World is Flat </h3></td>
+		</tr>
+	</table>
+</div>
+<div class="one-third">
+	<h1>SPORTS</h1>
+	<table>
+		<tr>
+			<td><h2>The World is Flat The World is Flat The World is Flat</h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat  The World is Flat</h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat </h2></td>
+		</tr>
+	</table>
+</div>
+<div class="one-third">
+<script src="http://www.gmodules.com/ig/ifr?url=http://shazingo.com/lig/lg/142002.xml&amp;up_extrafeed=http%3A%2F%2Fnewsrss.bbc.co.uk%2Frss%2Fnewsonline_uk_edition%2Flatest_published_stories%2Frss.xml&amp;up_extratitle=Recent&amp;up_subject=BBC%20News&amp;up_entries=3&amp;up_summaries=300&amp;up_selectedTab=&amp;synd=open&amp;w=274&amp;h=293&amp;title=BBC+News+Feed&amp;border=http%3A%2F%2Fwww.gmodules.com%2Fig%2Fimages%2F&amp;output=js"></script></div>

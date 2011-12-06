@@ -1,0 +1,12 @@
+<% title "Edit Ad" %>
+<ul class="breadcrumb">
+  <li><a href="#">Add a Page
+  	</li>
+
+</ul>
+<%= render 'form' %>
+
+<p>
+  <%= link_to "Show", @ad %> |
+  <%= link_to "View All", ads_path %>
+</p>

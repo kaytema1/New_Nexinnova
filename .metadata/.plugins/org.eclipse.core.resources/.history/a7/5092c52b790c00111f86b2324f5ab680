@@ -1,0 +1,23 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+  before_filter :pages, :advertisements, :articles
+  def pages
+    @pages ||= Page.all  
+  end
+  
+  def advertisements
+    @advertisements ||= Advertisement.all
+  end
+  
+  def articles
+    @articles ||= Article.all
+  end
+  def pluralize(count, noun, text)
+    case count
+    when 0: "There are no #{noun.pluralize} #{text}"
+    when 1: "There is one #{noun} #{text}"
+    else: "There are #{count} #{noun.pluralize} #{text}"
+  end
+end
+
+end

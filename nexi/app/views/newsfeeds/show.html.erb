@@ -1,0 +1,20 @@
+<% title "Newsfeed" %>
+
+<p>
+  <strong>Hit:</strong>
+  <%= @newsfeed.hit %>
+</p>
+<p>
+  <strong>Content:</strong>
+  <%= @newsfeed.content %>
+</p>
+<p>
+  <strong>Source:</strong>
+  <%= @newsfeed.source %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_newsfeed_path(@newsfeed) %> |
+  <%= link_to "Destroy", @newsfeed, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", newsfeeds_path %>
+</p>

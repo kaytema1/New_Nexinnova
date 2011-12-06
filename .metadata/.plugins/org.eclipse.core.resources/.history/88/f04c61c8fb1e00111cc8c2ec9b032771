@@ -1,0 +1,43 @@
+<%= form_for @article , :html => { :enctype => "multipart/form-data" }  do |f| %>
+<table>
+	<tr>
+		<td colspan="2"> <%= f.error_messages %> </td>
+	</tr>
+	<tr>
+		<td> <%= f.label :title , :style => "text-align: left" %></td>
+		<td> <%= f.text_field :title %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :content, cols => 20, :rows => 40, :style => "text-align: left"  %></td>
+		<td> <%= f.text_area :content %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :author , :style => "text-align: left"  %></td>
+		<td> <%= f.text_field :author %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :tag , :style => "text-align: left" %> </td>
+		<td> <%= f.text_field :tag %></td>
+	</tr>
+	<tr>
+		<td> <%= f.label :featured, :style => "text-align: left"  %> </td>
+		<td> <%= f.check_box :featured %> </td>
+	</tr>
+	<tr>
+		<td><%= f.label :approved , :style => "text-align: left"  %> </td>
+		<td> <%= f.check_box :approved %></td>
+	</tr>
+	<tr>
+		<td> <%= f.label :page_id , :style => "text-align: left" %> </td>
+		<td> <%= f.text_field :page_id %></td>
+	</tr>
+	<tr>
+		<td> <%= f.label :image, "Image" , :style => "text-align: left"  %></td>
+		<td><%= f.file_field :image %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td> <%= f.submit :class => "btn primary large"  %></td>
+	</tr>
+	<% end %>
+</table>

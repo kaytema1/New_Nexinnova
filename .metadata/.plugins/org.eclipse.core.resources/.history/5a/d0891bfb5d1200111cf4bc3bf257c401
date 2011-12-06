@@ -1,0 +1,7 @@
+ActiveAdmin.register NewsFeed do
+  
+  
+    # Filter only by title
+  filter :name
+  filter :search_query
+end

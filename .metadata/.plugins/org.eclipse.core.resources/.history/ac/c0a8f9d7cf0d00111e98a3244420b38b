@@ -1,0 +1,25 @@
+<!-- Top reveal (slides open, add class "topReveal" to links for open/close toggle ) -->
+<% if !signed_in? %>
+<div id="ContentPanel">
+	<!-- close button -->
+	<a href="#" class="topReveal closeBtn">Close</a>
+	<div class="contentArea">
+		<!-- New member registration -->
+		<div class="right" style="margin:10px 0 0;">
+			<h1> Not a member yet? <span>Register now and get started.</span></h1>
+			
+			<%= link_to 'Register for an account', signup_path %>
+			
+		</div>
+		<!-- Alternate Login -->
+		<div>
+			<%= render "sessions/new"%>
+			<p class="left noMargin">
+				
+			</p>
+		</div>
+		<!-- End of Content -->
+		<div class="clear"></div>
+	</div>
+</div>
+<% end %> 

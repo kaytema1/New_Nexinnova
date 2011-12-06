@@ -1,0 +1,20 @@
+<div id="feature_list">
+	<ul id="feature_tabs">
+		<% for article in @articles %>
+		<li>
+			<span class="link-title"> <%= article.title %> Beautiful flying people are invading some corn fields in Lacoste land</span>
+			<div class="feature_cat">
+				<span class="icon_cat icon_cat_1"> <%= article.tag %>Photography</span><a href="blog-details.html" class="link-more">Read more</a>
+			</div>
+		</li>
+		<%end %>
+	</ul>
+	<ul id="feature_output">
+		<% for article in @articles %>
+		<li>
+			<img src="images/temp/temp_featured_1.jpg" width="960" height="325" alt="" />
+			<a href="blog-details.html"></a>
+		</li>
+		<% end %>
+	</ul>
+</div>

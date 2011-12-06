@@ -1,0 +1,10 @@
+<% title "New Page" %>
+
+<ul class="breadcrumb">
+  <li><a href="#">Add a Page
+  	</li>
+
+</ul>
+<%= render 'form' %>
+
+<p><%= link_to "Back to List", pages_path %></p>

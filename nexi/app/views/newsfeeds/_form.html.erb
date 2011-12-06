@@ -1,0 +1,16 @@
+<%= form_for @newsfeed do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :hit %><br />
+    <%= f.text_field :hit %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.label :source %><br />
+    <%= f.text_field :source %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

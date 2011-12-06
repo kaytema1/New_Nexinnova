@@ -1,0 +1,40 @@
+<%= form_for @article do |f| %>
+<%= f.error_messages %>
+<table>
+	<tr>
+		<td>Title</td>
+		<td> <%= f.text_field :title, :class =>"span5" %></td>
+	</tr>
+	<tr>
+		<td>Author</td>
+		<td><%= f.text_field :author, :class =>"span5" %></td>
+	</tr>
+	<tr>
+		<td>Category</td>
+		<td><%= f.text_field :category, :class =>"span5" %></td>
+	</tr>
+	
+	<tr>
+		<td>Region</td>
+		<td>	<%= f.text_field :geo_region, :class =>"span5" %></td>
+	</tr>
+	<tr>
+		<td>Content</td>
+		<td>	<%= f.text_area :content, :class =>"span7" %></td>
+	</tr>
+	<tr>
+		<td>Page</td>
+		<td>	<%= f.text_field :page_id, :class =>"span5" %></td>
+	</tr>
+	<tr>
+		<td>Image</td>
+		<td><%= f.file_field :image %></td>
+	</tr>
+	
+	<tr>
+		<td></td>
+		<td><%= f.submit %></td>
+	</tr>
+</table>
+
+<% end %> 

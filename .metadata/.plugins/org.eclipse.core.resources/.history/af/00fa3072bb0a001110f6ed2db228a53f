@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<%= render "shared/stylesheets" %>
+		<%= render "shared/javascript" %>
+	</head>
+	<body>
+		<!-- Site Container -->
+		<div id="Wrapper">
+			<div id="PageWrapper">
+				<div class="pageTop"></div>
+				
+				<div class="pageMain">
+					<div class="contentArea">
+						<div class="two-thirds">
+							<%= yield %>
+						</div>
+						<div class="clear"></div>
+					</div>
+			
+				</div>
+				<%= render "shared/footer" %>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			Cufon.now();
+
+		</script>
+	</body>
+</html>

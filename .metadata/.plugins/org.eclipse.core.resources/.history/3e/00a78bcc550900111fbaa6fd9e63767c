@@ -1,0 +1,6 @@
+class Article < ActiveRecord::Base
+  attr_accessible :title, :author, :category, :geo_region, :content, :page_id
+  
+  belongs_to :page
+  has_many :comments
+end

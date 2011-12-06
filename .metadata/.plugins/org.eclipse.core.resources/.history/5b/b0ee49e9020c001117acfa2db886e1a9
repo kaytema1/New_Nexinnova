@@ -1,0 +1,68 @@
+<%= render "shared/slideshow" %>
+<div class="one-third">
+	<h1>News</h1>
+	<table>
+		<tr style="height: 180px;">
+			<td> fdjsbsjdsjsndjsndjsndsjndkjsndkn </td>
+		</tr>
+		<tr>
+			<td><h2> The World is Flat </h2></td>
+		</tr>
+	</table>
+</div>
+<div class="one-third">
+	<table>
+		<tr>
+			<td><h2>The World is Flat The World is Flat The World is Flat </h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat The World is Flat The World is Flat</h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat  The World is Flat</h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat </h2></td>
+		</tr>
+	</table>
+</div>
+<div class="one-third">
+	TABS  COMING SOON
+</div>
+<hr class="clear">
+<div class="one-third">
+	<h1>BUSINESS </h1>
+	<table>
+		<tr>
+			<td><h3>The World is Flat The World is Flat The World is Flat</h3></td>
+		</tr>
+		<tr>
+			<td><h3>The World is Flat  The World is Flat</h3></td>
+		</tr>
+		<tr>
+			<td><h3>The World is Flat </h3></td>
+		</tr>
+	</table>
+</div>
+<div class="one-third">
+	<h1>SPORTS</h1>
+	<table>
+		<tr>
+			<td><h2>The World is Flat The World is Flat The World is Flat</h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat  The World is Flat</h2></td>
+		</tr>
+		<tr>
+			<td><h2>The World is Flat </h2></td>
+		</tr>
+	</table>
+</div>
+<div class="one-third">
+
+
+
+</div>
+
+
+

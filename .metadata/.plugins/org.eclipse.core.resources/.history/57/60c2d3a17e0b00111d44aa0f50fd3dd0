@@ -1,0 +1,29 @@
+<%= javascript_include_tag :all %>
+<%= csrf_meta_tag %> <!-- jQuery framework and utilities -->
+<script type="text/javascript">
+			// initialize slideshow (Gallery View)
+			$(document).ready(function() {
+				if ($('#GalleryView').length > 0) {
+					$('#GalleryView').galleryView({
+						show_panels: true,
+						show_filmstrip: true,
+						panel_width: 938,
+						panel_height: 340,
+						frame_width: 87,
+						frame_height: 45,
+						frame_gap: 8,
+						pointer_size: 16,
+						pause_on_hover: true,
+						filmstrip_position: 'bottom',
+						overlay_position: 'bottom',
+						nav_theme: 'dark',
+						transition_speed: 800,
+						transition_interval: 4000
+					});
+				}
+			});
+		</script>
+<%= stylesheet_link_tag "galleryview.min" %>		
+		<link rel="stylesheet" type="text/css" href="stylesheets/galleryview.min.css" />
+<%= stylesheet_link_tag "ie-only.css" %>
+<%= stylesheet_link_tag "demo" %>

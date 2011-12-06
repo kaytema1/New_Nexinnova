@@ -1,0 +1,63 @@
+<div class="head_bar">
+	<div class="container_24">
+		<ul class="dropdown">
+			<% if user_signed_in? %>
+			Signed in as <%= current_user.email %>. Not you?
+			<li>
+				<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+			</li>
+			<% else %>
+			<li>
+				<%= link_to_rpx "Sign In Using FB or Twitter", user_session_url %>|
+			</li>
+			<li>
+				<%= link_to "Sign In", user_session_url %>
+			</li>
+			<% end %>
+			<li class="first parent">
+				<a href="shortcodes-html.html"><span>SHORTCODES</span></a>
+				<ul>
+					<li class="first">
+						<a href="shortcodes-html.html"><span>HTML Shortcodes</span></a>
+					</li>
+					<li>
+						<a href="shortcodes-columns.html"><span>Column Shortcodes</span></a>
+					</li>
+					<li>
+						<a href="shortcodes-typography.html"><span>Typography</span></a>
+					</li>
+					<li class="last parent">
+						<a href="#"><span>Page example</span></a>
+						<ul>
+							<li class="first">
+								<a href="2cols-sidebar-right.html"><span>2 Cols, Sidebar Right</span></a>
+							</li>
+							<li>
+								<a href="2cols-sidebar-left.html"><span>2 Cols, Sidebar Left</span></a>
+							</li>
+							<li>
+								<a href="3cols-sidebar-right.html"><span>3 Cols, Sidebar Right</span></a>
+							</li>
+							<li class="last">
+								<a href="3cols-sidebar-left.html"><span>3 Cols, Sidebar Left</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="page-pricing.html"><span>PRICING PAGE</span></a>
+			</li>
+			<li>
+				<a href="blog.html"><span>BLOG</span></a>
+			</li>
+			<li>
+				<a href="contacts.html"><span>CONTACT</span></a>
+			</li>
+			<li class="last">
+				<a href="baners-on.html"><span>BANNERS ON</span></a>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		
+		
+		
+	<%= render "shared/stylesheets" %>
+	<%= render "shared/javascript" %>
+	</head>
+	<body>
+		
+		<!-- Site Container -->
+		<div id="Wrapper">
+			<div id="PageWrapper">
+				<div class="pageTop"></div>
+				
+				<!-- Slide show: jQuery Cycle (default) -->
+				
+				
+		
+				
+				<%= render "shared/slideshow"%>
+				
+				
+				<div class="pageMain">
+					<!-- Showcase Content -->
+					<!-- Page Content -->
+					<div class="contentArea">
+						<div class="two-thirds">
+							<%= yield %> 
+							<!-- Featured Content -->
+						
+							
+							<div class="ribbon">
+								<div class="wrapAround"></div>
+								<div class="tab">
+									<span class="blogDate">5 Jan.</span>
+									<span class="blogPostInfo">Posted by <a href="#">J. Smith</a> in <a href="#">Advertising</a> | <a href="#">3 comments</a></span>
+								</div>
+							</div>
+							<div class="blogPostSummary">
+								<h1>How to Build a Better Mousetrap</h1>
+								<div class="blogPostImage">
+									<a href="#" class="img"><img src="images/content/demo-only/blog-post-1.jpg" width="566" height="133" alt="blog post image" /></a>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo vitae mi iaculis tincidunt. Sed ipsum diam, semper et adipiscing sit amet, gravida ac ipsum. Phasellus rutrum est non eros ultrices a molestie tellus suscipit. Nunc eleifend, nisl vel cursus hendrerit, arcu risus sagittis lorem, nec gravida massa lacus non nulla. Praesent urna diam, cursus ac eleifend mattis, euismod et nisi. Vestibulum id leo sit amet nisi. Aliquam erat volutpat. Nam egestas mollis ultrices. Praesent nec tellus est, et convallis mauris.
+								</p>
+								<p>
+									<a href="#">Read more...</a>
+								</p>
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+					</div>
+						<%= render "shared/footer" %>
+				</div>
+			
+			</div>
+		</div>
+		<!-- Activate Font Replacement (cufón) -->
+		<script type="text/javascript">
+			Cufon.now();
+
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+_

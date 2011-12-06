@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<%= render "shared/stylesheets" %>
+		<%= render "shared/javascript" %>
+	</head>
+	<body>
+		<%= render "shared/controlpanel" %>
+		<div id="Wrapper">
+			<div id="PageWrapper">
+				<%= render "shared/header" %> <div class="pageTop"></div>
+				<div class="pageMain">
+					<div class="contentArea">
+						<section class="round">
+							<% flash.each do |key, value| %>
+							<div class="flash <%= key %>">
+								<%= value %>
+							</div>
+							<% end %>
+							<%= yield %>
+						</section>
+						<%= yield %>
+					</div>
+				</div>
+				<%= render "shared/footer" %>
+			</div>
+		</div>
+		<script type="text/javascript">
+			Cufon.now();
+
+		</script>
+	</body>
+</html>

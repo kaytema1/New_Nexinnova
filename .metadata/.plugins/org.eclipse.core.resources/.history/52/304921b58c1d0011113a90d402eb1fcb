@@ -1,0 +1,94 @@
+<div class="header">
+	<div class="container_24">
+		<div class="header_left">
+			<a href="index.html"><img src="images/logo.png" width="300" height="115" border="0" alt="" /></a>
+			<div class="logo_text">
+				<h1>NexInnova Network</h1>
+			</div>
+		</div>
+		<div class="header_right">
+			<div class="social_icons">
+				<a href="#" class="social-rss"><strong>RSS</strong> subscribe</a> &nbsp; <a href="#" class="social-twitter"><strong>16453</strong> followers</a> &nbsp; <a href="#" class="social-facebook"><strong>5470</strong> fans</a>
+				<div class="clearboth"></div>
+			</div>
+			<div class="search_box">
+				<form method="get" id="searchform" action="">
+					<input type="text" value="Search LifeStyle Magazine" onfocus="if (this.value == 'Search LifeStyle Magazine') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search LifeStyle Magazine';}" name="s" id="s" class="inputField" />
+					<input type="submit" id="searchsubmit" value="Search" class="btn-search" />
+				</form>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- topmenu -->
+		<div class="topmenu">
+			<ul class="dropdown">
+				<% for page in @pages %>
+				<li class="menu-red">
+					<%= link_to page.title, page_path(page) %>
+				</li>
+				<% end %>
+				<li class="first current-menu-item menu-item-home menu-gray">
+					<a href="index.html"><span>HOME</span></a>
+				</li>
+				<li class="menu-red">
+					<a href="2cols-sidebar-right.html"><span>Fashion</span></a>
+				</li>
+				<li class="menu-orange">
+					<a href="2cols-sidebar-right.html"><span>Design</span></a>
+				</li>
+				<li class="menu-yellow parent">
+					<a href="3cols-sidebar-right.html"><span>Photography</span></a>
+					<ul>
+						<li class="first">
+							<a href="2cols-sidebar-right.html"><span>Fashion</span></a>
+						</li>
+						<li class="parent">
+							<a href="2cols-sidebar-right.html"><span>Nature</span></a>
+							<ul>
+								<li class="first">
+									<a href="3cols-sidebar-right.html"><span>Landscapes</span></a>
+								</li>
+								<li>
+									<a href="3cols-sidebar-right.html"><span>Scenics</span></a>
+								</li>
+								<li class="last">
+									<a href="3cols-sidebar-right.html"><span>Outdoors</span></a>
+								</li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="2cols-sidebar-right.html"><span>Animals</span></a>
+							<ul>
+								<li class="first">
+									<a href="3cols-sidebar-right.html"><span>Pets</span></a>
+								</li>
+								<li>
+									<a href="3cols-sidebar-right.html"><span>Wildlife</span></a>
+								</li>
+								<li class="last">
+									<a href="3cols-sidebar-right.html"><span>Zoo and farm animals</span></a>
+								</li>
+							</ul>
+						</li>
+						<li class="last">
+							<a href="3cols-sidebar-right.html"><span>Flowers</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-green">
+					<a href="3cols-sidebar-right.html"><span>Gadgets</span></a>
+				</li>
+				<li class="menu-turquoise">
+					<a href="3cols-sidebar-right.html"><span>Arts</span></a>
+				</li>
+				<li class="menu-blue">
+					<a href="2cols-sidebar-right.html"><span>Movies</span></a>
+				</li>
+				<li class="last menu-purple">
+					<a href="2cols-sidebar-right.html"><span>Music</span></a>
+				</li>
+			</ul>
+		</div>
+		<!--/ topmenu -->
+	</div>
+</div>

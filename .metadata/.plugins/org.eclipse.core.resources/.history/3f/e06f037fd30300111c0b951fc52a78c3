@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+/** Page Structure *********************************/
+#header-logo, #header-logo h1 a {color:#fff;}
+#page.pages {background:url(images/header-a-wood.png) top center no-repeat;}
+#page.gallery {background:url(images/header-d-wood.png) top center no-repeat;}
+#wrapper {background: url(images/header-b-wood.png) top center repeat-x;}
+#wrapper.gallery {background: url(images/header-c-wood.png) top center repeat-x;}
+/** / Page Structure *********************************/
+
+
+
+/** Menu Navigation *********************************/
+#tabs a {color:#fff;}
+
+/* #Class Menu */
+#tabs ul ul {
+	background:#828488;
+	border:1px solid #5b5d60;
+}
+/* / #Class Menu */
+
+#tabs ul li.current_page_item, #tabs ul li:hover {background:url(images/gradient-f-light.png) repeat-x top;}
+#tabs ul li ul li  {background:none;}
+#tabs ul li a:hover, #tabs ul li.current_page_item ul li a:hover, #footer a:hover, #tabs ul li ul li.current_page_item a {	color:#c0d5de;}
+#tabs ul li.current_page_item ul li a, #footer a, #footer {	color:#fff;}
+#tabs ul li.current_page_item {	background:url(images/gradient-f-light.png) repeat-x top;}
+#tabs li.menubreak,#tabs li.menubreak:hover {background:url(images/break-c-wood.png) left center repeat-y;}
+#tabs .menudesc {color:#aee4fd;}
+/** / Menu Navigation *********************************/
+
+
+/** Footer *********************************/
+
+
+/* #Class Footer */
+#footer-wrap {background:#171718 url(images/footer-a-wood.png) center top repeat-x;}
+/* / #Class Footer */
+
+#footer-wrap-inner {background:url(images/footer-m-wood.png) center top no-repeat;}
+
+/* #Class Form */
+#footer pre,#footer input[type=text],#footer input[type=password],#footer input[type=file],#footer textarea {
+	background:#262728 url(images/shadow-h.png) top repeat-x;
+	border: 1px solid;
+	color:#ccc;
+	border-color:#141415 #28292a #28292a #141415;
+}
+/* / #Class Form */
+
+#footer .widgetlinks, #footer .menu, #footer  .widget ul {background:url(images/break-a-wood.png) bottom left repeat-x;}
+#footer .widgetlinks li, #footer .menu li, #footer .widget li{background:url(images/break-a-wood.png) top left repeat-x;}
+#footer .widgetlinks li a, #footer .menu li a, #footer .widget li a {background:url(images/li-arrow-white.png) center left no-repeat;color:#fff;}
+#footer .hozbreak {	background:url(images/break-a-wood.png) center repeat-x;}
+#footer #wp-calendar, #footer #wp-calendar tfoot a { color:#555; }
+#footer #wp-calendar caption { color:#fff; }
+#footer .blockquote_line, #footer .blockquote_quotes, #footer blockquote {color:#fff;}
+#footer .blockquote_quotes .quote.left {background:url(images/quote-open-dark.png) no-repeat top left;}
+#footer .blockquote_quotes .quote.right {background:url(images/quote-close-dark.png) no-repeat bottom right;}
+/** / Footer *********************************/

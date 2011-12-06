@@ -1,0 +1,36 @@
+		<div id="feature_list">
+				<ul id="feature_tabs">
+					<li>
+						<span class="link-title">Beautiful flying people are invading some corn fields in Lacoste land</span>
+						<div class="feature_cat">
+							<span class="icon_cat icon_cat_1">Photography</span><a href="blog-details.html" class="link-more">Read more</a>
+						</div>
+					</li>
+					<li>
+						<span class="link-title">Learn how to enjoy more the weekend getaways, togheter with your family </span>
+						<div class="feature_cat">
+							<span class="icon_cat icon_cat_2">Gadgets</span><a href="blog-details.html" class="link-more">Read more</a>
+						</div>
+					</li>
+					<li>
+						<span class="link-title">Best music albums of 2010: Lifestyle Mojo</span>
+						<div class="feature_cat">
+							<span class="icon_cat icon_cat_3">Music</span><a href="blog-details.html" class="link-more">Read more</a>
+						</div>
+					</li>
+				</ul>
+				<ul id="feature_output">
+					<li>
+						<img src="images/temp/temp_featured_1.jpg" width="960" height="325" alt="" />
+						<a href="blog-details.html"></a>
+					</li>
+					<li>
+						<img src="images/temp/temp_featured_2.jpg" width="960" height="325" alt="" />
+						<a href="blog-details.html"></a>
+					</li>
+					<li>
+						<img src="images/temp/temp_featured_3.jpg" width="960" height="325" alt="" />
+						<a href="blog-details.html"></a>
+					</li>
+				</ul>
+			</div>

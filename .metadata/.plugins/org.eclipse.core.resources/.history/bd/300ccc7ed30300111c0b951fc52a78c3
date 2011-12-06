@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/** Page Structure *********************************/
+#header-logo, #header-logo h1 a {color:#fff;}
+#page.pages {background:url(images/header-a-blue.png) top center no-repeat;}
+#page.gallery {	background:url(images/header-d-blue.png) top center no-repeat;}
+#wrapper {background: url(images/header-b-blue.png) top center repeat-x;}
+#wrapper.gallery {background: url(images/header-c-blue.png) top center repeat-x;}
+/** / Page Structure *********************************/
+
+
+
+
+/** Menu Navigation *********************************/
+#tabs a {color:#fff;}
+#tabs ul ul {
+	background:#0bb0ee;
+	border-left:1px solid #0097cf;
+	border-right:1px solid #0097cf;
+	border-bottom:1px solid #0097cf;
+	border-top:1px solid #0097cf;	
+}
+#tabs ul li.current_page_item, #tabs ul li:hover {background:url(images/gradient-f-light.png) repeat-x top;}
+#tabs ul li ul li  {background:none;}
+#tabs ul li a:hover, #tabs ul li ul li.current_page_item a, #tabs ul li.current_page_item ul li a:hover, #footer a:hover {color:#dcf6ff;}
+#tabs ul li.current_page_item ul li a, #footer a, #footer {	color:#fff;}
+#tabs li.menubreak,#tabs li.menubreak:hover {background:url(images/break-c-blue.png) left center repeat-y;}
+#tabs .menudesc {color:#dcf6ff;}
+/** / Menu Navigation *********************************/
+
+
+
+
+/** Footer *********************************/
+
+#footer-wrap {background:#00a4e1 url(images/footer-a-blue.png) center top repeat-x;}
+#footer-wrap-inner {background:url(images/footer-m-blue.png) center top no-repeat;}
+#footer pre,#footer input[type=text],#footer input[type=password],#footer input[type=file],#footer textarea {
+	background:#00a8e6 url(images/shadow-h.png) top repeat-x;
+	border: 1px solid;
+	color:#ccc;
+	border-color:#0097cf #31bdf1 #31bdf1 #0097cf;
+}
+#footer .widgetlinks, #footer .menu, #footer  .widget ul {background:url(images/break-a-blue.png) bottom left repeat-x;}
+#footer .widgetlinks li, #footer .menu li, #footer .widget li{background:url(images/break-a-blue.png) top left repeat-x;}
+#footer .widgetlinks li a, #footer .menu li a, #footer .widget li a {background:url(images/li-arrow-white.png) center left no-repeat;}
+#footer .hozbreak {	background:url(images/break-a-blue.png) center repeat-x;}
+#footer #wp-calendar, #footer #wp-calendar tfoot a { color:#555; }
+#footer #wp-calendar caption { color:#fff; }
+#footer .blockquote_line, #footer .blockquote_quotes, #footer blockquote {color:#fff;}
+#footer .blockquote_quotes .quote.left {background:url(images/quote-open-dark.png) no-repeat top left;}
+#footer .blockquote_quotes .quote.right {background:url(images/quote-close-dark.png) no-repeat bottom right;}
+/** / Footer *********************************/

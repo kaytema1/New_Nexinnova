@@ -1,0 +1,20 @@
+<% title "Advertisements" %>
+
+<table id="FeatureMatrix">
+  <tr>
+    <th class="matrixColumn">Image</th>
+    <th class="matrixColumn">Permalink</th>
+  </tr>
+  <% for advertisement in @advertisements %>
+  
+    <tr>
+     <td class="matrixItem"><%= image_tag advertisement.image.url ,:size => "107x108" %> </td>
+      <td class="matrixOdd"><%= advertisement.permalink %></td>
+      <td><%= link_to "Show", advertisement %></td>
+      <td><%= link_to "Edit", edit_advertisement_path(advertisement) %></td>
+      <td><%= link_to "Destroy", advertisement, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+

@@ -1,0 +1,11 @@
+<%= render "shared/slideshow" %> 
+
+
+<div class="two-thirds">
+	
+	
+	jhbsdfjkhbdefhb
+</div>
+<div class="one-third">
+	<%= render "shared/sidelow" %>
+</div>

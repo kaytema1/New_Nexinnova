@@ -1,0 +1,17 @@
+one:
+  title: MyString
+  author: MyString
+  permalink: MyString
+  content: MyText
+  page_id: 1
+  region: MyString
+  category: MyString
+
+two:
+  title: MyString
+  author: MyString
+  permalink: MyString
+  content: MyText
+  page_id: 1
+  region: MyString
+  category: MyString

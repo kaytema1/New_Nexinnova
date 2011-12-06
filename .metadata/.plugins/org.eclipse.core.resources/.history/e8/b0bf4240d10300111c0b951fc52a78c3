@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap, from Twitter</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- Le styles -->
+		<link href="bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+			html, body {
+				background-color: #FFFFFF;
+			}
+			body {
+				padding-top: 160px;
+			}
+			.hero-unit {
+				padding-left: 20px;
+			}
+		</style>
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="stylesheet" href="wp-content/themes/DynamiX/style.css" type="text/css" media="screen" />
+		<!--    <link rel="stylesheet" href="wp-content/themes/DynamiX/stylesheets/prettyPhoto.css" type="text/css" media="screen" />
+		-->
+		<link rel="stylesheet" href="wp-content/themes/DynamiX/style-2.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="wp-content/themes/DynamiX/stylesheets/grey.css" type="text/css" media="screen" />
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'></script>
+		<script type='text/javascript' src='wp-content/themes/DynamiX/lib/js/dynamix.mindeae.js?ver=3.2.1'></script>
+		<script type='text/javascript' src='wp-content/uploads/2011/03/jwplayerdeae.js?ver=3.2.1'></script>
+		<script type="text/javascript" src="wp-content/themes/DynamiX/lib/js/Lucida_Sans_Unicode_400.font.js" defer></script>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="topbar-inner">
+				<div class="container-fluid">
+					<img sr	c="images/NexInnova.JPG" alt="NexInnova Brand" class="brand span4"/>
+					<ul class="nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+					<p class="pull-right">
+						Logged in as <a href="#">username</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="sidebar">
+				<div class="well">
+					<div class="accordion">
+						<div class="section">
+							<h3 class="accordionhead"><a href="#">Sales</a></h3>
+							<div class="sectioncontent"></div>
+						</div>
+						<div class="section">
+							<h3 class="accordionhead"><a href="#">Score Cards <span class="label success">New</span></a></h3>
+							<div class="sectioncontent"></div>
+						</div>
+						<div class="section">
+							<h3 class="accordionhead"><a href="#">Supply & Demand</a></h3>
+							<div class="sectioncontent"></div>
+						</div>
+						</
+					</div>
+					<div class="content">
+						<!-- Main hero unit for a primary marketing message or call to action -->
+						<ul class="tabs">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">Profile</a>
+							</li>
+							<li>
+								<a href="#">Messages</a>
+							</li>
+							<li>
+								<a href="#">Settings</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+						<footer>
+							<p>
+								&copy; Company 2011
+							</p>
+						</footer>
+					</div>
+				</div>
+	</body>
+</html>

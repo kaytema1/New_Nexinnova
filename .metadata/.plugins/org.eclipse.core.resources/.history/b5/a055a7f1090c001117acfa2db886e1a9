@@ -1,0 +1,10 @@
+<% for advertisement in @advertisements %>
+
+	<%= image_tag advertisement.image.url ,:size => "120x108", :style => "margin-left:15px;" %>
+
+<% end %> 
+<% for advertisement in @advertisements %>
+
+	<%= image_tag advertisement.image.url ,:size => "120x108", :style => "margin-left:15px; margin-top:15px;" %>
+
+<% end %> 

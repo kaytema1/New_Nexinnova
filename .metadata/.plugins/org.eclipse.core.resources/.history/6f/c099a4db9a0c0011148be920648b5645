@@ -1,0 +1,60 @@
+<% title "Nexinnova Web News | "+@page.name %>
+<div class="two-thirds">
+	<h1 class="headline"> NexInnova <strong><%= @page.name %></strong></h1>
+	<!-- Blog Post -->
+	<div class="ribbon">
+		<div class="wrapAround"></div>
+		<div class="tab">
+			<span class="blogDate"><%= @latest_article.created_at.strftime(" %d %b, %Y" ) %></span>
+			<span class="blogPostInfo">Posted by <a href="#"><%= @latest_article.author %></a> in <a href="#"><%= @latest_article.geo_region  %></a> | <a href="#"><%= @latest_article.comments.length %> comments</a></span>
+		</div>
+	</div>
+	<div class="blogPostSummary">
+		<h1><%= @latest_article.title %></h1>
+		<div class="blogPostImage">
+			<a href="#" class="img"><%= image_tag @latest_article.image.url , :class => "featuredImg img zoom"  , :size => "556x133", %></a>
+		</div>
+		<p>
+			<%= @latest_article.content %>
+		</p>
+		<p>
+			<%= link_to "Read more...", article_path(@latest_article)  %></a>
+		</p>
+	</div>
+	<div class="ribbon">
+		<div class="wrapAround"></div>
+		<div class="tab">
+			<span>Other Stories in <%= @page.name %> </span>
+		</div>
+	</div>
+	<div class	="featuredContent">
+		<!-- Featured Item -->
+		<table>
+			<tr><td><%= image_tag @page_articles.last.image.url, :size => "150x150", :style => "float:left; margin-right: 20px;" %>  <h2>  <%= @page_articles.last.title%> </h2>
+				<%= @page_articles.last %>
+				
+				 </td></tr>
+		</table>
+		<%for @article in @page_articles.last %>
+		<div class="featuredItem">
+			<%= image_tag @article.image.url , :class => "featuredImg img zoom" %>
+			<div class="featuredText">
+				<h1 class="title"> <%= @article.title %> <span><%= @article.content %></span></h1>
+				<br />
+				<%= @article.created_at.strftime("Published on %A , %d %B , %Y | %X %Z"  ) %>
+				<br />
+				<a href="#">More information...</a>
+			</div>
+		</div>
+		<% end %>
+	</div>
+	<p>
+		<%= link_to "Edit", edit_page_path(@page) %> |
+		<%= link_to "Destroy", @page, :confirm => 'Are you sure?', :method => :delete %> |
+		<%= link_to "View All", pages_path %>
+	</p>
+</div>
+<div class="one-third">
+	<%= render "shared/sidelow" %>
+</div>
+<div class="clear"></div>

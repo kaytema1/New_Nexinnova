@@ -1,0 +1,10 @@
+<% title "New Article" %>
+
+<ul class="breadcrumb">
+  <li><a href="#">Add an Article
+  	</li>
+
+</ul>
+<%= render 'form' %>
+
+<p><%= link_to "Back to List", articles_path %></p>

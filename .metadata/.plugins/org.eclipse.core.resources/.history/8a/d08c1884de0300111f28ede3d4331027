@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>NexInnova Web Platform</title>
+		<meta name="description" content="NexInnova Advisory Group">
+		<meta name="author" content="NexInnova">
+		<link href="bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+			}
+			.accordion {
+				width: 250px;
+			}
+			.section {
+				padding-right: 10px;
+			}
+		</style>
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link type="text/css" href="css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				// Accordion
+				$("#accordion").accordion({
+					header : "h3"
+				});
+
+				// Tabs
+				$('#tabs').tabs();
+
+				// Dialog
+				$('#dialog').dialog({
+					autoOpen : false,
+					width : 600,
+					buttons : {
+						"Ok" : function() {
+							$(this).dialog("close");
+						},
+						"Cancel" : function() {
+							$(this).dialog("close");
+						}
+					}
+				});
+
+				// Dialog Link
+				$('#dialog_link').click(function() {
+					$('#dialog').dialog('open');
+					return false;
+				});
+				// Datepicker
+				$('#datepicker').datepicker({
+					inline : true
+				});
+
+				// Slider
+				$('#slider').slider({
+					range : true,
+					values : [17, 67]
+				});
+
+				// Progressbar
+				$("#progressbar").progressbar({
+					value : 20
+				});
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(function() {
+					$(this).addClass('ui-state-hover');
+				}, function() {
+					$(this).removeClass('ui-state-hover');
+				});
+			});
+
+		</script>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="topbar-inner">
+				<div class="container-fluid">
+					<a class="brand" href="#">NexInnova Web Platform</a>
+					<ul class="nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+					<p class="pull-right">
+						Logged in as <a href="#">Emmanuel Bediako Addo-Yirenkyi</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="sidebar">
+				<div class="well">
+					<div id="accordion">
+						<div>
+							<h3><a href="#">First</a></h3>
+							<div>
+								Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+							</div>
+						</div>
+						<div>
+							<h3><a href="#">Second</a></h3>
+							<div>
+								Phasellus mattis tincidunt nibh.
+							</div>
+						</div>
+						<div>
+							<h3><a href="#">Third</a></h3>
+							<div>
+								Nam dui erat, auctor a, dignissim quis.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<footer>
+				<p>
+					<img src="NexInnova.JPG" width="320px" height="170px;">
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

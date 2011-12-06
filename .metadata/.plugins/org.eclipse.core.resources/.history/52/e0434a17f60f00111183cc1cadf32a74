@@ -1,0 +1,24 @@
+desc "Fetch Product Prices"
+task :fetch_prices => :environment do
+
+
+  require 'nokogiri'
+  require 'open-uri'
+  
+  @agent = Agent.all
+  @agent.each do |agent|
+    
+  
+  url = "http://#{agent.search_query}/search/?q=#{CGI.escape(agent.name)}"
+  doc = Nokogiri::HTML(open(url))
+  puts doc.at_css("title").text
+  doc.css(".item").each do |item|
+    title = item.at_css(".ListItemLink").text
+
+    puts "#{title}"
+    puts "www.walmart.com"+item.at_css(".linktrack-title")[:href]
+    agent.update_attribute(:result, title)  
+  end
+  
+end
+end

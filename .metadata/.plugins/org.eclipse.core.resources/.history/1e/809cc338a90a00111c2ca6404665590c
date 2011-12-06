@@ -1,0 +1,36 @@
+<%= javascript_include_tag :all %>
+		<%= csrf_meta_tag %> <!-- jQuery framework and utilities -->
+	
+		<script type="text/javascript">
+			// initialize slideshow (Cycle)
+			var firstCycle = true;
+			$(document).ready(function($) {
+				if($('#Slides').length > 0) {
+					$('#Slides').cycle({
+						fx : 'scrollHorz',
+						speed : 750,
+						timeout : 6000,
+						randomizeEffects : false,
+						easing : 'easeOutCubic',
+						next : '.slideNext',
+						prev : '.slidePrev',
+						pager : '#slidePager',
+						cleartypeNoBg : true,
+						after : function(curr, next, opts) {
+							// reset the overlay for the next slide
+							jQuery('#SlideRepeat').css('cursor', 'default').unbind('click');
+							// get the link and apply it to the overlay
+							toGet = (firstCycle) ? $('#Slides').children(':eq(0)') : next;
+							var linkURL = jQuery(toGet).attr('href') || jQuery(toGet).children('a').attr('href') || false;
+							if(linkURL) {
+								jQuery('#SlideRepeat').css('cursor', 'pointer').click(function() {
+									document.location.href = linkURL;
+								});
+							}
+							firstCycle = false;
+						}
+					});
+				}
+			});
+
+		</script>

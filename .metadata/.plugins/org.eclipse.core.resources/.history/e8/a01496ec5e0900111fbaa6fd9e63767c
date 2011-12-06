@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= content_for?(:title) ? yield(:title) : "NexInnova" %></title>
+		<%= stylesheet_link_tag "application" %>
+		<%= javascript_include_tag :defaults %>
+		<%= csrf_meta_tag %>
+		<%= yield(:head) %>
+	</head>
+	<body>
+		<% for page in @pages %>
+
+		<%= link_to page.name, page_path(page) %>
+		<% end %>
+		<div id="container">
+			<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			<% end %>
+			<%= content_tag :h1, yield(:title) if show_title? %>
+			<%= yield %>
+			
+		</div>
+		<div id="sidebar">
+			<% for advertisement in @advertisements %>
+			<p>
+				<%= image_tag advertisement.image.url %>
+			</p>
+			<%= advertisement.image %>
+			<br />
+			<%= advertisement.permalink %>
+
+			<% end %>
+		</div>
+		<hr />
+		<div class="lowbar">
+			<% for article in @articles %>
+
+			<%= article.category %>
+			
+			<br />
+			
+			<% end %>
+		</div>
+		<hr />
+		<div class="lowbar">
+			<% for page in @pages %>
+
+			<%= page.name %>
+			<br />
+			<% end %>
+		</div>
+		<hr />
+	</body>
+</html>
